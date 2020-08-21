@@ -183,6 +183,21 @@
                                     d.setAttribute("src", b);
                                     t.setAttribute("src", b);
                                     alert(t.$.src)
+                                    $.ajax({
+                                        cache : true,
+                                        type : "GET",
+                                        url : "/quesBank/demo/list",
+                                        data : {
+
+                                        },
+                                        async : false,
+                                        error : function(request) {
+                                            alert("error")
+                                        },
+                                        success : function(data) {
+                                            alert('111111');
+                                        }
+                                    })
                                     a.preview.setAttribute("src", t.$.src);
                                     g(a)
                                 } else a.preview &&
