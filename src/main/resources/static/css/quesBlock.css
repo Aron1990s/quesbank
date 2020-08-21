@@ -1,0 +1,39 @@
+.recordContainer{
+    width:100%;
+    min-height:200px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:25px;
+    float:none;
+    height: auto;
+}
+.recordContainer div.recordBody{
+    width:100%;
+    background-color:#f6f9fe;
+}
+.recordContainer div.showBody{
+    width:100%;
+    background-color:white;
+}
+.content{
+    width:100%;
+    height:auto;
+    min-height:200px;
+}
+.editDemo{
+    border-radius: 5px;
+    border: solid 1px #d6e6ff;
+    min-height:200px;
+    width:100%;
+    padding:0 0 0 10px;
+}
+.showDemo{
+    min-height:200px;
+    width:100%;
+    padding:0 0 0 10px;
+    border-top: solid 5px #3685fe;
+    border-left: solid 1px #d6e6ff;
+    border-right: solid 1px #d6e6ff;
+    border-bottom: solid 1px #d6e6ff;
+    border-radius: 5px;
+}
