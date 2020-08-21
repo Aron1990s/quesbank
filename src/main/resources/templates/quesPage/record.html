@@ -271,7 +271,7 @@
                 <div style="height: 2%"></div>
                 <div class="container" style="height: 7%;text-align: center">
                     <div class="col-sm-45"></div>
-                    <div class="col-sm-10 saveRecord"><font class="save-center-vertical">保存</font></div>
+                    <div class="col-sm-10 saveRecord" onclick="showContent();"><font class="save-center-vertical">保存</font></div>
                     <div class="col-sm-45"></div>
                 </div>
             </div>
@@ -281,4 +281,24 @@
 </body>
 <script type="text/javascript" src="../formula/jmeditor/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../formula/jmeditor/JMEditor.js"></script>
+<script th:inline="javascript">
+    function showContent() {
+        $('#content').html(JMEditor.html('content'))
+        $.ajax({
+            cache : true,
+            type : "GET",
+            url : "/quesBank/demo/save",
+            data : {
+                "content": JMEditor.html('content')
+            },
+            async : false,
+            error : function(request) {
+                alert("error")
+            },
+            success : function(data) {
+                alert(data)
+            }
+        });
+    }
+</script>
 </html>
