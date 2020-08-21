@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <link href="../formula/style/default.css" rel="stylesheet" media="screen" type="text/css" />
+    <script type="text/javascript" src="../formula/jmeditor/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../formula/jmeditor/JMEditor.js"></script>
+    <style>
+        html,body
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="body">
+        <div class="content">
+
+        </div>
+    </div>
+</div>
+</body>
+<script th:inline="javascript">
+    $(function(){
+        init()
+    });
+
+    function init() {
+        $.ajax({
+            cache : true,
+            type : "GET",
+            url : "/quesBank/demo/list",
+            data : {
+
+            },
+            async : false,
+            error : function(request) {
+                alert("error")
+            },
+            success : function(data) {
+                var con = '<div contentEditable="false" class="editDemo" style="border-radius: 3px;margin-top: 10px">AAAA</div>';
+                for(var i = 0; i<data.demo.length;i++){
+                    var con1 = con.replace('AAAA',data.demo[i].content);
+                    $('.content').append(con1);
+                }
+            }
+        });
+    }
+
+</script>
+</html>

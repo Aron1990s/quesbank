@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.physics.quesbank.dao.demo.DemoDao">
+
+    <!--  -->
+    <select id="getInfo" resultType="Demo">
+      select * from content
+    </select>
+
+    <!--  -->
+    <insert id="saveInfo" parameterType="Demo">
+      insert into content (
+        id,
+        content
+      )values(
+        #{id},
+        #{content}
+      )
+    </insert>
+</mapper>
+ 
