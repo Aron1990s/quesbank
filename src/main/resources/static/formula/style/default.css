@@ -21,7 +21,7 @@ A:hover {
 div.test{border:solid green 1px;}
 
 .container{
-	width:893px;
+	width:100%;
 	min-height:550px;
 	margin-left:auto;
 	margin-right:auto;

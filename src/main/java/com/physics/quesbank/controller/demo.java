@@ -37,6 +37,34 @@ public class demo {
         return mv;
     }
 
+    @RequestMapping("quesMainPage")
+    public ModelAndView quesMainPage(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("/quesPage/quesMainPage");
+        return mv;
+    }
+
+    @RequestMapping("record")
+    public ModelAndView record(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("/quesPage/record");
+        return mv;
+    }
+
+    @RequestMapping("generate")
+    public ModelAndView generate(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("/quesPage/generate");
+        return mv;
+    }
+
+    @RequestMapping("question")
+    public ModelAndView question(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("/quesPage/question");
+        return mv;
+    }
+
     @RequestMapping("save")
     @ResponseBody
     public String aaa(String content){
