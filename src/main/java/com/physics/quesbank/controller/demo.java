@@ -1,6 +1,7 @@
 package com.physics.quesbank.controller;
 
 import com.physics.quesbank.entity.demo.Demo;
+import com.physics.quesbank.quesTemplate.QuesTemplate;
 import com.physics.quesbank.service.demo.DemoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,28 +43,28 @@ public class demo {
     @RequestMapping("quesMainPage")
     public ModelAndView quesMainPage(){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("/quesPage/quesMainPage");
+        mv.setViewName("quesPage/quesMainPage");
         return mv;
     }
 
     @RequestMapping("record")
     public ModelAndView record(){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("/quesPage/record");
+        mv.setViewName("quesPage/record");
         return mv;
     }
 
     @RequestMapping("generate")
     public ModelAndView generate(){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("/quesPage/generate");
+        mv.setViewName("quesPage/generate");
         return mv;
     }
 
     @RequestMapping("question")
     public ModelAndView question(){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("/quesPage/question");
+        mv.setViewName("quesPage/question");
         return mv;
     }
 
@@ -99,4 +102,18 @@ public class demo {
         }
         return map;
     }
+
+//    @RequestMapping("te")
+//    @ResponseBody
+//    public void te(){
+//        try{
+//            List<Demo> demo = demoService.getInfo();
+//            StringBuilder demo1 = QuesTemplate.initQuesPage(demo);
+//            PrintStream printStream = new PrintStream(new FileOutputStream("D:/test.html"));
+//            printStream.println(demo1.toString());
+//            te.createPDF("d:/testoone2.pdf", demo1.toString(), "aaa");
+//        } catch (Exception e){
+//            e.printStackTrace();
+//        }
+//    }
 }
