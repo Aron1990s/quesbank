@@ -6,6 +6,7 @@
     line-height:25px;
     float:none;
     height: auto;
+    cursor: pointer;
 }
 .recordContainer div.recordBody{
     width:100%;

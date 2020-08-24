@@ -94,9 +94,9 @@
 					
         	methods.remove('#HOverlay,#HCloseBtn,#HTitle');
 			$body.stop().append("<div id='HOverlay' style='width:"+_doc.width()+"px;height:"+_doc.height()+"px;background-color:"+modalBg+";position:fixed;top:0;left:0;z-index:9999;'></div>");				
-			if(o.title != ''){ $obj.stop().prepend('<div id="HTitle" style="padding:10px 45px 10px 12px;border-bottom:1px solid #ddd;background-color:#3685fe;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:white;font-weight: bold">'+o.title+'</div>'); }
+			if(o.title != ''){ $obj.stop().prepend('<div id="HTitle" style="padding:10px 45px 10px 12px;border-bottom:1px solid #ddd;background-color:#65a2ff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:white;font-weight: bold">'+o.title+'</div>'); }
 			if(o.closeHide != false){
-				$obj.stop().append('<a id="HCloseBtn" title="关闭" style="width:24px;height:22px;line-height:18px;display:inline-block;border-radius: 3px;cursor:pointer;background-color:'+closeBg+';color:#fff;font-size:1.4em;text-align:center;position:absolute;top:8px;right:8px;"><span style="width:24px;height:24px;display:inline-block;color: black">×</span></a>').css({'position':'fixed','backgroundColor':o.boxBg,'top':t,'left':l,'margin':m,'zIndex':'100000'});
+				$obj.stop().append('<a id="HCloseBtn" title="关闭" style="width:24px;height:22px;line-height:19px;display:inline-block;border-radius: 3px;cursor:pointer;background-color:'+closeBg+';color:#fff;font-size:1.4em;text-align:center;position:absolute;top:10px;right:8px;"><span style="width:24px;height:24px;display:inline-block;color: black">×</span></a>').css({'position':'fixed','backgroundColor':o.boxBg,'top':t,'left':l,'margin':m,'zIndex':'100000'});
 			}
 			$obj.stop().animate({'width':o.width,'height':o.height},300).removeAttr('class').addClass('animated '+c+'').show();
         },
