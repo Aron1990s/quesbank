@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../css/common.css"/><!-- 基本样式 -->
+    <link rel="stylesheet" href="../css/animate.css"/> <!-- 动画效果 -->
     <link href="../css/bodyAndHtml.css" rel="stylesheet">
     <link href="../css/flexPlugin.css" rel="stylesheet">
     <link href="../css/quesBlock.css" rel="stylesheet">
 </head>
 <body class="main">
+<div id="HBox" style="height: 100%;width: 100%">
+    <iframe src="https://www.baidu.com" frameborder="0" style="height: 100%;width: 100%"></iframe>
+</div>
     <div class="container">
         <div class="col-sm-2"></div>
         <div class="col-sm-96 ques">
@@ -27,17 +32,25 @@
     </div>
 </body>
 <script type="text/javascript" src="../formula/jmeditor/jquery-1.8.3.min.js"></script>
+<script src="../js/jquery.hDialog.js"></script>
 <script type="text/javascript" src="../formula/jmeditor/JMEditor.js"></script>
 <script>
     $(function(){
-        init()
+        init();
+        initDialog();
     });
 
+    function initDialog() {
+        var $el = $('.dialog');
+        $el.hDialog();
+    }
+    
     function init() {
         $.ajax({
             cache : true,
             type : "GET",
             url : "/quesBank/demo/list",
+            async: false,
             data : {
 
             },
@@ -46,16 +59,31 @@
                 alert("error")
             },
             success : function(data) {
-                var con = '<div class="recordContainer"><div class="showBody"><div class="content"><div id="content" contentEditable="false" class="showDemo">AAAA</div></div></div></div><div style="height: 3%"></div>';
+                var con = '<div class="recordContainer bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="content"><div id="content" contentEditable="false" class="showDemo">AAAA</div></div></div></div><div style="height: 3%"></div>';
 
 
 
                 // var con = '<div contentEditable="false" class="showDemo" style="border-radius: 3px;margin-top: 10px">AAAA</div>';
                 for(var i = 0; i<data.demo.length;i++){
-                    var con1 = con.replace('AAAA',data.demo[i].content);
+                    var con1 = con.replace('INDEX',i).replace('AAAA',data.demo[i].content);
                     $('.ques').append(con1);
                 }
             }
+        });
+    }
+
+    function aa(aa) {
+        var $el = $('.dialog');
+        $el.hDialog();
+        $('.recordContainer').hDialog({
+            title: '这是什么呢'+aa,
+            width:'80%',
+            height: '80%',
+            box:'#HBox',
+            effect: 'fadeOut',
+            closeBg: '#ffffff',
+            positions: 'top'
+
         });
     }
 

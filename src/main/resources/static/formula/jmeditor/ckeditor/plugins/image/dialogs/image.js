@@ -183,19 +183,19 @@
                                     d.setAttribute("src", b);
                                     t.setAttribute("src", b);
                                     alert(t.$.src)
+                                    var formData = new FormData();
+                                    formData.append('photo', this.files[0]);
                                     $.ajax({
-                                        cache : true,
-                                        type : "GET",
-                                        url : "/quesBank/demo/list",
-                                        data : {
-
+                                        url:"/quesBank/demo/uploadPhoto",
+                                        type:"post",
+                                        data: formData,
+                                        contentType: false,
+                                        processData: false,
+                                        success: function(data) {
+                                            alert('1');
                                         },
-                                        async : false,
-                                        error : function(request) {
-                                            alert("error")
-                                        },
-                                        success : function(data) {
-                                            alert('111111');
+                                        error:function(data) {
+                                            alert("上传失败")
                                         }
                                     })
                                     a.preview.setAttribute("src", t.$.src);
