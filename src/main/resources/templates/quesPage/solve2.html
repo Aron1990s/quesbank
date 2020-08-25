@@ -12,17 +12,24 @@
         .footer{
             position:fixed;
             bottom:0;
-            border-top: #d4dee0 solid 1px;
-            background-color: #f7f7f9
+            background-color: white
         }
     </style>
 </head>
-<body class="main">
+<body>
     <div class="container">
         <div class="col-sm-2"></div>
         <div class="col-sm-96">
-            <div style="height: 95%" class="ques"></div>
-            <div style="height: 5%;text-align: center;width: 100%" class="footer" onclick="init()">点击</div>
+            <div style="height: 90%" class="ques"></div>
+            <div style="height: 4%"></div>
+            <div style="height: 6%;text-align: center;width: 100%" class="footer container" onclick="init()">
+                <div class="col-sm-43"></div>
+                <div class="col-sm-10" style="text-align: center;background-color: #3685fe;cursor: pointer;border-radius: 5px">
+                    <div style="height: 10%"></div>
+                    <img src="../images/jt.png" style="width: 20%;height: 40%">
+                </div>
+                <div class="col-sm-40"></div>
+            </div>
         </div>
         <div class="col-sm-2"></div>
     </div>
@@ -49,14 +56,14 @@
                 alert("error")
             },
             success : function(data) {
-                var con = '<div style="display:none" class="recordContainer bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="content"><div id="content" contentEditable="false" class="showDemo">AAAA</div></div></div></div><div style="height: 3%"></div>';
+                var con = '<div class="recordContainer bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="content"><div id="content" contentEditable="false" class="showDemo">AAAA</div></div></div></div><div style="height: 1%"></div>';
                 var con1 = con.replace('INDEX',i).replace('AAAA',data.demo[index].content);
                 $('.ques').append(con1);
                 index ++;
-                $(".recordContainer").stop().fadeIn(1000);
                 $('html, body').animate({
                     scrollTop: document.body.scrollHeight
                 }, 1000);
+                $(".recordContainer").stop().fadeIn(1000);
             }
         });
     }

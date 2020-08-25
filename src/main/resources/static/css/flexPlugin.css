@@ -70,6 +70,10 @@
     width: 15%;
 }
 
+.col-sm-18 {
+    width: 18%;
+}
+
 .col-sm-20 {
     width: 20%;
 }
@@ -102,8 +106,16 @@
     width: 35%;
 }
 
+.col-sm-38 {
+    width: 38%;
+}
+
 .col-sm-40 {
     width: 40%;
+}
+
+.col-sm-43 {
+    width: 43%;
 }
 
 .col-sm-44 {
