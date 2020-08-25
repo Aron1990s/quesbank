@@ -7,6 +7,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -25,6 +27,7 @@ import java.util.*;
  * @Author aron
  * @Date 2020/8/18 16:15
  **/
+@CrossOrigin
 @Controller
 @RequestMapping("demo")
 public class demo {
@@ -38,6 +41,20 @@ public class demo {
     public ModelAndView test(){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("demo");
+        return mv;
+    }
+
+    @RequestMapping("detail")
+    public ModelAndView detail(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("quesPage/solve");
+        return mv;
+    }
+
+    @RequestMapping("detail2")
+    public ModelAndView detail2(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("quesPage/solve2");
         return mv;
     }
 
