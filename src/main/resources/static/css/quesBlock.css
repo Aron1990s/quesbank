@@ -38,3 +38,8 @@
     border-bottom: solid 1px #d6e6ff;
     border-radius: 5px;
 }
+.showDemoSolution{
+    min-height:200px;
+    width:100%;
+    padding:0 0 0 10px;
+}
