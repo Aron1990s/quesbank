@@ -31,4 +31,8 @@ public class DemoService {
     public List<Demo> getInfo(){
         return dao.getInfo();
     }
+
+    public List<Demo> getAnswer(Demo demo){
+        return dao.getAnswer(demo);
+    }
 }

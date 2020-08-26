@@ -37,7 +37,7 @@
 <script type="text/javascript" src="../formula/jmeditor/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../formula/jmeditor/JMEditor.js"></script>
 <script>
-    var index = 0;
+    var index = 1;
     $(function(){
         init();
     });
@@ -46,24 +46,24 @@
         $.ajax({
             cache : true,
             type : "GET",
-            url : "/quesBank/demo/list",
+            url : "/quesBank/demo/list2",
             async: false,
             data : {
-
+                type_order: index
             },
             async : false,
             error : function(request) {
                 alert("error")
             },
             success : function(data) {
-                var con = '<div style="display:none" class="recordContainer bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="content"><div id="content" contentEditable="false" class="showDemoSolution">AAAA</div></div></div></div><div style="height: 1%"></div>';
-                var con1 = con.replace('INDEX',i).replace('AAAA',data.demo[index].content);
+                var con = '<div style="display:none" class="recordContainerSolve bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="contentSolve"><div id="content" contentEditable="false" class="showDemoSolution">AAAA</div></div></div></div><div style="height: 1%"></div>';
+                var con1 = con.replace('INDEX',index).replace('AAAA',data.demo[0].content);
                 $('.ques').append(con1);
                 index ++;
                 $('html, body').animate({
                     scrollTop: document.body.scrollHeight
                 }, 1000);
-                $(".recordContainer").stop().fadeIn(500);
+                $(".recordContainerSolve").stop().fadeIn(500);
             }
         });
     }

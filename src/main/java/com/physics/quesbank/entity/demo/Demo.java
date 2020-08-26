@@ -18,5 +18,7 @@ public class Demo {
     protected final static Logger logger = LoggerFactory.getLogger(Demo.class);
     private String id;
     private String content;
+    private String type_order;
+    private String record_time;
 
 }

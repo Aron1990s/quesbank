@@ -20,5 +20,6 @@ public interface DemoDao {
 
     List<Demo> getInfo();
 
+    public List<Demo> getAnswer(Demo demo);
 
 }

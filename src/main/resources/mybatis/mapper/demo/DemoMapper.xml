@@ -6,17 +6,25 @@
 
     <!--  -->
     <select id="getInfo" resultType="Demo">
-      select * from content
+      select * from content where type_order is null
+    </select>
+
+    <select id="getAnswer" parameterType="Demo" resultType="Demo">
+      select * from content where type_order = #{type_order}
     </select>
 
     <!--  -->
     <insert id="saveInfo" parameterType="Demo">
       insert into content (
         id,
-        content
+        content,
+        type_order,
+        record_time
       )values(
         #{id},
-        #{content}
+        #{content},
+        #{type_order},
+        #{record_time}
       )
     </insert>
 </mapper>

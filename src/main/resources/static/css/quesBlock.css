@@ -8,6 +8,16 @@
     height: auto;
     cursor: pointer;
 }
+.recordContainerSolve{
+    width:100%;
+    min-height:100px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:25px;
+    float:none;
+    height: auto;
+    cursor: pointer;
+}
 .recordContainer div.recordBody{
     width:100%;
     background-color:#f6f9fe;
@@ -20,6 +30,11 @@
     width:100%;
     height:auto;
     min-height:200px;
+}
+.contentSolve{
+    width:100%;
+    height:auto;
+    min-height:100px;
 }
 .editDemo{
     border-radius: 5px;
@@ -39,7 +54,7 @@
     border-radius: 5px;
 }
 .showDemoSolution{
-    min-height:200px;
+    min-height:100px;
     width:100%;
     padding:0 0 0 10px;
 }

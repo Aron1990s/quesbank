@@ -3831,3 +3831,898 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [demo/
 2020-08-26 09:49:14,012:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 2020-08-26 09:49:14,024:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 11 ms
 2020-08-26 09:49:25,446:WARN http-nio-8077-exec-6 (ResourceHttpRequestHandler.java:686) - Path contains "../" after call to StringUtils#cleanPath: [css../leftNav/custom.min.css]
+2020-08-26 11:24:42,580:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 24268 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 11:24:42,590:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 11:24:42,654:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-26 11:24:42,654:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-26 11:24:43,556:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 11:24:43,579:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-08-26 11:24:44,384:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 11:24:44,395:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 11:24:44,396:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 11:24:44,396:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 11:24:44,542:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 11:24:44,543:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1889 ms
+2020-08-26 11:24:44,925:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 11:24:49,083:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-26 11:24:49,163:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 11:24:49,251:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-26 11:24:49,605:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-26 11:24:49,660:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 11:24:49,836:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 11:24:50,091:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 11:24:50,104:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 11:24:50,196:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 11:24:50,213:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 11:24:50,255:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 11:24:50,257:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 11:24:50,257:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 11:24:50,265:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 8.266 seconds (JVM running for 12.009)
+2020-08-26 11:24:57,157:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-26 11:24:57,157:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-26 11:24:57,165:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 7 ms
+2020-08-26 11:29:13,464:INFO Thread-25 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 11:29:13,478:INFO Thread-25 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 11:29:13,489:INFO Thread-25 (Log4j2Impl.java:106) - {dataSource-1} closed
+2020-08-26 11:29:13,868:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 24268 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 11:29:13,869:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 11:29:14,209:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 11:29:14,216:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-08-26 11:29:14,393:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 11:29:14,393:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 11:29:14,394:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 11:29:14,394:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 11:29:14,425:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 11:29:14,425:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 551 ms
+2020-08-26 11:29:14,494:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 11:30:54,100:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 11:30:54,110:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 11:30:54,153:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-26 11:30:54,153:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-26 11:30:54,823:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 11:30:54,846:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-08-26 11:30:55,491:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 11:30:55,503:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 11:30:55,503:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 11:30:55,504:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 11:30:55,655:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 11:30:55,655:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1502 ms
+2020-08-26 11:30:55,928:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 11:31:00,025:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-26 11:31:00,070:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 11:31:00,130:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-26 11:31:00,331:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-26 11:31:00,421:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 11:31:00,501:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 11:31:00,750:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 11:31:00,760:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 11:31:00,921:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 11:31:00,939:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 11:31:00,969:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 11:31:00,971:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 11:31:00,972:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 11:31:00,983:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 7.343 seconds (JVM running for 10.341)
+2020-08-26 11:31:16,773:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-26 11:31:16,773:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-26 11:31:16,783:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 8 ms
+2020-08-26 11:43:48,671:INFO http-nio-8077-exec-6 (DirectJDKLog.java:175) - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Request header is too large
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:766) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:452) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_66]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+2020-08-26 13:07:56,753:INFO Thread-23 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:07:56,776:INFO Thread-23 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:07:56,798:INFO Thread-23 (Log4j2Impl.java:106) - {dataSource-1} closed
+2020-08-26 13:07:57,160:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:07:57,161:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:07:57,528:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:07:57,535:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-08-26 13:07:57,926:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:07:57,927:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:07:57,927:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:07:57,927:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:07:57,966:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:07:57,967:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 802 ms
+2020-08-26 13:07:58,022:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:01,665:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-2} inited
+2020-08-26 13:08:01,673:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:08:01,680:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:08:01,693:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:08:01,694:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:01,746:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:08:01,978:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:08:01,992:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:08:01,996:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:08:01,997:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:08:01,998:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:08:02,002:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 5.024 seconds (JVM running for 5831.36)
+2020-08-26 13:08:02,004:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-08-26 13:08:10,237:INFO Thread-30 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:10,238:INFO Thread-30 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:10,244:INFO Thread-30 (Log4j2Impl.java:106) - {dataSource-2} closed
+2020-08-26 13:08:10,525:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:08:10,526:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:08:10,795:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:08:10,800:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-08-26 13:08:10,933:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:08:10,934:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:08:10,934:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:08:10,935:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:08:10,960:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:08:10,960:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 430 ms
+2020-08-26 13:08:11,003:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:14,516:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-3} inited
+2020-08-26 13:08:14,523:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:08:14,528:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:08:14,538:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:08:14,538:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:14,570:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:08:14,751:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:08:14,758:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:08:14,762:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:08:14,762:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:08:14,763:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:08:14,766:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 4.349 seconds (JVM running for 5844.124)
+2020-08-26 13:08:14,768:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-08-26 13:08:32,329:INFO Thread-35 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:32,330:INFO Thread-35 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:32,342:INFO Thread-35 (Log4j2Impl.java:106) - {dataSource-3} closed
+2020-08-26 13:08:32,647:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:08:32,648:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:08:32,823:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:08:32,828:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-08-26 13:08:32,973:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:08:32,973:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:08:32,974:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:08:32,974:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:08:33,008:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:08:33,008:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 357 ms
+2020-08-26 13:08:33,059:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:36,479:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-4} inited
+2020-08-26 13:08:36,486:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:08:36,512:WARN restartedMain (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demo' defined in file [D:\Idea\workspace\quesbank\target\classes\com\physics\quesbank\controller\demo.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@55fbff1a]
+2020-08-26 13:08:36,513:INFO restartedMain (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:36,514:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:08:36,523:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:08:36,524:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:36,525:INFO restartedMain (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:36,528:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-4} closed
+2020-08-26 13:08:36,529:INFO restartedMain (DirectJDKLog.java:173) - Stopping service [Tomcat]
+2020-08-26 13:08:36,537:INFO restartedMain (ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-26 13:08:36,616:ERROR restartedMain (SpringApplication.java:837) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demo' defined in file [D:\Idea\workspace\quesbank\target\classes\com\physics\quesbank\controller\demo.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@55fbff1a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at com.physics.quesbank.QuesbankApplication.main(QuesbankApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_66]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@55fbff1a]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+Caused by: java.lang.NoClassDefFoundError: Lcom/physics/quesbank/service/demo/DemoService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_66]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: com.physics.quesbank.service.demo.DemoService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_66]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_66]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_66]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_66]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_66]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_66]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+2020-08-26 13:08:41,709:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:08:41,711:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:08:41,902:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:08:41,910:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+2020-08-26 13:08:42,054:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:08:42,054:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:08:42,055:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:08:42,055:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:08:42,083:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:08:42,083:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 369 ms
+2020-08-26 13:08:42,123:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:45,470:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-5} inited
+2020-08-26 13:08:45,476:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:08:45,480:WARN restartedMain (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demo' defined in file [D:\Idea\workspace\quesbank\target\classes\com\physics\quesbank\controller\demo.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4769f232]
+2020-08-26 13:08:45,480:INFO restartedMain (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:45,482:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:08:45,491:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:08:45,491:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:45,492:INFO restartedMain (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:45,496:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-5} closed
+2020-08-26 13:08:45,496:INFO restartedMain (DirectJDKLog.java:173) - Stopping service [Tomcat]
+2020-08-26 13:08:45,502:INFO restartedMain (ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-26 13:08:45,503:ERROR restartedMain (SpringApplication.java:837) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demo' defined in file [D:\Idea\workspace\quesbank\target\classes\com\physics\quesbank\controller\demo.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4769f232]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at com.physics.quesbank.QuesbankApplication.main(QuesbankApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_66]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4769f232]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+Caused by: java.lang.NoClassDefFoundError: Lcom/physics/quesbank/service/demo/DemoService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_66]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: com.physics.quesbank.service.demo.DemoService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_66]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_66]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_66]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_66]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_66]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_66]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+2020-08-26 13:08:47,414:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:08:47,415:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:08:47,595:WARN restartedMain (ClassPathMapperScanner.java:166) - No MyBatis mapper was found in '[com.physics.quesbank]' package. Please check your configuration.
+2020-08-26 13:08:47,607:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:08:47,613:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 4ms. Found 0 JPA repository interfaces.
+2020-08-26 13:08:47,795:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:08:47,796:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:08:47,797:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:08:47,797:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:08:47,824:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:08:47,824:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 405 ms
+2020-08-26 13:08:47,865:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:51,435:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-6} inited
+2020-08-26 13:08:51,442:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:08:51,447:WARN restartedMain (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demo' defined in file [D:\Idea\workspace\quesbank\target\classes\com\physics\quesbank\controller\demo.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4f194ca9]
+2020-08-26 13:08:51,447:INFO restartedMain (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:51,449:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:08:51,455:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:08:51,456:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:51,457:INFO restartedMain (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:51,459:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-6} closed
+2020-08-26 13:08:51,460:INFO restartedMain (DirectJDKLog.java:173) - Stopping service [Tomcat]
+2020-08-26 13:08:51,465:INFO restartedMain (ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-26 13:08:51,465:ERROR restartedMain (SpringApplication.java:837) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demo' defined in file [D:\Idea\workspace\quesbank\target\classes\com\physics\quesbank\controller\demo.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4f194ca9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at com.physics.quesbank.QuesbankApplication.main(QuesbankApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_66]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4f194ca9]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+Caused by: java.lang.NoClassDefFoundError: Lcom/physics/quesbank/service/demo/DemoService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_66]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: com.physics.quesbank.service.demo.DemoService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_66]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_66]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_66]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_66]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_66]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_66]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+2020-08-26 13:08:54,384:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:08:54,385:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:08:54,571:WARN restartedMain (ClassPathMapperScanner.java:166) - No MyBatis mapper was found in '[com.physics.quesbank]' package. Please check your configuration.
+2020-08-26 13:08:54,580:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:08:54,584:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 3ms. Found 0 JPA repository interfaces.
+2020-08-26 13:08:54,721:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:08:54,721:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:08:54,722:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:08:54,722:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:08:54,758:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:08:54,758:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 370 ms
+2020-08-26 13:08:54,801:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:08:58,204:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-7} inited
+2020-08-26 13:08:58,210:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:08:58,215:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:08:58,221:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:08:58,221:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:08:58,222:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:08:58,437:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:08:58,447:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:08:58,453:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:08:58,454:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:08:58,455:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:08:58,460:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 4.185 seconds (JVM running for 5887.818)
+2020-08-26 13:08:58,461:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-08-26 13:09:04,265:INFO Thread-40 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:09:04,266:INFO Thread-40 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:09:04,274:INFO Thread-40 (Log4j2Impl.java:106) - {dataSource-7} closed
+2020-08-26 13:09:04,624:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:09:04,626:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:09:04,807:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:09:04,812:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-08-26 13:09:04,961:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:09:04,961:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:09:04,962:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:09:04,962:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:09:04,995:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:09:04,995:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 366 ms
+2020-08-26 13:09:05,053:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:09:08,582:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-8} inited
+2020-08-26 13:09:08,587:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:09:08,592:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:09:08,598:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:09:08,598:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:09:08,638:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:09:08,818:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:09:08,827:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:09:08,831:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:09:08,832:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:09:08,832:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:09:08,835:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 4.36 seconds (JVM running for 5898.193)
+2020-08-26 13:09:08,836:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-08-26 13:09:17,006:INFO Thread-54 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:09:17,006:INFO Thread-54 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:09:17,012:INFO Thread-54 (Log4j2Impl.java:106) - {dataSource-8} closed
+2020-08-26 13:09:17,279:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:09:17,280:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:09:17,484:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:09:17,489:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-08-26 13:09:17,606:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:09:17,606:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:09:17,607:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:09:17,607:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:09:17,631:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:09:17,631:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 347 ms
+2020-08-26 13:09:17,667:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:09:21,307:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-9} inited
+2020-08-26 13:09:21,315:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:09:21,322:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:09:21,330:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:09:21,330:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:09:21,363:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:09:21,559:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:09:21,567:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:09:21,572:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:09:21,573:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:09:21,573:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:09:21,578:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 4.428 seconds (JVM running for 5910.936)
+2020-08-26 13:09:21,580:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-08-26 13:09:24,821:INFO Thread-59 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:09:24,822:INFO Thread-59 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:09:24,829:INFO Thread-59 (Log4j2Impl.java:106) - {dataSource-9} closed
+2020-08-26 13:09:25,109:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 19428 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:09:25,110:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:09:25,321:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:09:25,328:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-08-26 13:09:25,483:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:09:25,484:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:09:25,485:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:09:25,485:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:09:25,521:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:09:25,521:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 408 ms
+2020-08-26 13:09:25,574:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:09:28,840:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-10} inited
+2020-08-26 13:09:28,848:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:09:28,854:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:09:28,862:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:09:28,863:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:09:28,897:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:09:29,097:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:09:29,104:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:09:29,109:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:09:29,109:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:09:29,110:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:09:29,114:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 4.115 seconds (JVM running for 5918.471)
+2020-08-26 13:09:29,115:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-08-26 13:11:06,005:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 23320 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:11:06,013:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:11:06,056:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-26 13:11:06,057:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-26 13:11:06,922:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:11:06,945:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2020-08-26 13:11:07,730:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:11:07,742:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:11:07,743:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:11:07,743:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:11:07,888:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:11:07,888:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1831 ms
+2020-08-26 13:11:08,219:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:11:12,057:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-26 13:11:12,132:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:11:12,265:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-26 13:11:12,592:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-26 13:11:12,605:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:11:12,784:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:11:13,079:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:11:13,090:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:11:13,139:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:11:13,154:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:11:13,195:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:11:13,197:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:11:13,197:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:11:13,209:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 7.758 seconds (JVM running for 10.895)
+2020-08-26 13:11:31,027:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-26 13:11:31,027:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-26 13:11:31,035:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 7 ms
+2020-08-26 13:15:58,484:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 9344 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:15:58,493:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:15:58,548:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-26 13:15:58,548:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-26 13:15:59,290:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:15:59,311:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2020-08-26 13:16:00,847:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:16:00,857:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:16:00,858:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:16:00,860:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:16:01,035:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:16:01,036:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 2486 ms
+2020-08-26 13:16:01,304:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:16:04,802:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-26 13:16:04,846:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:16:04,912:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-26 13:16:05,123:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-26 13:16:05,220:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:16:05,286:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:16:05,648:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:16:05,661:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:16:05,917:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:16:05,941:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:16:05,977:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:16:05,980:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:16:05,981:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:16:05,995:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 8.058 seconds (JVM running for 11.387)
+2020-08-26 13:16:22,021:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-26 13:16:22,021:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-26 13:16:22,031:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 10 ms
+2020-08-26 13:16:23,997:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:16:24,283:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: null
+2020-08-26 13:16:24,344:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-08-26 13:16:45,891:INFO Thread-24 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:16:45,893:INFO Thread-24 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:16:45,902:INFO Thread-24 (Log4j2Impl.java:106) - {dataSource-1} closed
+2020-08-26 13:16:46,433:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 9344 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:16:46,434:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:16:46,754:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:16:46,761:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-08-26 13:16:46,929:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:16:46,930:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:16:46,930:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:16:46,931:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:16:46,965:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:16:46,965:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 526 ms
+2020-08-26 13:16:47,028:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:17:16,690:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 20544 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:17:16,700:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:17:16,750:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-26 13:17:16,751:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-26 13:17:17,538:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:17:17,556:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-08-26 13:17:18,201:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:17:18,213:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:17:18,214:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:17:18,215:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:17:18,375:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:17:18,375:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1624 ms
+2020-08-26 13:17:18,624:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:17:22,412:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-26 13:17:22,461:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:17:22,531:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-26 13:17:22,782:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-26 13:17:22,869:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:17:22,958:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:17:23,206:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:17:23,218:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:17:23,409:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:17:23,426:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:17:23,461:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:17:23,463:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:17:23,464:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:17:23,475:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 7.294 seconds (JVM running for 10.652)
+2020-08-26 13:17:40,350:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-26 13:17:40,350:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-26 13:17:40,357:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 6 ms
+2020-08-26 13:17:42,139:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:17:42,455:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: null
+2020-08-26 13:17:42,521:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-08-26 13:18:39,919:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 22992 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:18:39,930:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:18:39,989:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-26 13:18:39,989:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-26 13:18:40,781:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:18:40,806:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-08-26 13:18:41,628:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:18:41,639:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:18:41,639:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:18:41,639:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:18:41,815:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:18:41,815:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1826 ms
+2020-08-26 13:18:42,111:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:18:45,712:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-26 13:18:45,775:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:18:45,855:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-26 13:18:46,134:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-26 13:18:46,273:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:18:46,399:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:18:46,840:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:18:46,876:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:18:47,084:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:18:47,108:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:18:47,150:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:18:47,155:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:18:47,156:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:18:47,172:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 7.781 seconds (JVM running for 11.859)
+2020-08-26 13:19:07,329:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-26 13:19:07,329:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-26 13:19:07,337:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 8 ms
+2020-08-26 13:19:23,596:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:19:23,943:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: null
+2020-08-26 13:19:24,010:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-08-26 13:21:15,028:INFO Thread-24 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:21:15,031:INFO Thread-24 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:21:15,038:INFO Thread-24 (Log4j2Impl.java:106) - {dataSource-1} closed
+2020-08-26 13:21:15,390:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 22992 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:21:15,391:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:21:15,681:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:21:15,690:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+2020-08-26 13:21:15,857:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:21:15,858:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:21:15,858:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:21:15,859:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:21:15,896:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:21:15,896:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 499 ms
+2020-08-26 13:21:15,957:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:21:19,585:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-2} inited
+2020-08-26 13:21:19,591:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:21:19,600:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:21:19,611:WARN restartedMain (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demo' defined in file [D:\Idea\workspace\quesbank\target\classes\com\physics\quesbank\controller\demo.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@574d7c82]
+2020-08-26 13:21:19,611:INFO restartedMain (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:21:19,615:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:21:19,616:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:21:19,617:INFO restartedMain (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:21:19,621:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-2} closed
+2020-08-26 13:21:19,622:INFO restartedMain (DirectJDKLog.java:173) - Stopping service [Tomcat]
+2020-08-26 13:21:19,631:INFO restartedMain (ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-26 13:21:19,643:ERROR restartedMain (SpringApplication.java:837) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demo' defined in file [D:\Idea\workspace\quesbank\target\classes\com\physics\quesbank\controller\demo.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@574d7c82]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at com.physics.quesbank.QuesbankApplication.main(QuesbankApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_66]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.physics.quesbank.controller.demo] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@574d7c82]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+Caused by: java.lang.NoClassDefFoundError: Lcom/physics/quesbank/service/demo/DemoService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_66]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: com.physics.quesbank.service.demo.DemoService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_66]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_66]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_66]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_66]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_66]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[?:1.8.0_66]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[?:1.8.0_66]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[?:1.8.0_66]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 more
+2020-08-26 13:21:32,480:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 1404 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 13:21:32,493:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 13:21:32,557:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-26 13:21:32,557:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-26 13:21:33,390:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 13:21:33,416:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-08-26 13:21:34,212:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 13:21:34,225:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:21:34,225:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 13:21:34,226:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 13:21:34,398:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 13:21:34,398:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1841 ms
+2020-08-26 13:21:34,681:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 13:21:38,442:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-26 13:21:38,503:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 13:21:38,589:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-26 13:21:38,857:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-26 13:21:38,993:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 13:21:39,085:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 13:21:39,378:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 13:21:39,392:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 13:21:39,549:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 13:21:39,568:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 13:21:39,604:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 13:21:39,607:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 13:21:39,608:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 13:21:39,619:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 7.787 seconds (JVM running for 11.762)
+2020-08-26 13:21:42,163:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-26 13:21:42,163:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-26 13:21:42,171:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 8 ms
+2020-08-26 13:21:47,333:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:21:47,671:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:21:47,741:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:21:53,998:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:21:53,999:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 2(String)
+2020-08-26 13:21:54,047:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:22:23,694:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:22:23,695:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:22:23,737:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:22:24,898:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:22:24,898:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 2(String)
+2020-08-26 13:22:24,952:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:22:34,730:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-26 13:22:34,738:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-26 13:22:34,854:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 16
+2020-08-26 13:22:37,353:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:22:37,353:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:22:37,396:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:22:38,416:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:22:38,417:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 2(String)
+2020-08-26 13:22:38,459:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:23:59,533:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:23:59,534:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:23:59,575:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:24:07,634:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:24:07,634:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:24:07,682:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:24:34,991:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:24:34,992:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:24:35,033:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:24:47,563:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-26 13:24:47,563:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-26 13:24:47,648:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 16
+2020-08-26 13:24:49,806:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:24:49,807:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:24:49,849:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:24:52,775:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:24:52,775:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 2(String)
+2020-08-26 13:24:52,818:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:26:07,312:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:26:07,312:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:26:07,358:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:26:08,609:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:26:08,609:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 2(String)
+2020-08-26 13:26:08,651:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:26:10,577:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:26:10,579:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 3(String)
+2020-08-26 13:26:10,625:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:26:12,933:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:26:12,933:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 4(String)
+2020-08-26 13:26:12,977:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:26:18,928:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:26:18,929:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 5(String)
+2020-08-26 13:26:18,972:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:26:20,649:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:26:20,650:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 6(String)
+2020-08-26 13:26:20,693:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:27:24,027:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-26 13:27:24,028:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-26 13:27:24,113:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 16
+2020-08-26 13:27:27,787:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:27:27,788:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:27:27,829:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:27:29,265:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:27:29,265:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 2(String)
+2020-08-26 13:27:29,326:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:27:32,751:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:27:32,752:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 3(String)
+2020-08-26 13:27:32,800:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:27:35,293:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:27:35,293:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 4(String)
+2020-08-26 13:27:35,335:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:27:42,360:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:27:42,360:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 5(String)
+2020-08-26 13:27:42,401:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:27:44,045:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:27:44,045:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 6(String)
+2020-08-26 13:27:44,088:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:27:57,841:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:27:57,842:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:27:57,887:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:27:58,956:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:27:58,956:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 2(String)
+2020-08-26 13:27:58,997:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:28:00,923:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:28:00,923:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 3(String)
+2020-08-26 13:28:00,965:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:28:06,569:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:28:06,569:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 4(String)
+2020-08-26 13:28:06,611:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:28:08,514:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:28:08,514:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 5(String)
+2020-08-26 13:28:08,556:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:28:23,491:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-26 13:28:23,492:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-26 13:28:23,577:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 16
+2020-08-26 13:28:27,585:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:28:27,586:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-26 13:28:27,649:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:28:28,817:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:28:28,818:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 2(String)
+2020-08-26 13:28:28,863:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:28:29,925:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:28:29,925:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 3(String)
+2020-08-26 13:28:29,966:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:28:31,245:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:28:31,245:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 4(String)
+2020-08-26 13:28:31,287:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-26 13:28:32,778:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-26 13:28:32,779:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 5(String)
+2020-08-26 13:28:32,822:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1

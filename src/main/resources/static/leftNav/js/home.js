@@ -51,7 +51,7 @@ function showSideMenu(res) {
 	});
 	$("#navmenu .child_menu").eq(0).find("li:eq(0)").addClass("current-page");
 
-	var fram = "<iframe src='https://www.baidu.com/' name='myFrame' id='myIframe' width='100%' height='100%'  scrolling='auto' frameborder='0'></iframe>"
+	var fram = "<iframe src='' name='myFrame' id='myIframe' width='100%' height='100%'  scrolling='auto' frameborder='0'></iframe>"
 	$("#rightContent").append(fram);
 
 	$("#navmenu .child_menu").on("click", "li", function() {

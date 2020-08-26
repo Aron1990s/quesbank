@@ -3,6 +3,7 @@ package com.physics.quesbank.controller;
 import com.physics.quesbank.entity.demo.Demo;
 import com.physics.quesbank.quesTemplate.QuesTemplate;
 import com.physics.quesbank.service.demo.DemoService;
+import com.physics.quesbank.util.DateUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -97,7 +98,7 @@ public class demo {
     @ResponseBody
     public String aaa(String content){
         try{
-            Demo demo = new Demo(UUID.randomUUID().toString(), content);
+            Demo demo = new Demo(UUID.randomUUID().toString(), content,"1",DateUtil.getTime());
             demoService.saveInfo(demo);
         } catch (Exception e){
             e.printStackTrace();
@@ -121,6 +122,20 @@ public class demo {
         Map<String,Object> map = new HashMap<>();
         try{
             demo = demoService.getInfo();
+            map.put("demo", demo);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return map;
+    }
+
+    @RequestMapping("list2")
+    @ResponseBody
+    public Object list2(Demo demos){
+        List<Demo> demo = null;
+        Map<String,Object> map = new HashMap<>();
+        try{
+            demo = demoService.getAnswer(demos);
             map.put("demo", demo);
         } catch (Exception e){
             e.printStackTrace();
