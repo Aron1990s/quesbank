@@ -79,6 +79,13 @@ public class demo {
         return mv;
     }
 
+    @RequestMapping("search")
+    public ModelAndView search(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("quesPage/search");
+        return mv;
+    }
+
     @RequestMapping("question")
     public ModelAndView question(){
         ModelAndView mv = new ModelAndView();

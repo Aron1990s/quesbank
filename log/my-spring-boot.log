@@ -3686,3 +3686,148 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [demo/
 2020-08-25 14:06:18,667:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-08-25 14:06:18,667:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 2020-08-25 14:06:18,673:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 6 ms
+2020-08-25 16:32:31,367:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 7264 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-25 16:32:31,379:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-25 16:32:31,449:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-25 16:32:31,449:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-25 16:32:32,438:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-25 16:32:32,458:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-08-25 16:32:33,297:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-25 16:32:33,309:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-25 16:32:33,310:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-25 16:32:33,311:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-25 16:32:33,468:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-25 16:32:33,468:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 2018 ms
+2020-08-25 16:32:33,829:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 16:32:38,220:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-25 16:32:38,336:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-25 16:32:38,453:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-25 16:32:38,769:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-25 16:32:38,805:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-25 16:32:38,947:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-25 16:32:39,229:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-25 16:32:39,245:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-25 16:32:39,315:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-25 16:32:39,333:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-25 16:32:39,371:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-25 16:32:39,374:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-25 16:32:39,374:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-25 16:32:39,383:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 8.585 seconds (JVM running for 12.598)
+2020-08-25 16:32:46,641:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-25 16:32:46,642:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-25 16:32:46,648:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 6 ms
+2020-08-26 09:36:44,540:INFO Thread-25 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 09:36:44,554:INFO Thread-25 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 09:36:44,576:INFO Thread-25 (Log4j2Impl.java:106) - {dataSource-1} closed
+2020-08-26 09:36:45,053:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 7264 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 09:36:45,054:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 09:36:45,352:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 09:36:45,358:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-08-26 09:36:45,572:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 09:36:45,573:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 09:36:45,574:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 09:36:45,574:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 09:36:45,656:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 09:36:45,657:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 597 ms
+2020-08-26 09:36:45,727:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 09:36:49,325:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-2} inited
+2020-08-26 09:36:49,335:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 09:36:49,343:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 09:36:49,361:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 09:36:49,362:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 09:36:49,418:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 09:36:49,722:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 09:36:49,736:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 09:36:49,745:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 09:36:49,746:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 09:36:49,746:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 09:36:49,754:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 4.962 seconds (JVM running for 61462.979)
+2020-08-26 09:36:49,757:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-08-26 09:36:54,649:INFO Thread-32 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 09:36:54,650:INFO Thread-32 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-26 09:36:54,656:INFO Thread-32 (Log4j2Impl.java:106) - {dataSource-2} closed
+2020-08-26 09:36:54,922:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 7264 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 09:36:54,923:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 09:36:55,101:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 09:36:55,107:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2020-08-26 09:36:55,246:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 09:36:55,247:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 09:36:55,247:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 09:36:55,247:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 09:36:55,304:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 09:36:55,305:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 379 ms
+2020-08-26 09:36:55,349:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 09:36:58,767:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-3} inited
+2020-08-26 09:36:58,774:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 09:36:58,778:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 09:36:58,786:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 09:36:58,786:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 09:36:58,821:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 09:36:58,995:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 09:36:59,006:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 09:36:59,009:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 09:36:59,010:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 09:36:59,010:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 09:36:59,015:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 4.193 seconds (JVM running for 61472.24)
+2020-08-26 09:36:59,016:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-08-26 09:46:21,391:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 23532 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 09:46:21,405:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 09:46:21,456:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-26 09:46:21,456:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-26 09:46:22,341:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 09:46:22,369:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-08-26 09:46:23,291:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 09:46:23,302:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 09:46:23,303:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 09:46:23,303:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 09:46:23,455:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 09:46:23,455:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1999 ms
+2020-08-26 09:46:23,819:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 09:46:27,695:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-26 09:46:27,777:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 09:46:27,878:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-26 09:46:28,239:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-26 09:46:28,267:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 09:46:28,422:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 09:46:28,819:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 09:46:28,833:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 09:46:28,872:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 09:46:28,922:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 09:46:28,974:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 09:46:28,976:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 09:46:28,977:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 09:46:28,987:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 8.104 seconds (JVM running for 11.362)
+2020-08-26 09:46:39,384:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-26 09:46:39,385:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-26 09:46:39,391:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 6 ms
+2020-08-26 09:49:00,711:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 1532 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-26 09:49:00,721:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-26 09:49:00,785:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-26 09:49:00,785:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-26 09:49:01,956:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-26 09:49:01,981:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-08-26 09:49:02,763:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-26 09:49:02,788:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-26 09:49:02,789:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-26 09:49:02,789:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-26 09:49:02,932:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-26 09:49:02,933:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 2148 ms
+2020-08-26 09:49:03,262:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-26 09:49:07,263:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-26 09:49:07,319:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-26 09:49:07,411:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-26 09:49:07,733:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-26 09:49:07,936:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-26 09:49:08,021:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-26 09:49:08,253:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-26 09:49:08,271:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-26 09:49:08,601:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-26 09:49:08,620:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-26 09:49:08,660:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-26 09:49:08,664:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-26 09:49:08,665:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-26 09:49:08,676:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 8.527 seconds (JVM running for 12.838)
+2020-08-26 09:49:14,012:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-26 09:49:14,012:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-26 09:49:14,024:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 11 ms
+2020-08-26 09:49:25,446:WARN http-nio-8077-exec-6 (ResourceHttpRequestHandler.java:686) - Path contains "../" after call to StringUtils#cleanPath: [css../leftNav/custom.min.css]

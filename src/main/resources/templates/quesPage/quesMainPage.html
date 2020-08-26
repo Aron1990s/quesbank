@@ -102,6 +102,12 @@
                                 <div style="height:1%"></div>
                                 <div class="menuItemFont">生成</div>
                             </div>
+                            <div class="container menuItem" onclick="changePage(3)">
+                                <div style="height: 30%"></div>
+                                <img src="../images/menu/ss2.png" class="menuItemImg">
+                                <div style="height:1%"></div>
+                                <div class="menuItemFont">检索</div>
+                            </div>
                         </div>
                         <div class="col-sm-15"></div>
                     </div>
@@ -120,8 +126,10 @@
     function changePage(type) {
         if (type == 1){
             $('#mainPage').attr('src', "record");
-        }else if(type = 2){
+        }else if(type == 2){
             $('#mainPage').attr('src', "generate");
+        }else if(type == 3){
+            $('#mainPage').attr('src', "search");
         }
 
     }
