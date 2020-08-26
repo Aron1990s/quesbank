@@ -10,7 +10,7 @@
 }
 .recordContainerSolve{
     width:100%;
-    min-height:100px;
+    min-height:50px;
     margin-left:auto;
     margin-right:auto;
     line-height:25px;
@@ -34,7 +34,7 @@
 .contentSolve{
     width:100%;
     height:auto;
-    min-height:100px;
+    min-height:50px;
 }
 .editDemo{
     border-radius: 5px;
@@ -54,7 +54,7 @@
     border-radius: 5px;
 }
 .showDemoSolution{
-    min-height:100px;
+    min-height:50px;
     width:100%;
     padding:0 0 0 10px;
 }
