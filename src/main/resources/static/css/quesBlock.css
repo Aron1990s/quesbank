@@ -8,6 +8,18 @@
     height: auto;
     cursor: pointer;
 }
+.recordContainerPageSolve{
+    width:100%;
+    min-height:50px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:25px;
+    float:none;
+    height: auto;
+    cursor: pointer;
+    border: solid 1px #d6e6ff;
+}
+
 .recordContainerSolve{
     width:100%;
     min-height:50px;

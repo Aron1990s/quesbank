@@ -26,6 +26,7 @@
                     <!--</div>-->
                 <!--</div>-->
             <!--</div>-->
+            <!--<div class="recordContainerPageSolve"></div>-->
             <!--<div style="height: 3%"></div>-->
         </div>
         <div class="col-sm-2"></div>
@@ -59,10 +60,38 @@
                 alert("error")
             },
             success : function(data) {
+                var conx = '<div class="recordContainer bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="content"><div id="content" contentEditable="false" class="showDemo">AAAA</div></div></div></div>';
                 var con = '<div class="recordContainer bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="content"><div id="content" contentEditable="false" class="showDemo">AAAA</div></div></div></div><div style="height: 3%"></div>';
+                var sub = '<div style="display:none" class="recordContainerPageSolve"><div class="showBody"><div class="contentSolve"><div id="content" contentEditable="false" class="showDemoSolution">AAAA</div></div></div></div><div style="height: 3%"></div>'
                 for(var i = 0; i<data.demo.length;i++){
-                    var con1 = con.replace('INDEX',i).replace('AAAA',data.demo[i].content);
-                    $('.ques').append(con1);
+                    if (i == 0){
+                        var con1 = conx.replace('INDEX',i).replace('AAAA',data.demo[i].content);
+                        $('.ques').append(con1);
+
+                        $.ajax({
+                            cache : true,
+                            type : "GET",
+                            url : "/quesBank/demo/list2",
+                            async: false,
+                            data : {
+                                type_order: 7
+                            },
+                            async : false,
+                            error : function(request) {
+                                alert("error")
+                            },
+                            success : function(data) {
+                                // var con = '<div style="display:none" class="recordContainerSolve bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="contentSolve"><div id="content" contentEditable="false" class="showDemoSolution">AAAA</div></div></div></div><div style="height: 1%"></div>';
+                                var con1 = sub.replace('AAAA',data.demo[0].content);
+                                $('.ques').append(con1);
+                            }
+                        });
+
+
+                    }else{
+                        var con1 = con.replace('INDEX',i).replace('AAAA',data.demo[i].content);
+                        $('.ques').append(con1);
+                    }
                 }
             }
         });
@@ -77,9 +106,15 @@
             effect: 'fadeOut',
             closeBg: '#ffffff',
             positions: 'top'
+            // ,
+            // afterHide: function(){
+            //     $(".recordContainerPageSolve").css('display','none');
+            // }
 
         });
         $('#te').attr('src','/quesBank/demo/detail2');
+        $(".recordContainerPageSolve").stop().fadeIn(500);
+
     }
 
 </script>
