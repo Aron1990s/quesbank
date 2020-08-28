@@ -2,6 +2,7 @@ server:
   port: 8077
   servlet:
     context-path: /quesBank
+  max-http-header-size: 102400
 
 mybatis-plus:
   config-location: classpath:mybatis/mybatis.cfg.xml

@@ -10,9 +10,9 @@ CKEDITOR.dialog.add( 'jmeDialog', function( editor ) {
                 label: 'Editor',
                 elements: [
                     {
-                    	//mathquill-editable ¿É±à¼­
-                    	//mathquill-rendered-math ÒÑ¾­äÖÈ¾
-                    	//mathquill-embedded-latex Ö»×ö¾²Ì¬äÖÈ¾
+                    	//mathquill-editable ï¿½É±à¼­
+                    	//mathquill-rendered-math ï¿½Ñ¾ï¿½ï¿½ï¿½È¾
+                    	//mathquill-embedded-latex Ö»ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½È¾
                         type: 'html',
                         //CKEDITOR.basePath
                         //jmeditor1.0/ckeditor/plugins/jme/dialogs/mathdialog.html
@@ -28,7 +28,7 @@ CKEDITOR.dialog.add( 'jmeDialog', function( editor ) {
         	var thedoc = getIFrameDOM(jme_fid);
         	var mathHTML = '<span class="mathquill-rendered-math" style="font-size:' + JMEditor.defaultFontSize + ';" >' + $("#jme-math",thedoc).html() + '</span><span>&nbsp;</span>';
             editor.insertHtml(mathHTML);
-					return;			
+					return;
         }
     };
 });

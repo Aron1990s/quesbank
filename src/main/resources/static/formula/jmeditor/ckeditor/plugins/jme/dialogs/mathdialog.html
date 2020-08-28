@@ -46,7 +46,35 @@
 	<p>&nbsp;</p>
 </div>
 <div class="ad">
+    <div onclick="aaaaaaa()">sdasd</div>
 </div>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="html2canvas.min.js"></script>
 <script type="text/javascript" src="dialog.js"></script>
 </body>
+<script>
+    $(function(){
+
+    })
+
+    function aaaaaaa() {
+        html2canvas($('#jme-math'),{
+            dpi:1000,
+            onrendered: function(canvas) {
+                convertCanvasToImage(canvas);
+            }
+        })
+    }
+
+    function convertCanvasToImage(canvas) {
+        var image = new Image();
+        image.src = canvas.toDataURL("image/png");
+        image.style.width = canvas.width/11 + 'px';
+        image.style.height = canvas.height/11 + 'px';
+        $('#jme-math').empty();
+        $('#jme-math').append(image)
+        return image;
+    }
+</script>
 </html>
