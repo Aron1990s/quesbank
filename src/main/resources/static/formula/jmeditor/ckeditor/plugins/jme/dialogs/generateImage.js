@@ -31,7 +31,7 @@ function convertCanvasToImage(canvas) {
             alert("error")
         },
         success : function(data) {
-            image.src = 'http://localhost:8077/quesBank/image/'+data+'.png';
+            image.src = '/quesBank/image/'+data+'.png';
         }
     });
     $('#jme-math').empty();
