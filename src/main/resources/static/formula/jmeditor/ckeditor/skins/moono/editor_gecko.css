@@ -59,9 +59,6 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
     display: block;
     border: 1px solid #b6b6b6;
     padding: 0;
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
-    box-shadow: 0 0 3px rgba(0, 0, 0, .15)
 }
 
 .cke_inner {
