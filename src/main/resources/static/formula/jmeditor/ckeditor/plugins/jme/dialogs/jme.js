@@ -25,10 +25,12 @@ CKEDITOR.dialog.add( 'jmeDialog', function( editor ) {
         	//$("#jme-math",getIFrameDOM("math_frame")).mathquill("focus");
         },
         onOk: function() {
+            var frameID = '#'+jme_fid;
         	var thedoc = getIFrameDOM(jme_fid);
         	var mathHTML = '<span class="mathquill-rendered-math" style="font-size:' + JMEditor.defaultFontSize + ';" >' + $("#jme-math",thedoc).html() + '</span><span>&nbsp;</span>';
             editor.insertHtml(mathHTML);
-					return;
+            $(frameID).attr('src',document.querySelector(frameID).src);
+			return;
         }
     };
 });

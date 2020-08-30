@@ -117,9 +117,10 @@ public class demo {
     @RequestMapping("/upload")
     @ResponseBody
     public String  upload(String base64) throws Exception{
-        Base64Util.GenerateImage(base64, "D:\\Idea\\workspace\\quesbank\\src\\main\\resources\\static\\demo\\aaa.png");
+        String fileName = UUID.randomUUID().toString().replace("-", "");
+        Base64Util.GenerateImage(base64, "D:/"+fileName+".png");
 
-        return "1";
+        return fileName;
 
 
     }
