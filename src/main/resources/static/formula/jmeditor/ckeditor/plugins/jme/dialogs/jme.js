@@ -1,7 +1,7 @@
 CKEDITOR.dialog.add( 'jmeDialog', function( editor ) {
 	var jme_fid = "math_frame_" + editor.id ;
     return {
-        title: "JMEditor " + JMEditor.versionName,
+        title: "公式编辑",
         minWidth: 500,
         minHeight: 300,
         contents: [
