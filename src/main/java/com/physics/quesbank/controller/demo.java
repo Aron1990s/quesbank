@@ -3,20 +3,19 @@ package com.physics.quesbank.controller;
 import com.physics.quesbank.entity.demo.Demo;
 import com.physics.quesbank.quesTemplate.QuesTemplate;
 import com.physics.quesbank.service.demo.DemoService;
+import com.physics.quesbank.util.Base64Util;
 import com.physics.quesbank.util.DateUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
@@ -113,6 +112,16 @@ public class demo {
         mv.addObject("demos",demos);
         mv.setViewName("mainPage");
         return mv;
+    }
+
+    @RequestMapping("/upload")
+    @ResponseBody
+    public String  upload(String base64) throws Exception{
+        Base64Util.GenerateImage(base64, "D:\\Idea\\workspace\\quesbank\\src\\main\\resources\\static\\demo\\aaa.png");
+
+        return "1";
+
+
     }
 
     @RequestMapping("list")

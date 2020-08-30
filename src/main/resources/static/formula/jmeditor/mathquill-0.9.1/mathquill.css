@@ -260,6 +260,7 @@
   padding: .1em .1em 0 .1em;
   margin-right: -0.1em;
   margin-left: -0.1em;
+  border-collapse: separate;
 }
 .mathquill-rendered-math .sqrt-prefix {
   padding-top: 0;
