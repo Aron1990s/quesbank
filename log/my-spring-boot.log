@@ -6970,3 +6970,108 @@ java.lang.IllegalArgumentException: Request header is too large
 2020-08-30 20:08:55,436:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
 2020-08-30 20:08:55,437:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
 2020-08-30 20:08:55,868:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-08-30 20:42:14,248:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:42:14,249:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:42:16,669:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 33
+2020-08-30 20:42:16,749:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:42:16,782:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:42:16,835:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 20:43:23,411:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:43:23,415:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:43:26,096:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 33
+2020-08-30 20:43:26,118:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:43:26,119:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:43:26,171:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 20:44:09,523:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into content ( id, content, type_order, record_time )values( ?, ?, ?, ? ) 
+2020-08-30 20:44:09,529:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: ad975513-8431-4482-8843-dae48d4a7e31(String), <p><span class="mathquill-rendered-math" style="font-size:20px;"><img data-cke-saved-src="http://localhost:8077/quesBank/image/9ddedeba191144e391a1ee43ae8336c6.png" src="http://localhost:8077/quesBank/image/9ddedeba191144e391a1ee43ae8336c6.png" style="width: 115.455px; height: 35.9091px;"></span><span>&nbsp;</span> 大大所多多从自行车自行车璀璨之星从出租车<span class="mathquill-rendered-math" style="font-size:20px;"><img data-cke-saved-src="http://localhost:8077/quesBank/image/e251fd70eb194cc6bcad9485412db23e.png" src="http://localhost:8077/quesBank/image/e251fd70eb194cc6bcad9485412db23e.png" style="width: 144.818px; height: 39.7273px;"></span><span>&nbsp;</span>​<br></p>(String), 1(String), 2020-08-30 20:44:09(String)
+2020-08-30 20:44:09,633:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2020-08-30 20:44:30,014:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:44:30,015:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:44:32,543:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 34
+2020-08-30 20:44:32,569:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:44:32,569:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:44:32,620:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 20:44:53,186:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:44:53,186:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:44:56,214:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 34
+2020-08-30 20:44:56,238:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:44:56,239:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:44:56,291:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 20:46:01,946:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:46:01,947:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:46:04,496:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 34
+2020-08-30 20:46:04,580:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:46:04,581:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:46:04,637:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 20:47:47,124:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into content ( id, content, type_order, record_time )values( ?, ?, ?, ? ) 
+2020-08-30 20:47:47,125:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: ed74f557-3eaa-4479-acea-e14940d806a3(String), <p>正常VB发鬼地方个规定规范<span class="mathquill-rendered-math" style="font-size:20px;"><img data-cke-saved-src="http://localhost:8077/quesBank/image/ae70a2653e8e4b6084daab15c78095bb.png" src="http://localhost:8077/quesBank/image/ae70a2653e8e4b6084daab15c78095bb.png" style="width: 28.3636px; height: 28.3636px;"></span><span>&nbsp;</span>​ssssASS</p>(String), 1(String), 2020-08-30 20:47:47(String)
+2020-08-30 20:47:47,229:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2020-08-30 20:48:07,078:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:48:07,081:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:48:09,581:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 35
+2020-08-30 20:48:09,651:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:48:09,651:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:48:09,702:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 20:48:24,015:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:48:24,016:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:48:26,633:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 35
+2020-08-30 20:48:26,657:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:48:26,658:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:48:26,709:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 20:48:33,354:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:48:33,355:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-30 20:48:33,759:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-08-30 20:48:50,114:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:48:50,114:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:48:52,657:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 35
+2020-08-30 20:48:52,682:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:48:52,682:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:48:52,735:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 20:51:26,381:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into content ( id, content, type_order, record_time )values( ?, ?, ?, ? ) 
+2020-08-30 20:51:26,381:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 9301bf26-4df0-418c-8cf7-fd46ae203e2b(String), <p><img alt="" style="width: 176px; height: 59px;" data-cke-saved-src="ax.png" src="ax.png">大大士大大所大声道多<br></p>(String), 1(String), 2020-08-30 20:51:26(String)
+2020-08-30 20:51:26,498:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2020-08-30 20:51:45,008:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:51:45,009:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:51:47,554:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 36
+2020-08-30 20:51:47,578:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:51:47,578:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:51:47,631:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 20:51:54,202:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:51:54,203:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-08-30 20:51:54,626:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-08-30 20:52:11,117:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-08-30 20:52:11,117:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-08-30 20:52:13,666:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 36
+2020-08-30 20:52:13,749:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-08-30 20:52:13,749:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-08-30 20:52:13,800:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-08-30 22:29:14,195:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 18136 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-08-30 22:29:14,235:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-08-30 22:29:14,293:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-30 22:29:14,294:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-30 22:29:15,866:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-30 22:29:15,906:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-08-30 22:29:16,979:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-08-30 22:29:16,991:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-08-30 22:29:16,991:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-08-30 22:29:16,991:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:29:17,154:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:29:17,154:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 2860 ms
+2020-08-30 22:29:17,529:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:29:21,638:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-08-30 22:29:21,769:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-30 22:29:21,943:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-30 22:29:22,302:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-30 22:29:22,450:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-30 22:29:22,668:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-30 22:29:23,173:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-30 22:29:23,185:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-30 22:29:23,425:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-08-30 22:29:23,452:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-08-30 22:29:23,495:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-08-30 22:29:23,498:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-08-30 22:29:23,499:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-08-30 22:29:23,510:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 10.056 seconds (JVM running for 16.375)
+2020-08-30 22:30:34,328:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:30:34,328:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:30:34,338:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 9 ms
