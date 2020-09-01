@@ -28,7 +28,7 @@ CKEDITOR.dialog.add( 'jmeDialog', function( editor ) {
             var frameID = '#'+jme_fid;
         	var thedoc = getIFrameDOM(jme_fid);
         	var mathHTML = '<span class="mathquill-rendered-math" style="font-size:' + JMEditor.defaultFontSize + ';" >' + $("#jme-math",thedoc).html() + '</span><span>&nbsp;</span>';
-            if (mathHTML.indexOf('quesBank')!=-1){
+            if (mathHTML.indexOf('quesBank') != -1){
                 editor.insertHtml(mathHTML);
                 $(frameID).attr('src',document.querySelector(frameID).src);
             }else{
