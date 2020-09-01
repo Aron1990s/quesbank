@@ -86,6 +86,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
     padding: 6px 8px 2px;
     border-radius: 3px;
     background: #65a2ff;
+    background-image: -webkit-linear-gradient(top,#65a2ff,#65a2ff);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#65a2ff), to(#65a2ff));
     background-image: -moz-linear-gradient(top, #65a2ff, #65a2ff);
     background-image: -webkit-linear-gradient(top, #65a2ff, #65a2ff);

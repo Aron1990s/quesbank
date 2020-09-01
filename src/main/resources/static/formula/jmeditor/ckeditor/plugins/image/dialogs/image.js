@@ -164,12 +164,32 @@
                 this.originalElement && (this.originalElement.removeListener("load", q), this.originalElement.removeListener("error", h), this.originalElement.removeListener("abort", h), this.originalElement.remove(), this.originalElement = !1);
                 delete this.imageElement
             },
-            contents: [{
+            contents: [
+                {
+                    id: "Upload",
+                    hidden: false,
+                    filebrowser: "uploadButton",
+                    label: c.lang.image.upload,
+                    elements: [{
+                        type: "file",
+                        id: "upload",
+                        label: c.lang.image.btnUpload,
+                        style: "height:40px",
+                        size: 38
+                    }, {
+                        type: "fileButton",
+                        id: "uploadButton",
+                        filebrowser: "info:txtUrl",
+                        label: c.lang.image.btnUpload,
+                        "for": ["Upload", "upload"]
+                    }]
+                },
+                {
                 id: "info", label: c.lang.image.infoTab, accessKey: "I", elements: [{
                     type: "vbox", padding: 0, children: [{
                         type: "hbox", widths: ["280px",
                             "110px"], align: "right", children: [{
-                            id: "txtUrl", type: "file", label: c.lang.common.url, required: !0, onChange: function () {
+                            id: "txtUrl", type: "text", label: c.lang.common.url, required: !0, onChange: function () {
                                 var a = this.getDialog(), b = this.getValue();
                                 if (0 < b.length) {
                                     var a = this.getDialog(), d = a.originalElement;
@@ -182,22 +202,6 @@
                                     d.on("abort", h, a);
                                     d.setAttribute("src", b);
                                     t.setAttribute("src", b);
-                                    alert(t.$.src)
-                                    var formData = new FormData();
-                                    formData.append('photo', this.files[0]);
-                                    $.ajax({
-                                        url:"/quesBank/demo/uploadPhoto",
-                                        type:"post",
-                                        data: formData,
-                                        contentType: false,
-                                        processData: false,
-                                        success: function(data) {
-                                            alert('1');
-                                        },
-                                        error:function(data) {
-                                            alert("上传失败")
-                                        }
-                                    })
                                     a.preview.setAttribute("src", t.$.src);
                                     g(a)
                                 } else a.preview &&
@@ -457,164 +461,149 @@
                         }]
                     }]
                     }]
-            }, {
-                id: "Link", label: c.lang.image.linkTab, padding: 0, elements: [{
-                    id: "txtUrl",
-                    type: "text",
-                    label: c.lang.common.url,
-                    style: "width: 100%",
-                    "default": "",
-                    setup: function (a, b) {
-                        if (2 == a) {
-                            var c = b.data("cke-saved-href");
-                            c || (c = b.getAttribute("href"));
-                            this.setValue(c)
-                        }
-                    },
-                    commit: function (a, b) {
-                        if (2 == a && (this.getValue() || this.isChanged())) {
-                            var d = decodeURI(this.getValue());
-                            b.data("cke-saved-href", d);
-                            b.setAttribute("href", d);
-                            if (this.getValue() || !c.config.image_removeLinkByEmptyURL) this.getDialog().addLink =
-                                !0
-                        }
-                    }
-                }, {
-                    type: "button",
-                    id: "browse",
-                    filebrowser: {action: "Browse", target: "Link:txtUrl", url: c.config.filebrowserImageBrowseLinkUrl},
-                    style: "float:right",
-                    hidden: !0,
-                    label: c.lang.common.browseServer
-                }, {
-                    id: "cmbTarget",
-                    type: "select",
-                    label: c.lang.common.target,
-                    "default": "",
-                    items: [[c.lang.common.notSet, ""], [c.lang.common.targetNew, "_blank"], [c.lang.common.targetTop, "_top"], [c.lang.common.targetSelf, "_self"], [c.lang.common.targetParent, "_parent"]],
-                    setup: function (a, b) {
-                        2 == a && this.setValue(b.getAttribute("target") ||
-                            "")
-                    },
-                    commit: function (a, b) {
-                        2 == a && (this.getValue() || this.isChanged()) && b.setAttribute("target", this.getValue())
-                    }
-                }]
-            }, {
-                id: "Upload",
-                hidden: !0,
-                filebrowser: "uploadButton",
-                label: c.lang.image.upload,
-                elements: [{
-                    type: "file",
-                    id: "upload",
-                    label: c.lang.image.btnUpload,
-                    style: "height:40px",
-                    size: 38
-                }, {
-                    type: "fileButton",
-                    id: "uploadButton",
-                    filebrowser: "info:txtUrl",
-                    label: c.lang.image.btnUpload,
-                    "for": ["Upload", "upload"]
-                }]
-            }, {
-                id: "advanced", label: c.lang.common.advancedTab, elements: [{
-                    type: "hbox", widths: ["50%", "25%", "25%"],
-                    children: [{
-                        type: "text", id: "linkId", label: c.lang.common.id, setup: function (a, b) {
-                            a == f && this.setValue(b.getAttribute("id"))
-                        }, commit: function (a, b) {
-                            a == f && (this.getValue() || this.isChanged()) && b.setAttribute("id", this.getValue())
-                        }
-                    }, {
-                        id: "cmbLangDir",
-                        type: "select",
-                        style: "width : 100px;",
-                        label: c.lang.common.langDir,
-                        "default": "",
-                        items: [[c.lang.common.notSet, ""], [c.lang.common.langDirLtr, "ltr"], [c.lang.common.langDirRtl, "rtl"]],
-                        setup: function (a, b) {
-                            a == f && this.setValue(b.getAttribute("dir"))
-                        },
-                        commit: function (a,
-                                          b) {
-                            a == f && (this.getValue() || this.isChanged()) && b.setAttribute("dir", this.getValue())
-                        }
-                    }, {
-                        type: "text",
-                        id: "txtLangCode",
-                        label: c.lang.common.langCode,
-                        "default": "",
-                        setup: function (a, b) {
-                            a == f && this.setValue(b.getAttribute("lang"))
-                        },
-                        commit: function (a, b) {
-                            a == f && (this.getValue() || this.isChanged()) && b.setAttribute("lang", this.getValue())
-                        }
-                    }]
-                }, {
-                    type: "text", id: "txtGenLongDescr", label: c.lang.common.longDescr, setup: function (a, b) {
-                        a == f && this.setValue(b.getAttribute("longDesc"))
-                    }, commit: function (a, b) {
-                        a == f && (this.getValue() ||
-                            this.isChanged()) && b.setAttribute("longDesc", this.getValue())
-                    }
-                }, {
-                    type: "hbox",
-                    widths: ["50%", "50%"],
-                    children: [{
-                        type: "text",
-                        id: "txtGenClass",
-                        label: c.lang.common.cssClass,
-                        "default": "",
-                        setup: function (a, b) {
-                            a == f && this.setValue(b.getAttribute("class"))
-                        },
-                        commit: function (a, b) {
-                            a == f && (this.getValue() || this.isChanged()) && b.setAttribute("class", this.getValue())
-                        }
-                    }, {
-                        type: "text",
-                        id: "txtGenTitle",
-                        label: c.lang.common.advisoryTitle,
-                        "default": "",
-                        onChange: function () {
-                            g(this.getDialog())
-                        },
-                        setup: function (a, b) {
-                            a == f && this.setValue(b.getAttribute("title"))
-                        },
-                        commit: function (a, b) {
-                            a == f ? (this.getValue() || this.isChanged()) && b.setAttribute("title", this.getValue()) : 4 == a ? b.setAttribute("title", this.getValue()) : 8 == a && b.removeAttribute("title")
-                        }
-                    }]
-                }, {
-                    type: "text",
-                    id: "txtdlgGenStyle",
-                    label: c.lang.common.cssStyle,
-                    validate: CKEDITOR.dialog.validate.inlineStyle(c.lang.common.invalidInlineStyle),
-                    "default": "",
-                    setup: function (a, b) {
-                        if (a == f) {
-                            var c = b.getAttribute("style");
-                            !c && b.$.style.cssText && (c = b.$.style.cssText);
-                            this.setValue(c);
-                            var e = b.$.style.height, c = b.$.style.width,
-                                e = (e ? e : "").match(k), c = (c ? c : "").match(k);
-                            this.attributesInStyle = {height: !!e, width: !!c}
-                        }
-                    },
-                    onChange: function () {
-                        i.call(this, "info:cmbFloat info:cmbAlign info:txtVSpace info:txtHSpace info:txtBorder info:txtWidth info:txtHeight".split(" "));
-                        g(this)
-                    },
-                    commit: function (a, b) {
-                        a == f && (this.getValue() || this.isChanged()) && b.setAttribute("style", this.getValue())
-                    }
-                }]
-            }]
+            }
+            // , {
+            //     id: "Link", label: c.lang.image.linkTab, padding: 0, elements: [{
+            //         id: "txtUrl",
+            //         type: "text",
+            //         label: c.lang.common.url,
+            //         style: "width: 100%",
+            //         "default": "",
+            //         setup: function (a, b) {
+            //             if (2 == a) {
+            //                 var c = b.data("cke-saved-href");
+            //                 c || (c = b.getAttribute("href"));
+            //                 this.setValue(c)
+            //             }
+            //         },
+            //         commit: function (a, b) {
+            //             if (2 == a && (this.getValue() || this.isChanged())) {
+            //                 var d = decodeURI(this.getValue());
+            //                 b.data("cke-saved-href", d);
+            //                 b.setAttribute("href", d);
+            //                 if (this.getValue() || !c.config.image_removeLinkByEmptyURL) this.getDialog().addLink =
+            //                     !0
+            //             }
+            //         }
+            //     }, {
+            //         type: "button",
+            //         id: "browse",
+            //         filebrowser: {action: "Browse", target: "Link:txtUrl", url: c.config.filebrowserImageBrowseLinkUrl},
+            //         style: "float:right",
+            //         hidden: !0,
+            //         label: c.lang.common.browseServer
+            //     }, {
+            //         id: "cmbTarget",
+            //         type: "select",
+            //         label: c.lang.common.target,
+            //         "default": "",
+            //         items: [[c.lang.common.notSet, ""], [c.lang.common.targetNew, "_blank"], [c.lang.common.targetTop, "_top"], [c.lang.common.targetSelf, "_self"], [c.lang.common.targetParent, "_parent"]],
+            //         setup: function (a, b) {
+            //             2 == a && this.setValue(b.getAttribute("target") ||
+            //                 "")
+            //         },
+            //         commit: function (a, b) {
+            //             2 == a && (this.getValue() || this.isChanged()) && b.setAttribute("target", this.getValue())
+            //         }
+            //     }]
+            // }
+            // , {
+            //     id: "advanced", label: c.lang.common.advancedTab, elements: [{
+            //         type: "hbox", widths: ["50%", "25%", "25%"],
+            //         children: [{
+            //             type: "text", id: "linkId", label: c.lang.common.id, setup: function (a, b) {
+            //                 a == f && this.setValue(b.getAttribute("id"))
+            //             }, commit: function (a, b) {
+            //                 a == f && (this.getValue() || this.isChanged()) && b.setAttribute("id", this.getValue())
+            //             }
+            //         }, {
+            //             id: "cmbLangDir",
+            //             type: "select",
+            //             style: "width : 100px;",
+            //             label: c.lang.common.langDir,
+            //             "default": "",
+            //             items: [[c.lang.common.notSet, ""], [c.lang.common.langDirLtr, "ltr"], [c.lang.common.langDirRtl, "rtl"]],
+            //             setup: function (a, b) {
+            //                 a == f && this.setValue(b.getAttribute("dir"))
+            //             },
+            //             commit: function (a,
+            //                               b) {
+            //                 a == f && (this.getValue() || this.isChanged()) && b.setAttribute("dir", this.getValue())
+            //             }
+            //         }, {
+            //             type: "text",
+            //             id: "txtLangCode",
+            //             label: c.lang.common.langCode,
+            //             "default": "",
+            //             setup: function (a, b) {
+            //                 a == f && this.setValue(b.getAttribute("lang"))
+            //             },
+            //             commit: function (a, b) {
+            //                 a == f && (this.getValue() || this.isChanged()) && b.setAttribute("lang", this.getValue())
+            //             }
+            //         }]
+            //     }, {
+            //         type: "text", id: "txtGenLongDescr", label: c.lang.common.longDescr, setup: function (a, b) {
+            //             a == f && this.setValue(b.getAttribute("longDesc"))
+            //         }, commit: function (a, b) {
+            //             a == f && (this.getValue() ||
+            //                 this.isChanged()) && b.setAttribute("longDesc", this.getValue())
+            //         }
+            //     }, {
+            //         type: "hbox",
+            //         widths: ["50%", "50%"],
+            //         children: [{
+            //             type: "text",
+            //             id: "txtGenClass",
+            //             label: c.lang.common.cssClass,
+            //             "default": "",
+            //             setup: function (a, b) {
+            //                 a == f && this.setValue(b.getAttribute("class"))
+            //             },
+            //             commit: function (a, b) {
+            //                 a == f && (this.getValue() || this.isChanged()) && b.setAttribute("class", this.getValue())
+            //             }
+            //         }, {
+            //             type: "text",
+            //             id: "txtGenTitle",
+            //             label: c.lang.common.advisoryTitle,
+            //             "default": "",
+            //             onChange: function () {
+            //                 g(this.getDialog())
+            //             },
+            //             setup: function (a, b) {
+            //                 a == f && this.setValue(b.getAttribute("title"))
+            //             },
+            //             commit: function (a, b) {
+            //                 a == f ? (this.getValue() || this.isChanged()) && b.setAttribute("title", this.getValue()) : 4 == a ? b.setAttribute("title", this.getValue()) : 8 == a && b.removeAttribute("title")
+            //             }
+            //         }]
+            //     }, {
+            //         type: "text",
+            //         id: "txtdlgGenStyle",
+            //         label: c.lang.common.cssStyle,
+            //         validate: CKEDITOR.dialog.validate.inlineStyle(c.lang.common.invalidInlineStyle),
+            //         "default": "",
+            //         setup: function (a, b) {
+            //             if (a == f) {
+            //                 var c = b.getAttribute("style");
+            //                 !c && b.$.style.cssText && (c = b.$.style.cssText);
+            //                 this.setValue(c);
+            //                 var e = b.$.style.height, c = b.$.style.width,
+            //                     e = (e ? e : "").match(k), c = (c ? c : "").match(k);
+            //                 this.attributesInStyle = {height: !!e, width: !!c}
+            //             }
+            //         },
+            //         onChange: function () {
+            //             i.call(this, "info:cmbFloat info:cmbAlign info:txtVSpace info:txtHSpace info:txtBorder info:txtWidth info:txtHeight".split(" "));
+            //             g(this)
+            //         },
+            //         commit: function (a, b) {
+            //             a == f && (this.getValue() || this.isChanged()) && b.setAttribute("style", this.getValue())
+            //         }
+            //     }]
+            // }
+            ]
         }
     };
     CKEDITOR.dialog.add("image", function (c) {

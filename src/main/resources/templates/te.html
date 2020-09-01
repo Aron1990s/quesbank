@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../kindeditor/themes/default/default.css" />
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script charset="utf-8" src="../kindeditor/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../kindeditor/lang/zh_CN.js"></script>
+</head>
+<body>
+
+<textarea id="mul_input" name="content" style="width:700px;height:200px;visibility:hidden;display: block;">KindEditor</textarea>
+
+<script>
+    //简单模式初始化
+    var editor;
+    KindEditor.ready(function(K) {
+        editor = K.create('textarea[name="content"]', {
+            resizeType : 1,
+            allowPreviewEmoticons : false,
+            allowImageUpload : false,
+            items : [
+                'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                'insertunorderedlist', '|', 'emoticons', 'image', 'link', 'jme']
+        });
+    });
+</script>
+</body>
+</html>
