@@ -174,12 +174,13 @@
                         type: "file",
                         id: "upload",
                         label: c.lang.image.btnUpload,
-                        style: "height:40px",
+                        style: "height:40px;border:none",
                         size: 38
                     }, {
                         type: "fileButton",
                         id: "uploadButton",
                         filebrowser: "info:txtUrl",
+                        style: "border:1px solid #65a2ff",
                         label: c.lang.image.btnUpload,
                         "for": ["Upload", "upload"]
                     }]
