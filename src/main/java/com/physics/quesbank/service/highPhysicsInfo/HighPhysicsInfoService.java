@@ -19,26 +19,26 @@ import java.util.List;
  * @Date 2020/9/2 17:03
  **/
 @Service
-public class HighPhysicsInfo {
+public class HighPhysicsInfoService {
 
-    protected final static Logger logger = LoggerFactory.getLogger(HighPhysicsInfo.class);
+    protected final static Logger logger = LoggerFactory.getLogger(HighPhysicsInfoService.class);
 
     @Autowired
     private HighPhysicsInfoDao highPhysicsInfoDao;
 
-    List<HighGradeInfo> listHighGradeInfo(){
+    public List<HighGradeInfo> listHighGradeInfo(){
         return highPhysicsInfoDao.listHighGradeInfo();
     }
 
-    List<HighChapterInfo> listHighChapterInfo(HighGradeInfo highGradeInfo){
+    public List<HighChapterInfo> listHighChapterInfo(HighGradeInfo highGradeInfo){
         return highPhysicsInfoDao.listHighChapterInfo(highGradeInfo);
     }
 
-    List<HighChapterSubInfo> listHighChapterSubInfo(HighChapterInfo highChapterInfo){
+    public List<HighChapterSubInfo> listHighChapterSubInfo(HighChapterInfo highChapterInfo){
         return highPhysicsInfoDao.listHighChapterSubInfo(highChapterInfo);
     }
 
-    List<HighChapterSubItemInfo> listHighChapterSubItemInfo(HighChapterSubInfo highChapterSubInfo){
+    public List<HighChapterSubItemInfo> listHighChapterSubItemInfo(HighChapterSubInfo highChapterSubInfo){
         return highPhysicsInfoDao.listHighChapterSubItemInfo(highChapterSubInfo);
     }
 }

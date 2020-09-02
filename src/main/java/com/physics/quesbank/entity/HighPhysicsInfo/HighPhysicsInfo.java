@@ -20,12 +20,12 @@ public class HighPhysicsInfo {
 
     protected final static Logger logger = LoggerFactory.getLogger(HighPhysicsInfo.class);
 
-    private List<String> grades = new ArrayList<>();
+    private List<HighGradeInfo> grades = new ArrayList<>();
 
-    private Map<String, List<String>> chapters = new HashMap<>();
+    private Map<String, List<HighChapterInfo>> chapters = new HashMap<>();
 
-    private Map<String, List<String>> chapterSubs = new HashMap<>();
+    private Map<String, List<HighChapterSubInfo>> chapterSubs = new HashMap<>();
 
-    private Map<String, List<String>> chapterSubItems = new HashMap<>();
+    private Map<String, List<HighChapterSubItemInfo>> chapterSubItems = new HashMap<>();
 
 }
