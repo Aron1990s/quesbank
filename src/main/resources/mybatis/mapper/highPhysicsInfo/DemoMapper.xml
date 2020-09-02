@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.physics.quesbank.dao.highPhysicsInfo.HighPhysicsInfoDao">
+
+    <!-- listHighGradeInfo -->
+    <select id="listHighGradeInfo" resultType="HighGradeInfo">
+        select * from high_physics_grade
+    </select>
+
+    <!-- listHighChapterInfo -->
+    <select id="listHighChapterInfo" parameterType="HighGradeInfo" resultType="HighChapterInfo">
+        select * from high_physics_chapter where grade_id = #{id}
+    </select>
+
+    <!-- listHighChapterSubInfo -->
+    <select id="listHighChapterSubInfo" parameterType="HighChapterInfo" resultType="HighChapterSubInfo">
+        select * from high_physics_chapter_sub where chapter_id = #{id}
+    </select>
+
+    <!-- listHighChapterSubItemInfo -->
+    <select id="listHighChapterSubItemInfo" parameterType="HighChapterSubInfo" resultType="HighChapterSubItemInfo">
+        select * from high_physics_chapter_sub_item  where chapter_sub_id = #{id}
+    </select>
+</mapper>
+ 
