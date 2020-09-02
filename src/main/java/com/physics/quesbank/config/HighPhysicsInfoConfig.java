@@ -1,5 +1,6 @@
 package com.physics.quesbank.config;
 
+import com.physics.quesbank.entity.HighPhysicsInfo.HighPhysicsInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
@@ -19,14 +20,14 @@ public class HighPhysicsInfoConfig {
     protected final static Logger logger = LoggerFactory.getLogger(HighPhysicsInfoConfig.class);
 
     @Bean
-    public HighPhysicsInfoConfig initHighPhysicsInfoConfig(){
-        HighPhysicsInfoConfig highPhysicsInfoConfig = new HighPhysicsInfoConfig();
+    public HighPhysicsInfo initHighPhysicsInfoConfig(){
+        HighPhysicsInfo highPhysicsInfo = new HighPhysicsInfo();
         try{
 
         } catch (Exception e){
             e.printStackTrace();
         }
-        return highPhysicsInfoConfig;
+        return highPhysicsInfo;
     }
 
 }
