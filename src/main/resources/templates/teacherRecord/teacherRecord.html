@@ -228,6 +228,28 @@
         });
     }
 
+    function changeChapter(chapterId) {
+        $.ajax({
+            cache : true,
+            type : "GET",
+            url : "../highPhyGrChCtl/getChapterSubInfo?chapterId="+chapterId,
+            async : false,
+            error : function(request) {
+                alert("error")
+            },
+            success : function(data) {
+                var chapterSubs = data.chapterSubs;
+                $('#chapterSubName').empty();
+                $('#chapterSubItemName').empty();
+                $('#chapterSubItemName').append('<option value ="" disabled selected style="display:none;">选择章节知识点</option>')
+                $('#chapterSubName').append(selectOptionFirstTemplate.replace('OPTIONNAME','选择章节子项'))
+                for (var i = 0; i < chapterSubs.length; i++) {
+                    $('#chapterSubName').append(selectOptionTemplate.replace('OPTIONVALUE',chapterSubs[i].id).replace('OPTIONNAME',chapterSubs[i].chapter_sub_name));
+                }
+            }
+        });
+    }
+
 
     function showContent() {
         $('#content').html(JMEditor.html('content'))
