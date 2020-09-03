@@ -10,12 +10,38 @@
 					"menuId": "001",
 					"menuName": "机械运动",
 					"menuCode": "RR1234",
-					"menuAction": "../demo/question"
+					"menuAction": "#",
+                    "children": [
+                      {
+                        "menuId": "001",
+                        "menuName": "机械运动",
+                        "menuCode": "RR1234",
+                        "menuAction": "http://localhost:8077/quesBank/demo/question"
+                      }, {
+                        "menuId": "001",
+                        "menuName": "直线运动",
+                        "menuCode": "RR1234",
+                        "menuAction": "https://fanyi.baidu.com/?aldtype=16047#auto/zh"
+                      }
+                    ]
 				}, {
 					"menuId": "001",
 					"menuName": "直线运动",
 					"menuCode": "RR1234",
-					"menuAction": "https://fanyi.baidu.com/?aldtype=16047#auto/zh"
+					"menuAction": "#",
+                    "children": [
+                      {
+                        "menuId": "001",
+                        "menuName": "机械运动",
+                        "menuCode": "RR1234",
+                        "menuAction": "../demo/question"
+                      }, {
+                        "menuId": "001",
+                        "menuName": "直线运动",
+                        "menuCode": "RR1234",
+                        "menuAction": "https://fanyi.baidu.com/?aldtype=16047#auto/zh"
+                      }
+                    ]
 				}, {
 					"menuId": "001",
 					"menuName": "相互作用",

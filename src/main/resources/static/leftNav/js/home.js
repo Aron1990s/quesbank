@@ -14,6 +14,12 @@ $(function() {
 		$("#navmenu>li>.child_menu").eq(index).slideToggle();
 		$("#navmenu>li>.child_menu").eq(index).parent().siblings("li").find(".child_menu").slideUp();
 	});
+
+    $("#navmenu").on("click", ".linameSub", function(index) {
+        var index = $("#navmenu .linameSub").index(this);
+        $("#navmenuSub>li>.child_menu").eq(index).slideToggle();
+        $("#navmenuSub>li>.child_menu").eq(index).parent().siblings("li").find(".child_menu").slideUp();
+    });
 	
 
 });
@@ -23,11 +29,11 @@ function showSideMenu(res) {
 		var html = "";
 		html += "<li>";
 		html += "<a class='liname'><i class='fa fa-check-circle'></i>" + res[i].menuName + "<span class='fa fa-chevron-down'></span></a>";
-		html += "<ul class='nav child_menu'>";
+		html += "<ul class='nav child_menu' id='navmenuSub'>";
 		for(var k = 0; k < res[i].children.length; k++) {
 			if(typeof(res[i].children[k].children) != 'undefined') {
 				html += "<li class='three_menu'>";
-				html += "<a href='" + res[i].children[k].menuAction + "'>" + res[i].children[k].menuName + "</a>";
+				html += "<a class='linameSub' href='" + res[i].children[k].menuAction + "'>" + res[i].children[k].menuName + "</a>";
 				html += "<ul class='nav child_menu'>";
 				for(var j = 0; j < res[i].children[k].children.length; j++) {
 					html += "<li>";
