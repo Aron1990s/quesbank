@@ -92,6 +92,7 @@ public class HighPhysicsGradeChapterController extends BaseController {
         Map<String, Object> map = new HashMap<>();
         try{
             Map<String, List<HighChapterSubItemInfo>> chapterSubItems = highPhysicsInfo.getChapterSubItems();
+            map.put("chapterSubItems", chapterSubItems.get(chapterSubId));
             map.put("code", "1");
         } catch (Exception e){
             e.printStackTrace();

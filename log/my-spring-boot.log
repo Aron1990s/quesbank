@@ -14615,3 +14615,575 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [quesP
 2020-09-03 10:55:03,368:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-09-03 10:55:03,368:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 2020-09-03 10:55:03,371:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 3 ms
+2020-09-03 12:48:14,537:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 12:48:14,558:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 12:48:17,004:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 12:48:17,055:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 12:48:17,056:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 12:48:17,118:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 13:27:51,781:INFO Thread-62 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-03 13:27:51,782:INFO Thread-62 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:27:51,788:INFO Thread-62 (Log4j2Impl.java:106) - {dataSource-8} closed
+2020-09-03 13:27:52,105:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 25764 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-09-03 13:27:52,106:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-09-03 13:27:52,339:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-03 13:27:52,349:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 9ms. Found 0 JPA repository interfaces.
+2020-09-03 13:27:52,499:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-09-03 13:27:52,500:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:27:52,500:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-09-03 13:27:52,500:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-03 13:27:52,531:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-09-03 13:27:52,531:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 422 ms
+2020-09-03 13:27:52,580:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:27:55,952:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-9} inited
+2020-09-03 13:27:55,963:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-03 13:27:55,969:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-03 13:27:55,977:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-03 13:27:55,978:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-03 13:27:56,009:INFO restartedMain (HighPhysicsInfoConfig.java:37) - saasssss
+2020-09-03 13:27:56,009:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_grade 
+2020-09-03 13:27:56,010:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 13:27:56,053:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 12
+2020-09-03 13:27:56,054:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:56,054:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:27:56,097:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:27:56,098:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:27:56,098:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:27:56,156:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 5
+2020-09-03 13:27:56,157:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,158:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:27:56,201:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:27:56,202:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,202:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:27:56,243:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-09-03 13:27:56,244:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,244:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:27:56,285:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,286:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,286:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:27:56,328:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,329:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,329:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:27:56,379:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,379:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:27:56,379:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:27:56,423:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 6
+2020-09-03 13:27:56,424:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,424:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:27:56,467:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,467:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,468:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:27:56,519:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,520:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,521:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:27:56,565:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,566:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,566:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:27:56,609:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,610:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,610:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:27:56,651:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,652:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:27:56,653:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:27:56,700:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,701:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:27:56,701:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:27:56,749:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,749:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:27:56,749:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:27:56,792:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,792:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:56,793:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:27:56,835:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,835:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:56,835:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:27:56,877:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,878:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:56,878:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:27:56,920:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,920:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:56,921:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:27:56,964:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:56,964:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:56,964:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:27:57,006:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:57,006:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:57,007:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:27:57,047:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:57,048:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:57,048:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:27:57,090:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:57,091:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:57,091:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:27:57,134:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:57,134:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:57,135:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:27:57,176:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:57,177:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:57,177:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:27:57,217:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:57,218:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:27:57,218:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 12(Integer)
+2020-09-03 13:27:57,261:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:27:57,277:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-03 13:27:57,492:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-09-03 13:27:57,502:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:27:57,506:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-09-03 13:27:57,507:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-09-03 13:27:57,507:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-09-03 13:27:57,510:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 5.548 seconds (JVM running for 10399.604)
+2020-09-03 13:27:57,512:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-09-03 13:28:01,186:INFO Thread-67 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-03 13:28:01,186:INFO Thread-67 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:28:01,194:INFO Thread-67 (Log4j2Impl.java:106) - {dataSource-9} closed
+2020-09-03 13:28:01,588:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 25764 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-09-03 13:28:01,589:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-09-03 13:28:01,763:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-03 13:28:01,772:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+2020-09-03 13:28:01,888:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-09-03 13:28:01,889:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:28:01,889:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-09-03 13:28:01,890:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-03 13:28:01,916:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-09-03 13:28:01,916:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 325 ms
+2020-09-03 13:28:01,953:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:28:05,677:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-10} inited
+2020-09-03 13:28:05,686:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-03 13:28:05,701:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-03 13:28:05,749:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-03 13:28:05,750:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-03 13:28:05,791:INFO restartedMain (HighPhysicsInfoConfig.java:37) - saasssss
+2020-09-03 13:28:05,792:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_grade 
+2020-09-03 13:28:05,793:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 13:28:05,868:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 12
+2020-09-03 13:28:05,869:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:05,869:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:28:05,915:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:28:05,916:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:05,918:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:28:05,961:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 5
+2020-09-03 13:28:05,962:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:05,963:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:28:06,015:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:28:06,015:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,016:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:28:06,060:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-09-03 13:28:06,060:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,061:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:28:06,105:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,106:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,106:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:28:06,149:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,149:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,149:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:28:06,195:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,195:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:06,196:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:28:06,250:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 6
+2020-09-03 13:28:06,251:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,251:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:28:06,297:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,297:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,297:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:28:06,344:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,345:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,346:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:28:06,388:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,389:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,390:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:28:06,461:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,462:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,462:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:28:06,507:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,508:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:06,508:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:28:06,565:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,566:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:06,566:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:28:06,621:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,622:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:06,622:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:28:06,665:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,665:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:06,666:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:28:06,719:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,720:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:06,720:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:28:06,768:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,769:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:06,769:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:28:06,843:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,844:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:06,844:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:28:06,888:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,888:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:06,889:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:28:06,932:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,932:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:06,933:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:28:06,976:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:06,977:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:06,977:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:28:07,021:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:07,021:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:07,022:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:28:07,066:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:07,067:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:07,067:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:28:07,111:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:07,112:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:07,113:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:28:07,159:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:07,160:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:07,160:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 12(Integer)
+2020-09-03 13:28:07,204:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:07,214:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-03 13:28:07,413:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-09-03 13:28:07,422:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:28:07,426:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-09-03 13:28:07,426:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-09-03 13:28:07,427:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-09-03 13:28:07,430:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 5.944 seconds (JVM running for 10409.523)
+2020-09-03 13:28:07,432:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-09-03 13:28:10,337:INFO Thread-72 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-03 13:28:10,338:INFO Thread-72 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:28:10,344:INFO Thread-72 (Log4j2Impl.java:106) - {dataSource-10} closed
+2020-09-03 13:28:10,628:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 25764 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-09-03 13:28:10,629:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-09-03 13:28:10,966:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-03 13:28:10,978:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-09-03 13:28:11,133:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-09-03 13:28:11,134:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:28:11,134:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-09-03 13:28:11,135:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-03 13:28:11,171:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-09-03 13:28:11,171:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 539 ms
+2020-09-03 13:28:11,237:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:28:14,921:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-11} inited
+2020-09-03 13:28:14,931:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-03 13:28:14,935:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-03 13:28:14,940:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-03 13:28:14,941:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-03 13:28:14,975:INFO restartedMain (HighPhysicsInfoConfig.java:37) - saasssss
+2020-09-03 13:28:14,976:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_grade 
+2020-09-03 13:28:14,977:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 13:28:15,019:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 12
+2020-09-03 13:28:15,020:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:15,020:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:28:15,072:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:28:15,073:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:15,073:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:28:15,115:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 5
+2020-09-03 13:28:15,116:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,117:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:28:15,161:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:28:15,162:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,162:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:28:15,215:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-09-03 13:28:15,216:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,216:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:28:15,263:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,263:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,264:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:28:15,313:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,314:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,314:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:28:15,362:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,363:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:15,363:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:28:15,406:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 6
+2020-09-03 13:28:15,407:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,407:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:28:15,448:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,449:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,449:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:28:15,513:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,514:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,515:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:28:15,559:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,560:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,560:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:28:15,603:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,604:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,604:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:28:15,653:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,654:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:15,655:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:28:15,702:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,702:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:15,703:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:28:15,752:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,753:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:15,753:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:28:15,801:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,802:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:15,802:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:28:15,853:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,853:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:15,854:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:28:15,903:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,903:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:15,904:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:28:15,952:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:15,953:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:15,953:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:28:16,002:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:16,003:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:16,003:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:28:16,052:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:16,053:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:16,053:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:28:16,094:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:16,094:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:16,095:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:28:16,139:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:16,140:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:16,140:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:28:16,187:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:16,188:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:16,188:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:28:16,232:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:16,233:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:16,233:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:28:16,275:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:16,276:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:16,276:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 12(Integer)
+2020-09-03 13:28:16,328:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:16,341:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-03 13:28:16,550:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-09-03 13:28:16,561:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:28:16,566:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-09-03 13:28:16,566:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-09-03 13:28:16,567:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-09-03 13:28:16,571:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 6.074 seconds (JVM running for 10418.664)
+2020-09-03 13:28:16,572:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-09-03 13:28:20,276:INFO Thread-77 (AbstractEntityManagerFactoryBean.java:598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-03 13:28:20,277:INFO Thread-77 (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:28:20,284:INFO Thread-77 (Log4j2Impl.java:106) - {dataSource-11} closed
+2020-09-03 13:28:20,586:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 25764 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-09-03 13:28:20,587:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-09-03 13:28:20,835:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-03 13:28:20,848:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2020-09-03 13:28:20,975:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-09-03 13:28:20,976:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:28:20,976:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-09-03 13:28:20,976:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-03 13:28:21,003:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-09-03 13:28:21,003:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 413 ms
+2020-09-03 13:28:21,045:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:28:24,567:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-12} inited
+2020-09-03 13:28:24,576:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-03 13:28:24,580:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-03 13:28:24,586:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-03 13:28:24,586:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-03 13:28:24,618:INFO restartedMain (HighPhysicsInfoConfig.java:37) - saasssss
+2020-09-03 13:28:24,619:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_grade 
+2020-09-03 13:28:24,619:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 13:28:24,667:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 12
+2020-09-03 13:28:24,668:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:24,669:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:28:24,718:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:28:24,719:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:24,719:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:28:24,773:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 5
+2020-09-03 13:28:24,774:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:24,774:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:28:24,825:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:28:24,826:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:24,827:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:28:24,882:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-09-03 13:28:24,883:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:24,883:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:28:24,932:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:24,933:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:24,933:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:28:24,987:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:24,988:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:24,988:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:28:25,040:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,040:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:25,041:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:28:25,086:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 6
+2020-09-03 13:28:25,087:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:25,087:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:28:25,140:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,140:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:25,140:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:28:25,186:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,187:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:25,187:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:28:25,239:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,239:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:25,240:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:28:25,287:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,288:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:25,289:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:28:25,344:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,344:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:28:25,345:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:28:25,394:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,395:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:25,395:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:28:25,448:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,449:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:28:25,449:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:28:25,502:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,503:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,503:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:28:25,553:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,554:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,554:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:28:25,602:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,603:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,603:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:28:25,648:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,649:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,649:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:28:25,700:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,700:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,700:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:28:25,755:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,756:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,757:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:28:25,812:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,813:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,814:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:28:25,870:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,871:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,871:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:28:25,918:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,919:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,920:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:28:25,971:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:25,972:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:25,972:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:28:26,056:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:26,056:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:28:26,057:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 12(Integer)
+2020-09-03 13:28:26,105:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:28:26,116:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-03 13:28:26,321:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-09-03 13:28:26,341:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:28:26,345:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-09-03 13:28:26,345:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-09-03 13:28:26,346:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-09-03 13:28:26,351:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 5.922 seconds (JVM running for 10428.444)
+2020-09-03 13:28:26,353:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-09-03 13:28:40,091:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-03 13:28:40,092:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-09-03 13:28:40,095:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 3 ms
+2020-09-03 13:29:04,315:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 18496 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-09-03 13:29:04,323:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-09-03 13:29:04,362:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-03 13:29:04,362:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-03 13:29:04,989:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-03 13:29:05,012:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-09-03 13:29:05,710:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-09-03 13:29:05,722:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:29:05,723:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-09-03 13:29:05,723:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-03 13:29:05,863:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-09-03 13:29:05,863:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1501 ms
+2020-09-03 13:29:06,128:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:29:10,007:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-09-03 13:29:10,085:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-03 13:29:10,152:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-09-03 13:29:10,387:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-03 13:29:10,445:INFO restartedMain (HighPhysicsInfoConfig.java:37) - saasssss
+2020-09-03 13:29:10,474:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_grade 
+2020-09-03 13:29:10,590:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-03 13:29:10,595:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 13:29:10,675:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 12
+2020-09-03 13:29:10,677:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:10,704:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:29:10,751:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:29:10,752:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:29:10,753:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:29:10,799:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 5
+2020-09-03 13:29:10,800:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:10,802:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-03 13:29:10,837:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-03 13:29:10,850:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-03 13:29:10,851:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:10,852:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:29:10,855:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-03 13:29:10,897:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-09-03 13:29:10,899:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:10,899:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:29:10,951:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:10,952:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:10,953:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:29:11,001:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,002:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:11,003:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:29:11,053:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,054:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:29:11,055:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:29:11,102:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 6
+2020-09-03 13:29:11,104:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:11,104:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:29:11,157:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,158:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:11,158:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:29:11,201:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,203:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:11,204:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:29:11,247:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,248:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:11,249:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:29:11,303:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,305:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:11,305:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:29:11,351:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,352:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-03 13:29:11,353:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:29:11,399:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,401:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:29:11,402:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:29:11,450:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,452:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-03 13:29:11,453:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:29:11,497:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,498:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,499:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-03 13:29:11,553:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,554:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,555:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-03 13:29:11,603:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,604:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,604:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-03 13:29:11,647:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,649:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,649:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-03 13:29:11,695:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,696:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,696:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-03 13:29:11,740:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,741:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,742:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-03 13:29:11,794:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,795:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,796:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-03 13:29:11,851:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,852:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,852:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-03 13:29:11,899:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,900:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,901:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-03 13:29:11,945:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,945:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,946:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-03 13:29:11,991:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:11,992:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-03 13:29:11,993:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 12(Integer)
+2020-09-03 13:29:12,037:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-03 13:29:12,084:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-03 13:29:12,533:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-09-03 13:29:12,549:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-09-03 13:29:12,577:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-09-03 13:29:12,579:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-09-03 13:29:12,579:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-09-03 13:29:12,589:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 8.703 seconds (JVM running for 11.692)
+2020-09-03 13:29:12,850:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-03 13:29:12,850:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-09-03 13:29:12,856:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 6 ms
