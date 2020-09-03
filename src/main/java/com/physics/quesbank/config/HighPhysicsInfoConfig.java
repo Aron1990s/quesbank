@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,25 +30,28 @@ public class HighPhysicsInfoConfig {
     @Bean
     public HighPhysicsInfo initHighPhysicsInfoConfig(){
         HighPhysicsInfo highPhysicsInfo = new HighPhysicsInfo();
+        List<HighGradeInfo> highGradeInfos;
         Map<String, List<HighChapterInfo>> chapters = new HashMap<>();
         Map<String, List<HighChapterSubInfo>> chapterSubs = new HashMap<>();
         Map<String, List<HighChapterSubItemInfo>> chapterSubItems = new HashMap<>();
         logger.info("saasssss");
         try{
-            List<HighGradeInfo> highGradeInfos = highPhysicsInfoService.listHighGradeInfo();
-            highPhysicsInfo.setGrades(highGradeInfos);
+            highGradeInfos = highPhysicsInfoService.listHighGradeInfo();
             for (HighGradeInfo highGradeInfo: highGradeInfos) {
                 List<HighChapterInfo> highChapterInfos = highPhysicsInfoService.listHighChapterInfo(highGradeInfo);
                 chapters.put(highGradeInfo.getId()+"", highChapterInfos);
+
                 for (HighChapterInfo highChapterInfo:highChapterInfos) {
                     List<HighChapterSubInfo> highChapterSubInfos = highPhysicsInfoService.listHighChapterSubInfo(highChapterInfo);
-                    chapterSubs.put(highChapterInfo.getGrade_id()+"", highChapterSubInfos);
+                    chapterSubs.put(highChapterInfo.getId()+"", highChapterSubInfos);
+
                     for (HighChapterSubInfo highChapterSubInfo:highChapterSubInfos) {
                         List<HighChapterSubItemInfo> highChapterSubItemInfos = highPhysicsInfoService.listHighChapterSubItemInfo(highChapterSubInfo);
-                        chapterSubItems.put(highChapterSubInfo.getChapter_id()+"", highChapterSubItemInfos);
+                        chapterSubItems.put(highChapterSubInfo.getId()+"", highChapterSubItemInfos);
                     }
                 }
             }
+            highPhysicsInfo.setGrades(highGradeInfos);
             highPhysicsInfo.setChapters(chapters);
             highPhysicsInfo.setChapterSubs(chapterSubs);
             highPhysicsInfo.setChapterSubItems(chapterSubItems);
