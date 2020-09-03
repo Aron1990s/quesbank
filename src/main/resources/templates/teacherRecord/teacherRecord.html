@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,8 +9,7 @@
         html,body{
             width: 100%;
             height: 100%;
-            margin-top: -0.1px;
-            margin-left: -0.1px;
+            margin: 0;
         }
         .titleBorder{
             height:5%;
@@ -43,7 +42,7 @@
         }
         .center-vertical{
             position: relative;
-            top:5%;
+            top:15%;
             transform:translateY(-5%);
         }
         .save-center-vertical{
@@ -89,54 +88,35 @@
     </div>
     <div style="height:2%"></div>
     <div style="height:90%">
-        <div class="container">
+        <form action="" method="post" id="question" style="height: 100%">
+            <div class="container">
             <div class="col-sm-15"></div>
             <div class="col-sm-70">
-                <!--<div style="height: 4%">-->
-                    <!--<div class="itemFont">类型</div>-->
-                    <!--<div style="height: 10%"></div>-->
-                <!--</div>-->
-                <div style="height: 4%">
+                <div style="height: 5%">
                     <div class="container">
-                        <div class="col-sm-6 blockHead ">
-                            <font class="center-vertical">类型1:</font>
+                        <div class="col-sm-10 blockHead ">
+                            <font class="center-vertical">题型所属:</font>
                         </div>
                         <div class="col-sm-1"></div>
-                        <div class="col-sm-6 blockActive ">
-                            <font class="center-vertical">类型1</font>
+                        <div class="col-sm-18 blockActive ">
+                            <select name="question_type">
+                                <option value ="" disabled selected style='display:none;'>选择题型</option>
+                                <option value ="1">单选</option>
+                                <option value ="2">多选</option>
+                                <option value="3">填空</option>
+                                <option value="4">判断</option>
+                                <option value="5">简答</option>
+                                <option value="6">实验</option>
+                            </select>
                         </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-6 blockActive ">
-                            <font class="center-vertical">类型1</font>
-                        </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-6 blockActive ">
-                            <font class="center-vertical">类型1</font>
-                        </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-6 blockActive ">
-                            <font class="center-vertical">类型1</font>
-                        </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-6 blockActive ">
-                            <font class="center-vertical">类型1</font>
-                        </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-6 blockActive ">
-                            <font class="center-vertical">类型1</font>
-                        </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-6 blockActive ">
-                            <font class="center-vertical">类型1</font>
-                        </div>
-                        <div class="col-sm-1"></div>
+
                     </div>
                 </div>
                 <div style="height: 2%"></div>
                 <div style="height: 5%">
                     <div class="container">
-                        <div class="col-sm-6 blockHead ">
-                            <font class="center-vertical">类型1:</font>
+                        <div class="col-sm-10 blockHead ">
+                            <font class="center-vertical">题目所属:</font>
                         </div>
                         <div class="col-sm-1"></div>
                         <div class="col-sm-18 blockActive ">
@@ -221,6 +201,7 @@
                 </div>
             </div>
         </div>
+        </form>
     </div>
     <div style="height:3%"></div>
 </body>

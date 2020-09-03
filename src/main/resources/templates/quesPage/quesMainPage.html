@@ -116,7 +116,7 @@
             </div>
             <div class="col-sm-05"></div>
             <div class="col-sm-87" style="background-color: white;border-radius: 5px">
-                <iframe id="mainPage" src="record" frameborder="0" class="subPage"></iframe>
+                <iframe id="mainPage" src="../teacherRecordCtl/goToTeacherRecord" frameborder="0" class="subPage"></iframe>
             </div>
         </div>
     </div>
@@ -125,7 +125,7 @@
 <script>
     function changePage(type) {
         if (type == 1){
-            $('#mainPage').attr('src', "record");
+            $('#mainPage').attr('src', "../teacherRecordCtl/goToTeacherRecord");
         }else if(type == 2){
             $('#mainPage').attr('src', "generate");
         }else if(type == 3){

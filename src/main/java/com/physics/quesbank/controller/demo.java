@@ -1,7 +1,7 @@
 package com.physics.quesbank.controller;
 
+import com.physics.quesbank.entity.HighPhysicsInfo.*;
 import com.physics.quesbank.entity.demo.Demo;
-import com.physics.quesbank.quesTemplate.QuesTemplate;
 import com.physics.quesbank.service.demo.DemoService;
 import com.physics.quesbank.util.Base64Util;
 import com.physics.quesbank.util.DateUtil;
@@ -9,16 +9,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.util.*;
 
@@ -37,6 +33,9 @@ public class demo {
 
     @Autowired
     private DemoService demoService;
+
+    @Autowired
+    private HighPhysicsInfo highPhysicsInfo;
 
     @RequestMapping("test")
     public ModelAndView test(){
@@ -99,6 +98,21 @@ public class demo {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("quesPage/question");
         return mv;
+    }
+
+    @RequestMapping("phy")
+    @ResponseBody
+    public String phy(String content){
+        String h = null;
+        try{
+            List<HighGradeInfo> grades = highPhysicsInfo.getGrades();
+            Map<String, List<HighChapterInfo>> chapters = highPhysicsInfo.getChapters();
+            Map<String, List<HighChapterSubInfo>> chapterSubs = highPhysicsInfo.getChapterSubs();
+            Map<String, List<HighChapterSubItemInfo>> chapterSubItems = highPhysicsInfo.getChapterSubItems();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return h;
     }
 
     @RequestMapping("save")
