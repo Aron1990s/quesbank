@@ -342,11 +342,10 @@ a.cke_dialog_ui_button:hover {
 }
 
 a.cke_dialog_ui_button:focus, a.cke_dialog_ui_button:active {
-    border-color: #969696;
+    border-color: white;
     outline: 0;
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, .4) inset;
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .4) inset;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .4) inset
+    background-color: #2171ea;
+    height: auto;
 }
 
 .cke_hc a.cke_dialog_ui_button:hover, .cke_hc a.cke_dialog_ui_button:focus, .cke_hc a.cke_dialog_ui_button:active {
@@ -364,36 +363,39 @@ a.cke_dialog_ui_button_ok span, a.cke_dialog_ui_button_cancel span {
     color: inherit;
     font-size: 12px;
     font-weight: bold;
-    text-shadow: 0 1px 0 #fff;
+    /*text-shadow: 0 1px 0 #fff;*/
     line-height: 20px
 }
 
 a.cke_dialog_ui_button_ok {
     color: #fff;
-    text-shadow: 0 -1px 0 #55830c;
-    border-color: #62a60a #62a60a #4d9200;
-    background: #69b10b;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9ad717), to(#69b10b));
-    background-image: -webkit-linear-gradient(top, #9ad717, #69b10b);
-    background-image: -o-linear-gradient(top, #9ad717, #69b10b);
-    background-image: linear-gradient(to bottom, #9ad717, #69b10b);
-    background-image: -moz-linear-gradient(top, #9ad717, #69b10b);
+    border: 1px solid #9dc4ff;
+    border-radius: 3px;
+    background: #2171ea;
+    height: auto;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2171ea), to(#2171ea));
+    background-image: -webkit-linear-gradient(top, #2171ea, #2171ea);
+    background-image: -o-linear-gradient(top, #2171ea, #2171ea);
+    background-image: linear-gradient(to bottom, #2171ea, #2171ea);
+    background-image: -moz-linear-gradient(top, #2171ea, #2171ea);
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ff9ad717', endColorstr='#ff69b10b')
 }
 
 a.cke_dialog_ui_button_ok:hover {
-    border-color: #5b9909 #5b9909 #478500;
-    background: #88be14;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #88be14), color-stop(100%, #5d9c0a));
-    background: -webkit-linear-gradient(top, #88be14 0, #5d9c0a 100%);
-    background: -o-linear-gradient(top, #88be14 0, #5d9c0a 100%);
-    background: linear-gradient(to bottom, #88be14 0, #5d9c0a 100%);
-    background: -moz-linear-gradient(top, #88be14 0, #5d9c0a 100%);
+    border-color: #9dc4ff #9dc4ff #9dc4ff;
+    border-radius: 3px;
+    background: #3f7bd6;
+    height: auto;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3f7bd6), color-stop(100%, #3f7bd6));
+    background: -webkit-linear-gradient(top, #3f7bd6 0, #3f7bd6 100%);
+    background: -o-linear-gradient(top, #3f7bd6 0, #3f7bd6 100%);
+    background: linear-gradient(to bottom, #3f7bd6 0, #3f7bd6 100%);
+    background: -moz-linear-gradient(top, #3f7bd6 0, #3f7bd6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#88be14', endColorstr='#5d9c0a', GradientType=0)
 }
 
 a.cke_dialog_ui_button_ok span {
-    text-shadow: 0 -1px 0 #55830c
+    /*text-shadow: 0 -1px 0 #55830c*/
 }
 
 span.cke_dialog_ui_button {
@@ -401,12 +403,11 @@ span.cke_dialog_ui_button {
 }
 
 a.cke_dialog_ui_button_ok:focus, a.cke_dialog_ui_button_ok:active, a.cke_dialog_ui_button_cancel:focus, a.cke_dialog_ui_button_cancel:active {
-    border-width: 2px;
     padding: 2px 0
 }
 
 a.cke_dialog_ui_button_ok:focus, a.cke_dialog_ui_button_ok:active {
-    border-color: #568c0a
+    border-color: #9dc4ff
 }
 
 a.cke_dialog_ui_button_ok:focus span, a.cke_dialog_ui_button_ok:active span, a.cke_dialog_ui_button_cancel:focus span, a.cke_dialog_ui_button_cancel:active span {
