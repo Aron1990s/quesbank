@@ -13,5 +13,5 @@ select{
 }
 select:focus{
     width: 100%;
-    border: 1px solid #65a2ff;
+    border: 1px solid #65a2ff !important;
 }

@@ -15187,3 +15187,949 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [quesP
 2020-09-03 13:29:12,850:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-09-03 13:29:12,850:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 2020-09-03 13:29:12,856:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 6 ms
+2020-09-03 15:15:44,736:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:15:44,742:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:15:47,346:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:15:47,466:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:15:47,467:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:15:47,536:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:15:54,860:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:15:54,860:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:15:57,478:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:15:57,564:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:15:57,564:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:15:57,623:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:20:17,575:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:20:17,576:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:20:23,460:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:20:23,617:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:20:23,618:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:20:23,679:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:22:57,597:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:22:57,598:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:23:00,286:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:23:00,396:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:23:00,396:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:23:00,456:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:24:22,746:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:24:22,746:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:24:25,530:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:24:25,614:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:24:25,615:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:24:25,681:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:31:22,841:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:31:22,841:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:31:25,807:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:31:26,129:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:31:26,129:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:31:26,189:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:47:55,459:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:47:55,460:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:47:57,958:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:47:58,047:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:47:58,048:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:47:58,115:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:48:00,515:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:48:00,515:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:48:03,080:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:48:03,191:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:48:03,191:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:48:03,251:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:48:09,237:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:48:09,238:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:48:11,743:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:48:11,817:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:48:11,818:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:48:11,887:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:48:32,297:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:48:32,298:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:48:34,848:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:48:35,005:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:48:35,006:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:48:35,072:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:48:43,449:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:48:43,450:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:48:46,018:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:48:46,128:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:48:46,128:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:48:46,200:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:48:55,840:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:48:55,840:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:48:58,683:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:48:58,793:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:48:58,794:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:48:58,876:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:49:38,024:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:49:38,024:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:49:41,287:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:49:41,307:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:49:41,307:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:49:41,388:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:49:43,837:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:49:43,837:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:49:46,339:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:49:46,354:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:49:46,354:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:49:46,412:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:49:52,532:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:49:52,532:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:49:55,232:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:49:55,250:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:49:55,251:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:49:55,328:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:50:09,025:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:50:09,025:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:50:11,777:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:50:11,797:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:50:11,798:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:50:11,894:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:51:38,385:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:51:38,386:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:51:41,279:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:51:41,297:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:51:41,298:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:51:41,405:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:51:42,950:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:51:42,951:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:51:45,533:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:51:45,554:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:51:45,555:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:51:45,617:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:51:47,618:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:51:47,619:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:51:50,444:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:51:50,463:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:51:50,463:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:51:50,543:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:51:53,587:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:51:53,587:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:51:56,323:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:51:56,341:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:51:56,341:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:51:56,418:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:52:04,944:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:52:04,944:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:52:07,738:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:52:07,757:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:52:07,757:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:52:07,814:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:52:11,777:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:52:11,778:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:52:15,319:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:52:15,338:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:52:15,339:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:52:15,432:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:52:18,398:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:52:18,399:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:52:21,511:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:52:21,531:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:52:21,532:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:52:21,629:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:52:28,482:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:52:28,483:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:52:31,045:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:52:31,065:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:52:31,066:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:52:31,199:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:56:51,330:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:56:51,330:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:56:54,036:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:56:54,109:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:56:54,109:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:56:54,173:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:58:00,447:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:58:00,447:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:58:03,263:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:58:03,333:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:58:03,333:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:58:03,406:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:59:15,459:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:59:15,459:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:59:18,016:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:59:18,104:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:59:18,105:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:59:18,171:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:59:23,074:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:59:23,075:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:59:25,931:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:59:26,018:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:59:26,019:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:59:26,145:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:59:32,260:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:59:32,261:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:59:34,961:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:59:35,070:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:59:35,070:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:59:35,137:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:59:36,488:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:59:36,489:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:59:38,957:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:59:38,979:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:59:38,980:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:59:39,044:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 15:59:45,570:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 15:59:45,570:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 15:59:48,127:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 15:59:48,148:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 15:59:48,148:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 15:59:48,207:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:00:41,025:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:00:41,025:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:00:43,603:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:00:43,623:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:00:43,623:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:00:43,691:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:00:57,648:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:00:57,648:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:01:00,238:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:01:00,260:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:01:00,260:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:01:00,319:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:03:12,626:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:03:12,626:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:03:15,171:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:03:15,189:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:03:15,190:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:03:15,257:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:03:22,834:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:03:22,835:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:03:25,401:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:03:25,421:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:03:25,421:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:03:25,481:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:03:32,667:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:03:32,667:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:03:35,399:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:03:35,474:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:03:35,474:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:03:35,533:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:03:39,160:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:03:39,160:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:03:42,268:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:03:42,287:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:03:42,288:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:03:42,345:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:03:45,270:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:03:45,271:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:03:47,770:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:03:47,787:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:03:47,788:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:03:47,847:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:04:09,023:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:04:09,024:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:04:11,557:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:04:11,673:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:04:11,673:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:04:11,738:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:04:11,947:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:04:11,947:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:04:15,076:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:04:15,094:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:04:15,095:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:04:15,160:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:04:17,995:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:04:17,995:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:04:21,009:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:04:21,027:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:04:21,027:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:04:21,114:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:05:16,778:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:05:16,778:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:05:19,281:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:05:19,300:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:05:19,301:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:05:19,358:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:05:22,563:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:05:22,563:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:05:25,230:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:05:25,248:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:05:25,249:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:05:25,308:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:05:27,958:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:05:27,958:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:05:30,513:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:05:30,531:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:05:30,532:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:05:30,594:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:05:44,926:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:05:44,926:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:05:47,650:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:05:47,668:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:05:47,670:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:05:47,726:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:38:45,336:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:38:45,337:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:38:47,751:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:38:47,826:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:38:47,826:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:38:47,898:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:39:52,937:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:39:52,937:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:39:55,499:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:39:55,517:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:39:55,517:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:39:55,572:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 16:40:10,344:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 16:40:10,345:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 16:40:13,253:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 16:40:13,273:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 16:40:13,273:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 16:40:13,324:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:01:12,975:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:01:12,975:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:01:15,679:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:01:15,696:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:01:15,696:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:01:15,745:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:01:41,399:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:01:41,399:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:01:44,237:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:01:44,261:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:01:44,262:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:01:44,387:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:02:24,628:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:02:24,629:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:02:27,203:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:02:27,274:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:02:27,274:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:02:27,326:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:02:45,955:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:02:45,956:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:02:48,523:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:02:48,602:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:02:48,603:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:02:48,654:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:03:49,176:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:03:49,177:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:03:51,755:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:03:51,833:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:03:51,834:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:03:51,902:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:04:13,332:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:04:13,332:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:04:15,887:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:04:15,962:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:04:15,962:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:04:16,023:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:04:56,005:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:04:56,005:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:04:58,723:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:04:58,790:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:04:58,791:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:04:58,869:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:07:29,377:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:07:29,377:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:07:32,048:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:07:32,072:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:07:32,072:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:07:32,137:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:08:58,048:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:08:58,049:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:09:00,594:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:09:00,705:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:09:00,705:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:09:00,762:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:10:37,139:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:10:37,139:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:10:39,872:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:10:39,943:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:10:39,943:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:10:40,027:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:10:57,701:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:10:57,701:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:11:00,288:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:11:00,365:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:11:00,365:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:11:00,548:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:11:22,095:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:11:22,096:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:11:24,661:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:11:24,752:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:11:24,753:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:11:24,804:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:11:44,889:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:11:44,889:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:11:47,689:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:11:47,769:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:11:47,769:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:11:47,820:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:12:31,575:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:12:31,575:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:12:34,306:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:12:34,367:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:12:34,368:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:12:34,420:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:13:04,899:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:13:04,900:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:13:07,827:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:13:07,846:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:13:07,846:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:13:07,932:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-03 17:21:47,582:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-03 17:21:47,582:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-03 17:21:50,134:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-03 17:21:50,158:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-03 17:21:50,159:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-03 17:21:50,214:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 09:25:22,320:INFO restartedMain (StartupInfoLogger.java:55) - Starting QuesbankApplication on ARON-OMG-HEIHEI with PID 17156 (D:\Idea\workspace\quesbank\target\classes started by aron in D:\Idea\workspace\quesbank)
+2020-09-04 09:25:22,334:INFO restartedMain (SpringApplication.java:655) - The following profiles are active: constants
+2020-09-04 09:25:22,401:INFO restartedMain (DeferredLog.java:225) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-04 09:25:22,401:INFO restartedMain (DeferredLog.java:225) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-04 09:25:23,957:INFO restartedMain (RepositoryConfigurationDelegate.java:127) - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-04 09:25:24,005:INFO restartedMain (RepositoryConfigurationDelegate.java:187) - Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-09-04 09:25:24,919:INFO restartedMain (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8077 (http)
+2020-09-04 09:25:24,929:INFO restartedMain (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8077"]
+2020-09-04 09:25:24,930:INFO restartedMain (DirectJDKLog.java:173) - Starting service [Tomcat]
+2020-09-04 09:25:24,930:INFO restartedMain (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-04 09:25:25,076:INFO restartedMain (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2020-09-04 09:25:25,076:INFO restartedMain (ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 2675 ms
+2020-09-04 09:25:25,452:INFO restartedMain (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-04 09:25:29,052:INFO restartedMain (Log4j2Impl.java:106) - {dataSource-1} inited
+2020-09-04 09:25:29,190:INFO task-1 (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-04 09:25:29,399:INFO task-1 (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-09-04 09:25:29,850:INFO task-1 (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-04 09:25:29,894:INFO restartedMain (HighPhysicsInfoConfig.java:37) - saasssss
+2020-09-04 09:25:29,921:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_grade 
+2020-09-04 09:25:30,114:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 09:25:30,221:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 12
+2020-09-04 09:25:30,221:INFO task-1 (Dialect.java:172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-04 09:25:30,225:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:30,263:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-04 09:25:30,320:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-04 09:25:30,321:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-04 09:25:30,323:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-04 09:25:30,378:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 5
+2020-09-04 09:25:30,379:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,380:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2020-09-04 09:25:30,426:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 4
+2020-09-04 09:25:30,427:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,427:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-04 09:25:30,472:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-09-04 09:25:30,473:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,473:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-04 09:25:30,527:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:30,528:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,529:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-04 09:25:30,556:INFO task-1 (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-04 09:25:30,567:INFO task-1 (AbstractEntityManagerFactoryBean.java:416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-04 09:25:30,571:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:30,572:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,572:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-04 09:25:30,627:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:30,628:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-04 09:25:30,628:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-04 09:25:30,675:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 6
+2020-09-04 09:25:30,676:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,676:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-04 09:25:30,732:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:30,733:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,734:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-04 09:25:30,777:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:30,778:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,779:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-04 09:25:30,824:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:30,825:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,826:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-04 09:25:30,884:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:30,886:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,886:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-04 09:25:30,929:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:30,931:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub_item where chapter_sub_id = ? 
+2020-09-04 09:25:30,931:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-04 09:25:30,974:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:30,976:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-04 09:25:30,977:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-04 09:25:31,034:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,038:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter_sub where chapter_id = ? 
+2020-09-04 09:25:31,039:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-04 09:25:31,087:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,088:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,089:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 2(Integer)
+2020-09-04 09:25:31,149:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,150:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,151:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 3(Integer)
+2020-09-04 09:25:31,193:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,195:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,195:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 4(Integer)
+2020-09-04 09:25:31,239:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,240:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,241:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 5(Integer)
+2020-09-04 09:25:31,288:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,289:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,289:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 6(Integer)
+2020-09-04 09:25:31,335:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,336:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,337:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 7(Integer)
+2020-09-04 09:25:31,380:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,381:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,382:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 8(Integer)
+2020-09-04 09:25:31,450:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,451:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,451:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 9(Integer)
+2020-09-04 09:25:31,496:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,497:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,497:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 10(Integer)
+2020-09-04 09:25:31,542:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,543:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,544:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 11(Integer)
+2020-09-04 09:25:31,586:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,587:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==>  Preparing: select * from high_physics_chapter where grade_id = ? 
+2020-09-04 09:25:31,588:DEBUG restartedMain (BaseJdbcLogger.java:159) - ==> Parameters: 12(Integer)
+2020-09-04 09:25:31,645:DEBUG restartedMain (BaseJdbcLogger.java:159) - <==      Total: 0
+2020-09-04 09:25:31,732:WARN restartedMain (JpaBaseConfiguration.java:220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-04 09:25:32,649:INFO restartedMain (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2020-09-04 09:25:32,679:INFO restartedMain (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8077"]
+2020-09-04 09:25:32,719:INFO restartedMain (TomcatWebServer.java:220) - Tomcat started on port(s): 8077 (http) with context path '/quesBank'
+2020-09-04 09:25:32,721:INFO restartedMain (DeferredRepositoryInitializationListener.java:49) - Triggering deferred initialization of Spring Data repositories…
+2020-09-04 09:25:32,722:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
+2020-09-04 09:25:32,730:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 11.122 seconds (JVM running for 16.951)
+2020-09-04 09:25:38,687:INFO http-nio-8077-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-04 09:25:38,688:INFO http-nio-8077-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-09-04 09:25:38,696:INFO http-nio-8077-exec-1 (FrameworkServlet.java:547) - Completed initialization in 8 ms
+2020-09-04 09:26:20,893:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 09:26:20,917:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 09:26:25,517:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 09:26:25,679:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 09:26:25,680:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 09:26:25,741:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 09:26:28,906:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 09:26:28,906:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 09:26:31,818:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 09:26:31,898:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 09:26:31,899:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 09:26:31,958:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 13:14:55,036:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 13:14:55,037:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 13:14:58,034:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 13:14:58,258:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 13:14:58,259:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 13:14:58,335:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 13:15:55,022:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 13:15:55,022:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 13:15:57,897:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 13:15:57,919:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 13:15:57,920:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 13:15:57,981:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 13:16:24,084:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 13:16:24,084:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 13:16:26,884:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 13:16:26,904:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 13:16:26,905:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 13:16:26,958:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 13:16:34,612:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 13:16:34,612:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 13:16:37,186:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 13:16:37,211:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 13:16:37,211:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 13:16:37,282:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 13:17:02,462:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 13:17:02,463:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 13:17:05,384:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 13:17:05,460:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 13:17:05,460:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 13:17:05,534:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:08:32,012:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:08:32,013:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:08:34,661:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:08:34,742:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:08:34,742:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:08:34,798:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:09:32,957:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:09:32,958:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:09:35,619:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:09:35,687:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:09:35,687:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:09:35,743:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:10:11,706:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:10:11,707:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:10:14,701:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:10:14,757:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:10:14,758:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:10:14,815:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:10:52,200:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:10:52,200:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:10:55,127:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:10:55,195:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:10:55,196:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:10:55,256:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:11:23,772:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:11:23,773:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:11:26,329:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:11:26,407:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:11:26,408:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:11:26,464:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:11:56,278:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:11:56,278:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:11:58,870:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:11:58,928:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:11:58,929:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:11:58,984:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:12:06,478:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:12:06,479:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:12:08,983:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:12:09,002:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:12:09,003:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:12:09,075:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:12:36,491:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:12:36,491:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:12:39,225:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:12:39,244:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:12:39,244:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:12:39,300:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:16:44,593:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:16:44,594:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:16:47,119:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:16:47,139:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:16:47,139:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:16:47,197:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:19:45,308:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:19:45,309:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:19:47,876:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:19:47,897:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:19:47,898:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:19:47,954:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:20:54,750:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:20:54,750:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:20:58,182:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:20:58,200:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:20:58,201:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:20:58,293:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:21:00,099:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:21:00,100:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:21:02,727:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:21:02,743:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:21:02,744:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:21:02,811:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:24:34,794:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:24:34,795:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:24:37,353:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:24:37,373:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:24:37,373:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:24:37,429:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:28:19,085:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:28:19,085:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:28:22,023:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:28:22,048:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:28:22,048:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:28:22,094:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:28:59,333:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:28:59,334:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:29:02,194:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:29:02,215:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:29:02,216:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:29:02,315:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:38:03,967:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:38:03,968:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:38:06,672:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:38:06,694:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:38:06,694:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:38:06,749:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:38:58,179:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:38:58,179:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:39:00,935:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:39:00,998:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:39:00,999:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:39:01,057:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:40:45,967:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:40:45,967:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:40:48,464:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:40:48,538:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:40:48,539:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:40:48,600:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:41:39,981:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:41:39,982:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:41:42,658:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:41:42,736:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:41:42,737:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:41:42,795:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:42:54,062:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:42:54,063:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:42:56,722:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:42:56,805:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:42:56,805:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:42:56,860:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:50:05,760:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:50:05,760:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:50:08,647:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:50:08,756:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:50:08,756:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:50:08,812:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:52:08,044:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:52:08,044:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:52:10,585:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:52:10,686:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:52:10,686:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:52:10,762:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:53:34,426:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:53:34,426:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:53:37,183:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:53:37,265:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:53:37,266:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:53:37,322:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:55:40,130:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:55:40,130:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:55:42,694:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:55:42,770:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:55:42,771:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:55:42,827:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:56:25,983:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:56:25,983:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:56:28,656:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:56:28,739:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:56:28,739:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:56:28,836:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:56:43,767:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:56:43,768:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:56:46,412:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:56:46,534:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:56:46,534:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:56:46,588:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 14:58:23,163:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 14:58:23,163:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 14:58:25,902:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 14:58:26,164:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 14:58:26,165:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 14:58:26,221:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:04:07,644:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:04:07,644:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:04:10,191:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:04:10,273:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:04:10,274:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:04:10,357:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:04:20,646:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:04:20,647:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:04:23,257:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:04:23,347:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:04:23,347:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:04:23,405:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:04:30,504:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:04:30,504:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:04:32,967:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:04:33,053:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:04:33,054:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:04:33,101:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:06:02,070:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:06:02,070:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 1(String)
+2020-09-04 15:06:02,319:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 3
+2020-09-04 15:07:00,476:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:07:00,476:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:07:03,275:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:07:03,340:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:07:03,340:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:07:03,394:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:08:19,151:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:08:19,151:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:08:21,753:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:08:21,833:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:08:21,833:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:08:21,889:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:08:50,314:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:08:50,314:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:08:52,882:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:08:52,962:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:08:52,963:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:08:53,016:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:09:27,318:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:09:27,319:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:09:29,901:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:09:29,964:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:09:29,965:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:09:30,022:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:09:49,436:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:09:49,436:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:09:52,024:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:09:52,101:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:09:52,101:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:09:52,156:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:10:08,904:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:10:08,905:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:10:11,530:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:10:11,593:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:10:11,594:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:10:11,657:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:10:49,097:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:10:49,097:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:10:51,672:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:10:51,753:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:10:51,753:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:10:51,812:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:16:15,304:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:16:15,304:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:16:17,910:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:16:17,981:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:16:17,982:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:16:18,040:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:20:18,330:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:20:18,330:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:20:21,076:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:20:21,145:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:20:21,146:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:20:21,227:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:21:45,355:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:21:45,356:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:21:48,010:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:21:48,130:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:21:48,130:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:21:48,184:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:21:54,808:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:21:54,808:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:21:57,605:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:21:57,692:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:21:57,692:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:21:57,751:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:22:22,290:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:22:22,290:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:22:24,878:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:22:24,958:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:22:24,958:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:22:25,020:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:22:58,361:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:22:58,362:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:23:01,050:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:23:01,130:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:23:01,131:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:23:01,193:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:24:07,986:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:24:07,987:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:24:10,536:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:24:10,620:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:24:10,620:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:24:10,692:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:24:32,206:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:24:32,206:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:24:34,888:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:24:34,951:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:24:34,951:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:24:35,019:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:25:09,003:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:25:09,003:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:25:11,561:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:25:11,637:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:25:11,638:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:25:11,691:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:25:33,056:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:25:33,057:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:25:35,697:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:25:35,778:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:25:35,779:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:25:35,839:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:33:14,543:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:33:14,544:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:33:17,082:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:33:17,161:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:33:17,161:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:33:17,218:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:34:16,564:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:34:16,564:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:34:19,208:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:34:19,298:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:34:19,299:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:34:19,357:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:34:52,434:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:34:52,434:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:34:55,139:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:34:55,233:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:34:55,233:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:34:55,290:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:35:12,100:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:35:12,100:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:35:15,174:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:35:15,250:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:35:15,250:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:35:15,312:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:35:35,100:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:35:35,100:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:35:37,578:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:35:37,654:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:35:37,654:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:35:37,708:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:36:25,697:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:36:25,698:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:36:28,298:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:36:28,372:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:36:28,373:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:36:28,429:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:37:06,545:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:37:06,545:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:37:09,328:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:37:09,416:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:37:09,416:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:37:09,469:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:37:39,463:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:37:39,463:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:37:42,157:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:37:42,234:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:37:42,236:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:37:42,306:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:44:01,058:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:44:01,058:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:44:03,650:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:44:03,731:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:44:03,732:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:44:03,786:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:45:00,706:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:45:00,707:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:45:03,204:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:45:03,336:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:45:03,337:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:45:03,397:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:46:07,026:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:46:07,026:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:46:09,604:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:46:09,676:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:46:09,676:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:46:09,723:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:48:21,870:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:48:21,870:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:48:27,004:DEBUG http-nio-8077-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:48:27,083:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:48:27,083:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:48:27,420:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:48:50,333:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:48:50,334:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:48:52,948:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:48:53,085:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:48:53,085:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:48:53,140:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:49:02,708:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:49:02,708:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:49:05,295:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:49:05,385:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:49:05,386:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:49:05,441:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:50:27,951:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:50:27,951:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:50:30,501:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:50:30,596:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:50:30,597:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:50:30,649:DEBUG http-nio-8077-exec-5 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:50:58,902:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:50:58,902:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:51:01,683:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:51:01,795:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:51:01,795:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:51:01,854:DEBUG http-nio-8077-exec-7 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:51:29,972:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:51:29,972:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:51:32,426:DEBUG http-nio-8077-exec-10 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:51:32,490:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:51:32,491:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:51:32,550:DEBUG http-nio-8077-exec-9 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:51:55,177:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:51:55,178:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:51:57,864:DEBUG http-nio-8077-exec-4 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:51:57,946:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:51:57,946:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:51:57,992:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:52:03,398:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:52:03,398:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:52:06,157:DEBUG http-nio-8077-exec-6 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:52:06,256:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:52:06,256:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:52:06,314:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 1
+2020-09-04 15:52:11,064:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order is null 
+2020-09-04 15:52:11,065:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-04 15:52:13,619:DEBUG http-nio-8077-exec-8 (BaseJdbcLogger.java:159) - <==      Total: 39
+2020-09-04 15:52:13,683:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==>  Preparing: select * from content where type_order = ? 
+2020-09-04 15:52:13,684:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - ==> Parameters: 7(String)
+2020-09-04 15:52:13,747:DEBUG http-nio-8077-exec-1 (BaseJdbcLogger.java:159) - <==      Total: 1
