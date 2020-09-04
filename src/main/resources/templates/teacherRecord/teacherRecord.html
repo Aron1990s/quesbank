@@ -7,27 +7,31 @@
     <link href="../css/quesBlock.css" rel="stylesheet">
     <link href="../css/customSelect.css" rel="stylesheet">
     <style>
-        html,body{
+        html, body {
             width: 100%;
             height: 100%;
             margin: 0;
         }
-        .titleBorder{
-            height:5%;
+
+        .titleBorder {
+            height: 5%;
             border-bottom: solid 2px #d6e6ff
         }
-        .titleFont{
+
+        .titleFont {
             height: 70%;
             font-size: 1.3vw;
             padding-left: 1%;
             color: #3685fe
         }
-        .itemFont{
+
+        .itemFont {
             height: 70%;
             font-size: 1vw;
             color: #676767;
         }
-        .blockActive{
+
+        .blockActive {
             background-color: #65a2ff;
             border-radius: 3px;
             text-align: center;
@@ -35,31 +39,37 @@
             color: white;
             cursor: pointer;
         }
-        .blockHead{
+
+        .blockHead {
             border-radius: 3px;
             text-align: center;
             font-size: 2vh;
             color: #676767;
         }
-        .center-vertical{
+
+        .center-vertical {
             position: relative;
-            top:15%;
-            transform:translateY(-5%);
+            top: 15%;
+            transform: translateY(-5%);
         }
-        .save-center-vertical{
+
+        .save-center-vertical {
             position: relative;
-            top:25%;
-            transform:translateY(-25%);
+            top: 25%;
+            transform: translateY(-25%);
         }
-        .recordMain{
+
+        .recordMain {
             height: 34%;
         }
-        .subRecordBlock{
+
+        .subRecordBlock {
             background-color: #f6f9fe;
             border-radius: 5px;
             border: solid 1px #d6e6ff
         }
-        .saveRecord{
+
+        .saveRecord {
             background-color: #65a2ff;
             border-radius: 3px;
             text-align: center;
@@ -71,15 +81,15 @@
 
 </head>
 <body>
-    <div class="titleBorder">
-        <div style="height: 15%"></div>
-        <div class="titleFont">录入</div>
-        <div style="height: 15%"></div>
-    </div>
-    <div style="height:2%"></div>
-    <div style="height:90%">
-        <form action="" method="post" id="question" style="height: 100%">
-            <div class="container">
+<div class="titleBorder">
+    <div style="height: 15%"></div>
+    <div class="titleFont">录入</div>
+    <div style="height: 15%"></div>
+</div>
+<div style="height:2%"></div>
+<div style="height:90%">
+    <form action="" method="post" id="question" style="height: 100%">
+        <div class="container">
             <div class="col-sm-15"></div>
             <div class="col-sm-70">
                 <div style="height: 5%">
@@ -90,9 +100,9 @@
                         <div class="col-sm-1"></div>
                         <div class="col-sm-18 blockActive ">
                             <select name="question_type">
-                                <option value ="" disabled selected style='display:none;'>选择题型</option>
-                                <option value ="1">单选</option>
-                                <option value ="2">多选</option>
+                                <option value="" disabled selected style='display:none;'>选择题型</option>
+                                <option value="1">单选</option>
+                                <option value="2">多选</option>
                                 <option value="3">填空</option>
                                 <option value="4">判断</option>
                                 <option value="5">简答</option>
@@ -110,45 +120,50 @@
                         </div>
                         <div class="col-sm-1"></div>
                         <div class="col-sm-18 blockActive ">
-                            <select id="gradeName" name="gradeName" onchange="changeGrade(this.options[this.options.selectedIndex].value)">
+                            <select id="gradeName" name="gradeName"
+                                    onchange="changeGrade(this.options[this.options.selectedIndex].value)">
                             </select>
                         </div>
                         <div class="col-sm-1"></div>
                         <div class="col-sm-18 blockActive ">
-                            <select id="chapterName" name="chapterName" onchange="changeChapter(this.options[this.options.selectedIndex].value)">
-                                <option value ="" disabled selected style="display:none;">选择章节</option>
+                            <select id="chapterName" name="chapterName"
+                                    onchange="changeChapter(this.options[this.options.selectedIndex].value)">
+                                <option value="" disabled selected style="display:none;">选择章节</option>
                             </select>
                         </div>
                         <div class="col-sm-1"></div>
                         <div class="col-sm-18 blockActive ">
-                            <select id="chapterSubName" name="chapterSubName" onchange="changeChapterSub(this.options[this.options.selectedIndex].value)">
-                                <option value ="" disabled selected style="display:none;">选择章节子项</option>
+                            <select id="chapterSubName" name="chapterSubName"
+                                    onchange="changeChapterSub(this.options[this.options.selectedIndex].value)">
+                                <option value="" disabled selected style="display:none;">选择章节子项</option>
                             </select>
                         </div>
                         <div class="col-sm-1"></div>
                         <div class="col-sm-18 blockActive ">
                             <select id="chapterSubItemName" name="chapterSubItemName">
-                                <option value ="" disabled selected style="display:none;">选择章节知识点</option>
+                                <option value="" disabled selected style="display:none;">选择章节知识点</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div style="height: 2%"></div>
-                <div class="recordContainer">
-                    <div class="recordBody">
-                        <div class="content">
-                            <div id="content" contentEditable="true" class="editDemo">
+                <div style="height: 75%;overflow: auto" id="questionAndAnswer">
+                    <div class="recordContainer">
+                        <div class="recordBody">
+                            <div class="content">
+                                <div id="content" contentEditable="true" class="editDemo">
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div style="height: 1%"></div>
-                <div class="recordContainer">
-                    <div class="recordBody">
-                        <div class="content">
-                            <div id="content2" contentEditable="true" class="editDemo">
+                    <div style="height: 1%"></div>
+                    <div class="recordContainer">
+                        <div class="recordBody">
+                            <div class="content">
+                                <div id="content2" contentEditable="true" class="editDemo">
 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,19 +171,19 @@
                 <div style="height: 2%"></div>
                 <div class="container" style="height: 7%;text-align: center">
                     <div class="col-sm-45"></div>
-                    <div class="col-sm-10 saveRecord" onclick="showContent();"><font class="save-center-vertical">保存</font></div>
+                    <div class="col-sm-10 saveRecord" onclick="generate();">
+                        <font class="save-center-vertical">保存</font></div>
                     <div class="col-sm-45"></div>
                 </div>
             </div>
         </div>
-        </form>
-    </div>
-    <div style="height:3%"></div>
+    </form>
+</div>
 </body>
 <script type="text/javascript" src="../formula/jmeditor/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../formula/jmeditor/JMEditor.js"></script>
 <script>
-    var  selectOptionFirstTemplate = '<option value ="" disabled selected style="display:none;">OPTIONNAME</option>';
+    var selectOptionFirstTemplate = '<option value ="" disabled selected style="display:none;">OPTIONNAME</option>';
     var selectOptionTemplate = '<option value = OPTIONVALUE>OPTIONNAME</option>';
     $(function () {
         getGrade();
@@ -176,43 +191,43 @@
 
     function getGrade() {
         $.ajax({
-            cache : true,
-            type : "GET",
-            url : "../highPhyGrChCtl/getGradeInfo",
-            async : false,
-            error : function(request) {
+            cache: true,
+            type: "GET",
+            url: "../highPhyGrChCtl/getGradeInfo",
+            async: false,
+            error: function (request) {
                 alert("error")
             },
-            success : function(data) {
+            success: function (data) {
                 var grades = data.grades;
                 $('#gradeName').empty();
-                $('#gradeName').append(selectOptionFirstTemplate.replace('OPTIONNAME','选择年级'))
+                $('#gradeName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择年级'))
                 for (var i = 0; i < grades.length; i++) {
-                    $('#gradeName').append(selectOptionTemplate.replace('OPTIONVALUE',grades[i].id).replace('OPTIONNAME',grades[i].grade));
+                    $('#gradeName').append(selectOptionTemplate.replace('OPTIONVALUE', grades[i].id).replace('OPTIONNAME', grades[i].grade));
                 }
             }
         });
     }
-    
+
     function changeGrade(gradeId) {
         $.ajax({
-            cache : true,
-            type : "GET",
-            url : "../highPhyGrChCtl/getChapterInfo?gradeId="+gradeId,
-            async : false,
-            error : function(request) {
+            cache: true,
+            type: "GET",
+            url: "../highPhyGrChCtl/getChapterInfo?gradeId=" + gradeId,
+            async: false,
+            error: function (request) {
                 alert("error")
             },
-            success : function(data) {
+            success: function (data) {
                 var chapters = data.chapters;
                 $('#chapterName').empty();
                 $('#chapterSubName').empty();
                 $('#chapterSubName').append('<option value ="" disabled selected style="display:none;">选择章节子项</option>')
                 $('#chapterSubItemName').empty();
                 $('#chapterSubItemName').append('<option value ="" disabled selected style="display:none;">选择章节知识点</option>')
-                $('#chapterName').append(selectOptionFirstTemplate.replace('OPTIONNAME','选择章节'))
+                $('#chapterName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择章节'))
                 for (var i = 0; i < chapters.length; i++) {
-                    $('#chapterName').append(selectOptionTemplate.replace('OPTIONVALUE',chapters[i].id).replace('OPTIONNAME',chapters[i].chapter_name));
+                    $('#chapterName').append(selectOptionTemplate.replace('OPTIONVALUE', chapters[i].id).replace('OPTIONNAME', chapters[i].chapter_name));
                 }
             }
         });
@@ -220,21 +235,21 @@
 
     function changeChapter(chapterId) {
         $.ajax({
-            cache : true,
-            type : "GET",
-            url : "../highPhyGrChCtl/getChapterSubInfo?chapterId="+chapterId,
-            async : false,
-            error : function(request) {
+            cache: true,
+            type: "GET",
+            url: "../highPhyGrChCtl/getChapterSubInfo?chapterId=" + chapterId,
+            async: false,
+            error: function (request) {
                 alert("error")
             },
-            success : function(data) {
+            success: function (data) {
                 var chapterSubs = data.chapterSubs;
                 $('#chapterSubName').empty();
                 $('#chapterSubItemName').empty();
                 $('#chapterSubItemName').append('<option value ="" disabled selected style="display:none;">选择章节知识点</option>')
-                $('#chapterSubName').append(selectOptionFirstTemplate.replace('OPTIONNAME','选择章节子项'))
+                $('#chapterSubName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择章节子项'))
                 for (var i = 0; i < chapterSubs.length; i++) {
-                    $('#chapterSubName').append(selectOptionTemplate.replace('OPTIONVALUE',chapterSubs[i].id).replace('OPTIONNAME',chapterSubs[i].chapter_sub_name));
+                    $('#chapterSubName').append(selectOptionTemplate.replace('OPTIONVALUE', chapterSubs[i].id).replace('OPTIONNAME', chapterSubs[i].chapter_sub_name));
                 }
             }
         });
@@ -242,19 +257,19 @@
 
     function changeChapterSub(chapterSubId) {
         $.ajax({
-            cache : true,
-            type : "GET",
-            url : "../highPhyGrChCtl/getChapterSubItemInfo?chapterSubId="+chapterSubId,
-            async : false,
-            error : function(request) {
+            cache: true,
+            type: "GET",
+            url: "../highPhyGrChCtl/getChapterSubItemInfo?chapterSubId=" + chapterSubId,
+            async: false,
+            error: function (request) {
                 alert("error")
             },
-            success : function(data) {
+            success: function (data) {
                 var chapterSubItems = data.chapterSubItems;
                 $('#chapterSubItemName').empty();
                 $('#chapterSubItemName').append('<option value ="" disabled selected style="display:none;">选择章节知识点</option>')
                 for (var i = 0; i < chapterSubItems.length; i++) {
-                    $('#chapterSubItemName').append(selectOptionTemplate.replace('OPTIONVALUE',chapterSubItems[i].id).replace('OPTIONNAME',chapterSubItems[i].chapter_sub_item));
+                    $('#chapterSubItemName').append(selectOptionTemplate.replace('OPTIONVALUE', chapterSubItems[i].id).replace('OPTIONNAME', chapterSubItems[i].chapter_sub_item));
                 }
             }
         });
@@ -264,20 +279,36 @@
     function showContent() {
         $('#content').html(JMEditor.html('content'))
         $.ajax({
-            cache : true,
-            type : "GET",
-            url : "/quesBank/demo/save",
-            data : {
+            cache: true,
+            type: "GET",
+            url: "/quesBank/demo/save",
+            data: {
                 "content": JMEditor.html('content')
             },
-            async : false,
-            error : function(request) {
+            async: false,
+            error: function (request) {
                 alert("error")
             },
-            success : function(data) {
+            success: function (data) {
                 alert(data)
             }
         });
+    }
+
+    function generate() {
+        var gen = '<div style="height: 1%"></div>\n' +
+            '                    <div class="recordContainer">\n' +
+            '                        <div class="recordBody">\n' +
+            '                            <div class="content">\n' +
+            '                                <div id="content2" contentEditable="true" class="editDemo">\n' +
+            '\n' +
+            '                                </div>\n' +
+            '                            </div>\n' +
+            '                        </div>\n' +
+            '                    </div>'
+        $('#questionAndAnswer').append(gen);
+        var div = document.getElementById('questionAndAnswer');
+        div.scrollTop = div.scrollHeight;
     }
 </script>
 </html>
