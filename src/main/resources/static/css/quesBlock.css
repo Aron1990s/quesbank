@@ -95,9 +95,25 @@ select:focus{
 }
 
 .showDemoShowQuestion{
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     border: solid 1px #d6e6ff;
     min-height:150px;
     width:100%;
     padding:0 0 0 10px;
+}
+
+.questionOperate{
+    background-color: #d6e6ff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.questionOperateBlock{
+    background-color: white;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 30px;
+    font-size: 1.4vw;
+    cursor: pointer;
 }
