@@ -147,23 +147,21 @@
                     </div>
                 </div>
                 <div style="height: 2%"></div>
-                <div style="height: 75%;overflow: auto" id="questionAndAnswer">
-                    <div class="recordContainer">
-                        <div class="recordBody">
-                            <div class="content">
-                                <div id="content" contentEditable="true" class="editDemo">
+                <div class="recordContainer">
+                    <div class="recordBody">
+                        <div class="content">
+                            <div id="content" contentEditable="true" class="editDemo">
 
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div style="height: 1%"></div>
-                    <div class="recordContainer">
-                        <div class="recordBody">
-                            <div class="content">
-                                <div id="content2" contentEditable="true" class="editDemo">
+                </div>
+                <div style="height: 1%"></div>
+                <div class="recordContainer">
+                    <div class="recordBody">
+                        <div class="content">
+                            <div id="content2" contentEditable="true" class="editDemo">
 
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,7 +169,7 @@
                 <div style="height: 2%"></div>
                 <div class="container" style="height: 7%;text-align: center">
                     <div class="col-sm-45"></div>
-                    <div class="col-sm-10 saveRecord" onclick="generate();">
+                    <div class="col-sm-10 saveRecord" onclick="showContent();">
                         <font class="save-center-vertical">保存</font></div>
                     <div class="col-sm-45"></div>
                 </div>
@@ -293,22 +291,6 @@
                 alert(data)
             }
         });
-    }
-
-    function generate() {
-        var gen = '<div style="height: 1%"></div>\n' +
-            '                    <div class="recordContainer">\n' +
-            '                        <div class="recordBody">\n' +
-            '                            <div class="content">\n' +
-            '                                <div id="content2" contentEditable="true" class="editDemo">\n' +
-            '\n' +
-            '                                </div>\n' +
-            '                            </div>\n' +
-            '                        </div>\n' +
-            '                    </div>'
-        $('#questionAndAnswer').append(gen);
-        var div = document.getElementById('questionAndAnswer');
-        div.scrollTop = div.scrollHeight;
     }
 </script>
 </html>
