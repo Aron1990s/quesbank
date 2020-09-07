@@ -131,6 +131,10 @@
     width: 45%;
 }
 
+.col-sm-46 {
+    width: 46%;
+}
+
 .col-sm-48 {
     width: 48%;
 }
@@ -177,6 +181,14 @@
 
 .col-sm-90 {
     width: 90%;
+}
+
+.col-sm-91 {
+    width: 91%;
+}
+
+.col-sm-92 {
+    width: 92%;
 }
 
 .col-sm-96 {
