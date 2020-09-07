@@ -55,8 +55,8 @@
 
         .save-center-vertical {
             position: relative;
-            top: 25%;
-            transform: translateY(-25%);
+            top: 15%;
+            transform: translateY(-15%);
         }
 
         .recordMain {
@@ -147,31 +147,61 @@
                     </div>
                 </div>
                 <div style="height: 2%"></div>
+                <label style="font-weight: bold">请在下方录入题目：</label>
+                <div style="height: 0.5%"></div>
                 <div class="recordContainer">
                     <div class="recordBody">
                         <div class="content">
-                            <div id="content" contentEditable="true" class="editDemo">
+                            <div id="questionContent" contentEditable="true" class="editDemo">
 
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div style="height: 0.5%"></div>
+                <div class="container" style="height: 5%;text-align: center">
+                    <div class="col-sm-92"></div>
+                    <div class="col-sm-8 saveRecord" onclick="saveQuestion();" style="float: left">
+                        <font class="save-center-vertical">保存题目</font>
                     </div>
                 </div>
                 <div style="height: 1%"></div>
+                <label style="font-weight: bold">请在下方录入题目解析:</label>
+                <div style="height: 0.5%"></div>
                 <div class="recordContainer">
                     <div class="recordBody">
                         <div class="content">
-                            <div id="content2" contentEditable="true" class="editDemo">
+                            <div id="questionSimpleSolve" contentEditable="true" class="editDemo">
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style="height: 2%"></div>
-                <div class="container" style="height: 7%;text-align: center">
-                    <div class="col-sm-45"></div>
-                    <div class="col-sm-10 saveRecord" onclick="showContent();">
-                        <font class="save-center-vertical">保存</font></div>
-                    <div class="col-sm-45"></div>
+                <div style="height: 0.5%"></div>
+                <div class="container" style="height: 5%;text-align: center">
+                    <div class="col-sm-92"></div>
+                    <div class="col-sm-8 saveRecord" onclick="saveQuestion();" style="float: left">
+                        <font class="save-center-vertical">保存答案</font>
+                    </div>
+                </div>
+                <div style="height: 1%"></div>
+                <label style="font-weight: bold">请在下方录入题目详细解析(分步请用水平线分隔)：</label>
+                <div style="height: 0.5%"></div>
+                <div class="recordContainer">
+                    <div class="recordBody">
+                        <div class="content">
+                            <div id="questionStepSolve" contentEditable="true" class="editDemo">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 0.5%"></div>
+                <div class="container" style="height: 5%;text-align: center">
+                    <div class="col-sm-92"></div>
+                    <div class="col-sm-8 saveRecord" onclick="saveQuestion();" style="float: left">
+                        <font class="save-center-vertical">保存答案</font>
+                    </div>
                 </div>
             </div>
         </div>
@@ -275,13 +305,13 @@
 
 
     function showContent() {
-        $('#content').html(JMEditor.html('content'))
+        $('#content').html(JMEditor.html('questionContent'))
         $.ajax({
             cache: true,
             type: "GET",
             url: "/quesBank/demo/save",
             data: {
-                "content": JMEditor.html('content')
+                "content": JMEditor.html('questionContent')
             },
             async: false,
             error: function (request) {
