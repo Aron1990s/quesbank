@@ -127,6 +127,21 @@ public class demo {
         return "1";
     }
 
+    @RequestMapping("save2")
+    @ResponseBody
+    public String aaa2(String content){
+        try{
+            String [] contents = content.split("<hr>");
+            for (String s: contents) {
+                Demo demo = new Demo(UUID.randomUUID().toString(), s,"1",DateUtil.getTime());
+                demoService.saveInfo(demo);
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return "1";
+    }
+
     @RequestMapping("mainPage")
     public ModelAndView mainPage(){
         ModelAndView mv = new ModelAndView();

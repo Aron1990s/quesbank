@@ -6,7 +6,7 @@
 
     <!--  -->
     <select id="getInfo" resultType="Demo">
-      select * from content where type_order is null
+      select * from content order by record_time desc limit 10
     </select>
 
     <select id="getAnswer" parameterType="Demo" resultType="Demo">
