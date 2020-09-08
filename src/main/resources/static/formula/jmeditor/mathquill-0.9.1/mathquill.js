@@ -372,7 +372,7 @@ var Parser = P(function(_, _super, Parser) {
   // Externally, you use one to parse a string by calling
   //   var result = SomeParser.parse('Me Me Me! Parse Me!');
   // You should never call the constructor, rather you should
-  // construct your Parser from the base parsers and the
+  // construct your Parser from the baseMapper parsers and the
   // parser combinator methods.
 
   function parseError(stream, message) {
@@ -581,7 +581,7 @@ var Parser = P(function(_, _super, Parser) {
  ************************************************/
 
 /**
- * MathQuill virtual-DOM tree-node abstract base class
+ * MathQuill virtual-DOM tree-node abstract baseMapper class
  */
 var Node = P(function(_) {
   _.prev = 0;
@@ -760,7 +760,7 @@ var uuid = (function() {
 })();
 
 /**
- * Math tree node base class.
+ * Math tree node baseMapper class.
  * Some math-tree-specific extensions to Node.
  * Both MathBlock's and MathCommand's descend from it.
  */
@@ -1112,7 +1112,7 @@ var MathBlock = P(MathElement, function(_) {
 });
 
 /**
- * Math tree fragment base class.
+ * Math tree fragment baseMapper class.
  * Some math-tree-specific extensions to Fragment.
  */
 var MathFragment = P(Fragment, function(_, _super) {

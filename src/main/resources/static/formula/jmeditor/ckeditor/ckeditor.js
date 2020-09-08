@@ -12325,7 +12325,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
                         var b = d.config, e = b.fullPage, f = b.docType,
                             g = CKEDITOR.tools.buildStyleHtml(q()).replace(/<style>/, '<style data-cke-temp="1">');
                         e || (g += CKEDITOR.tools.buildStyleHtml(d.config.contentsCss));
-                        var h = b.baseHref ? '<base href="' +
+                        var h = b.baseHref ? '<baseMapper href="' +
                             b.baseHref + '" data-cke-temp="1" />' : "";
                         e && (a = a.replace(/<!DOCTYPE[^>]*>/i, function (a) {
                             d.docType = f = a;
