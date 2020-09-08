@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.physics.quesbank.dao.highPhysicsQuestion.HighPhysicsQuestionDao">
+
+    <!-- saveInfo -->
+    <insert id="saveInfo" parameterType="HighPhysicsQuestion">
+        insert into high_physics_question (
+            id,
+            question_type,
+            question_content,
+            grade_id,
+            chapter_id,
+            chapter_sub_id,
+            chapter_sub_item_id,
+            status,
+            recommend_count,
+            record_time,
+            record_teacher_id,
+            difficult_level
+        )values(
+            #{id},
+            #{question_type},
+            #{question_content},
+            #{grade_id},
+            #{chapter_id},
+            #{chapter_sub_id},
+            #{chapter_sub_item_id},
+            #{status},
+            #{recommend_count},
+            #{record_time},
+            #{record_teacher_id},
+            #{difficult_level}
+        )
+    </insert>
+
+    <!-- listInfo -->
+    <select id="listInfo" parameterType="HighPhysicsQuestion" resultType="HighPhysicsQuestion">
+        select * from high_physics_question
+    </select>
+</mapper>
+ 
