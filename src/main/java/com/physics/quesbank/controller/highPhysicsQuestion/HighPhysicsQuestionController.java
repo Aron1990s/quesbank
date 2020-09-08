@@ -3,6 +3,7 @@ package com.physics.quesbank.controller.highPhysicsQuestion;
 import com.physics.quesbank.controller.base.BaseController;
 import com.physics.quesbank.dao.highPhysicsQuestion.HighPhysicsQuestionDao;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestion;
+import com.physics.quesbank.util.DateUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +41,10 @@ public class HighPhysicsQuestionController extends BaseController {
         Map<String, Object> map = new HashMap<>();
         try{
             highPhysicsQuestion.setId(getUUID());
+            highPhysicsQuestion.setRecommend_count(0);
+            highPhysicsQuestion.setRecord_time(DateUtil.getTime());
             highPhysicsQuestionDao.saveInfo(highPhysicsQuestion);
+            map.put("questionId", highPhysicsQuestion.getId());
             map.put("code", "1");
         } catch (Exception e){
             e.printStackTrace();

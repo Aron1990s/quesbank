@@ -149,6 +149,7 @@
                 <div style="height: 2%"></div>
                 <label style="font-weight: bold">请在下方录入题目：</label>
                 <div style="height: 0.5%"></div>
+                <input type="hidden" id="question_id" value="">
                 <div class="recordContainer">
                     <div class="recordBody">
                         <div class="content">
@@ -310,19 +311,20 @@
             type: "POST",
             url: "/quesBank/highPhyQuesCtl/saveHighPhysicsQuestion",
             data: {
-                question_type: $('#question_type'),
+                question_type: $('#question_type').val(),
                 question_content: JMEditor.html('questionContent'),
-                grade_id: $('#gradeName'),
-                chapter_id: $('#chapterName'),
-                chapter_sub_id: $('#chapterSubName'),
-                chapter_sub_item_id: $('#chapterSubItemName')
+                grade_id: $('#gradeName').val(),
+                chapter_id: $('#chapterName').val(),
+                chapter_sub_id: $('#chapterSubName').val(),
+                chapter_sub_item_id: $('#chapterSubItemName').val()
             },
             async: false,
             error: function (request) {
                 alert("error")
             },
             success: function (data) {
-                alert(data)
+                $('#question_id').val(data.questionId)
+                alert('保存成功')
             }
         });
     }
@@ -333,7 +335,7 @@
             type: "POST",
             url: "/quesBank/highPhySimAnswerCtl/saveHighPhysicsSimpleAnswer",
             data: {
-                question_id: $('#question_id'),
+                question_id: $('#question_id').val(),
                 simple_answer: JMEditor.html('questionSimpleSolve')
             },
             async: false,
@@ -352,7 +354,7 @@
             type: "POST",
             url: "/quesBank/highPhyStepAnswerCtl/saveHighPhysicsStepAnswer",
             data: {
-                question_id: $('#question_id'),
+                question_id: $('#question_id').val(),
                 detail_answer: JMEditor.html('questionStepSolve')
             },
             async: false,

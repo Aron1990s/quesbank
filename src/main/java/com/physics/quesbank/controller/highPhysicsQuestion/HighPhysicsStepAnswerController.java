@@ -48,7 +48,7 @@ public class HighPhysicsStepAnswerController extends BaseController {
                 subHighStepAnswer.setDetail_answer(sub);
                 subHighStepAnswer.setStep(step);
                 step++;
-                highPhysicsStepAnswerService.saveInfo(highPhysicsStepAnswer);
+                highPhysicsStepAnswerService.saveInfo(subHighStepAnswer);
             }
             map.put("code", "1");
         } catch (Exception e){
