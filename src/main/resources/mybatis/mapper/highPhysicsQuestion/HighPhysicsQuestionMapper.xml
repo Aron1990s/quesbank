@@ -37,7 +37,7 @@
 
     <!-- listInfo -->
     <select id="listInfo" parameterType="HighPhysicsQuestion" resultType="HighPhysicsQuestion">
-        select * from high_physics_question
+        select * from high_physics_question order by record_time desc limit 10
     </select>
 </mapper>
  

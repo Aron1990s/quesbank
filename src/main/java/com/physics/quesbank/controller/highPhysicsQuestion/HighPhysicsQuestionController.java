@@ -3,6 +3,7 @@ package com.physics.quesbank.controller.highPhysicsQuestion;
 import com.physics.quesbank.controller.base.BaseController;
 import com.physics.quesbank.dao.highPhysicsQuestion.HighPhysicsQuestionDao;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestion;
+import com.physics.quesbank.service.highPhysiscQuestion.HighPhysicsQuestionService;
 import com.physics.quesbank.util.DateUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -29,7 +31,7 @@ public class HighPhysicsQuestionController extends BaseController {
     protected final static Logger logger = LoggerFactory.getLogger(HighPhysicsQuestionController.class);
 
     @Autowired
-    private HighPhysicsQuestionDao highPhysicsQuestionDao;
+    private HighPhysicsQuestionService highPhysicsQuestionService;
 
     /**
      * 保存数据
@@ -43,7 +45,7 @@ public class HighPhysicsQuestionController extends BaseController {
             highPhysicsQuestion.setId(getUUID());
             highPhysicsQuestion.setRecommend_count(0);
             highPhysicsQuestion.setRecord_time(DateUtil.getTime());
-            highPhysicsQuestionDao.saveInfo(highPhysicsQuestion);
+            highPhysicsQuestionService.saveInfo(highPhysicsQuestion);
             map.put("questionId", highPhysicsQuestion.getId());
             map.put("code", "1");
         } catch (Exception e){
@@ -62,11 +64,12 @@ public class HighPhysicsQuestionController extends BaseController {
     public ModelAndView listInfo(HighPhysicsQuestion highPhysicsQuestion){
         ModelAndView mv = new ModelAndView();
         try{
-
+            List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfo(highPhysicsQuestion);
+            mv.addObject("questionList", lists);
         } catch (Exception e){
             e.printStackTrace();
         }
-
+        mv.setViewName("highPhysicsQuestion/highPhysicsQuestion");
         return mv;
     }
 }
