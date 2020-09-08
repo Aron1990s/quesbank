@@ -2,4 +2,5 @@ img{
     backface-visibility:hidden;
     -webkit-backface-visibility:hidden;	/* Chrome 和 Safari */
     -moz-backface-visibility:hidden; 	/* Firefox */
+    -ms-backface-visibility:hidden; 	/* Internet Explorer */
 }

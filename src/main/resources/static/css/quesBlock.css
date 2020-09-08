@@ -95,8 +95,8 @@ select:focus{
 }
 
 .showDemoShowQuestion{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    /*border-top-left-radius: 5px;*/
+    /*border-top-right-radius: 5px;*/
     border: solid 1px #d6e6ff;
     min-height:150px;
     width:100%;

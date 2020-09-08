@@ -30,38 +30,38 @@
             <!--</div>-->
             <!--<div class="recordContainerPageSolve"></div>-->
             <!--<div style="height: 3%"></div>-->
-            <div style="height: auto" id="question1">
-                <div class="recordContainerShowQuestion bounceInDown dialog" onclick="aa(0)">
-                    <div class="showBody">
-                        <div class="contentShowQuestion">
-                            <div id="content" class="showDemoShowQuestion" contenteditable="false">
-                                <p>3)大大士大撒大所多大撒大大大大大大大所多大大大是大所大<br></p>
-                                <p>大大士大撒大所多大大士大撒大所多大大所多所大所<span class="mathquill-rendered-math" style="font-size:20px;"><img data-cke-saved-src="/quesBank/image/f0aa801980f24be8b66fae4c7be55d52.png" src="/quesBank/image/f0aa801980f24be8b66fae4c7be55d52.png" style="width: 212.091px; height: 35.9091px;"></span><span>&nbsp;</span><br></p>
-                                <p>打算打算多打算打算大大声道多<br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="height:40px" class="questionOperate">
-                    <div style="height: 5px"></div>
-                    <div style="height: 30px" class="container">
-                        <div class="col-sm-64"></div>
-                        <div class="col-sm-11">
-                            <div class="questionOperateBlock"><i class="fa fa-check-square-o"></i>&nbsp;简单解析</div>
-                        </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-11">
-                            <div class="questionOperateBlock"><i class="fa fa-check-circle-o"></i>&nbsp;详细解析</div>
-                        </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-11">
-                            <div class="questionOperateBlock"><i class="fa fa-cubes"></i>&nbsp;难度:&nbsp;3.6</div>
-                        </div>
-                        <div class="col-sm-1"></div>
-                    </div>
-                    <div style="height: 5px"></div>
-                </div>
-            </div>
+            <!--<div style="height: auto" id="question1">-->
+                <!--<div class="recordContainerShowQuestion bounceInDown dialog" onclick="aa(0)">-->
+                    <!--<div class="showBody">-->
+                        <!--<div class="contentShowQuestion">-->
+                            <!--<div id="content" class="showDemoShowQuestion" contenteditable="false">-->
+                                <!--<p>3)大大士大撒大所多大撒大大大大大大大所多大大大是大所大<br></p>-->
+                                <!--<p>大大士大撒大所多大大士大撒大所多大大所多所大所<span class="mathquill-rendered-math" style="font-size:20px;"><img data-cke-saved-src="/quesBank/image/f0aa801980f24be8b66fae4c7be55d52.png" src="/quesBank/image/f0aa801980f24be8b66fae4c7be55d52.png" style="width: 212.091px; height: 35.9091px;"></span><span>&nbsp;</span><br></p>-->
+                                <!--<p>打算打算多打算打算大大声道多<br></p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div style="height:40px" class="questionOperate">-->
+                    <!--<div style="height: 5px"></div>-->
+                    <!--<div style="height: 30px" class="container">-->
+                        <!--<div class="col-sm-64"></div>-->
+                        <!--<div class="col-sm-11">-->
+                            <!--<div class="questionOperateBlock" onclick="getSimpleAnswer()"><i class="fa fa-check-square-o"></i>&nbsp;简单解析</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-1"></div>-->
+                        <!--<div class="col-sm-11">-->
+                            <!--<div class="questionOperateBlock bounceInDown dialog" onclick="aa(0)"><i class="fa fa-check-circle-o"></i>&nbsp;详细解析</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-1"></div>-->
+                        <!--<div class="col-sm-11">-->
+                            <!--<div class="questionOperateBlock"><i class="fa fa-cubes"></i>&nbsp;难度:&nbsp;3.6</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-1"></div>-->
+                    <!--</div>-->
+                    <!--<div style="height: 5px"></div>-->
+                <!--</div>-->
+            <!--</div>-->
             <div style="height: 3%"></div>
         </div>
         <div class="col-sm-2"></div>
@@ -95,12 +95,49 @@
                 alert("error")
             },
             success : function(data) {
-                var conx = '<div class="recordContainerShowQuestion bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="contentShowQuestion"><div id="content" contentEditable="false" class="showDemoShowQuestion">AAAA</div></div></div></div>';
-                var con = '<div class="recordContainerShowQuestion bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="contentShowQuestion"><div id="content" contentEditable="false" class="showDemoShowQuestion">AAAA</div></div></div></div><div style="height: 3%"></div>';
+                var conx = '<div style="height: auto" id="QUESTIONID"><div class="recordContainerShowQuestion bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="contentShowQuestion"><div id="content" contentEditable="false" class="showDemoShowQuestion">AAAA</div></div></div></div><div style="height:40px" class="questionOperate">\n' +
+                    '                    <div style="height: 5px"></div>\n' +
+                    '                    <div style="height: 30px" class="container">\n' +
+                    '                        <div class="col-sm-64"></div>\n' +
+                    '                        <div class="col-sm-11">\n' +
+                    '                            <div class="questionOperateBlock" onclick="getSimpleAnswer()"><i class="fa fa-check-square-o"></i>&nbsp;简单解析</div>\n' +
+                    '                        </div>\n' +
+                    '                        <div class="col-sm-1"></div>\n' +
+                    '                        <div class="col-sm-11">\n' +
+                    '                            <div class="questionOperateBlock" bounceInDown dialog><i class="fa fa-check-circle-o"></i>&nbsp;详细解析</div>\n' +
+                    '                        </div>\n' +
+                    '                        <div class="col-sm-1"></div>\n' +
+                    '                        <div class="col-sm-11">\n' +
+                    '                            <div class="questionOperateBlock"><i class="fa fa-cubes"></i>&nbsp;难度:&nbsp;3.6</div>\n' +
+                    '                        </div>\n' +
+                    '                        <div class="col-sm-1"></div>\n' +
+                    '                    </div>\n' +
+                    '                    <div style="height: 5px"></div>\n' +
+                    '                </div></div>';
+                var con = '<div style="height: auto" id="QUESTIONID"><div class="recordContainerShowQuestion bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="contentShowQuestion"><div id="content" contentEditable="false" class="showDemoShowQuestion">AAAA</div></div></div></div><div style="height: 3%"></div><div style="height:40px" class="questionOperate">\n' +
+                    '                    <div style="height: 5px"></div>\n' +
+                    '                    <div style="height: 30px" class="container">\n' +
+                    '                        <div class="col-sm-64"></div>\n' +
+                    '                        <div class="col-sm-11">\n' +
+                    '                            <div class="questionOperateBlock" onclick="getSimpleAnswer()"><i class="fa fa-check-square-o"></i>&nbsp;简单解析</div>\n' +
+                    '                        </div>\n' +
+                    '                        <div class="col-sm-1"></div>\n' +
+                    '                        <div class="col-sm-11">\n' +
+                    '                            <div class="questionOperateBlock bounceInDown dialog" onclick="aa(1)"><i class="fa fa-check-circle-o"></i>&nbsp;详细解析</div>\n' +
+                    '                        </div>\n' +
+                    '                        <div class="col-sm-1"></div>\n' +
+                    '                        <div class="col-sm-11">\n' +
+                    '                            <div class="questionOperateBlock"><i class="fa fa-cubes"></i>&nbsp;难度:&nbsp;3.6</div>\n' +
+                    '                        </div>\n' +
+                    '                        <div class="col-sm-1"></div>\n' +
+                    '                    </div>\n' +
+                    '                    <div style="height: 5px"></div>\n' +
+                    '                </div></div><div style="height: 3%"></div>';
                 var sub = '<div style="display:none" class="recordContainerPageSolve"><div class="showBody"><div class="contentSolve"><div id="content" contentEditable="false" class="showDemoSolution">AAAA</div></div></div></div><div style="height: 3%"></div>'
                 for(var i = 0; i<data.demo.length;i++){
+                    var tempId = 'question'+i;
                     if (i == 0){
-                        var con1 = conx.replace('INDEX',i).replace('AAAA',data.demo[i].content);
+                        var con1 = con.replace('INDEX',i).replace('AAAA',data.demo[i].content).replace('QUESTIONID',tempId);
                         $('.ques').append(con1);
 
                         $.ajax({
@@ -118,13 +155,13 @@
                             success : function(data) {
                                 // var con = '<div style="display:none" class="recordContainerSolve bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="contentSolve"><div id="content" contentEditable="false" class="showDemoSolution">AAAA</div></div></div></div><div style="height: 1%"></div>';
                                 var con1 = sub.replace('AAAA',data.demo[0].content);
-                                $('.ques').append(con1);
+                                $('#question0').append(con1);
                             }
                         });
 
 
                     }else{
-                        var con1 = con.replace('INDEX',i).replace('AAAA',data.demo[i].content);
+                        var con1 = con.replace('INDEX',i).replace('AAAA',data.demo[i].content).replace('QUESTIONID',tempId);
                         $('.ques').append(con1);
                     }
                 }
@@ -133,7 +170,7 @@
     }
 
     function aa(aa) {
-        $('.recordContainerShowQuestion').hDialog({
+        $('.questionOperateBlock').hDialog({
             title: '这是什么呢'+aa,
             width:'80%',
             height: '90%',
@@ -148,8 +185,18 @@
 
         });
         $('#te').attr('src','/quesBank/demo/detail2');
-        $(".recordContainerPageSolve").stop().fadeIn(500);
+        // $(".recordContainerPageSolve").stop().fadeIn(500);
 
+    }
+
+    var count = 0;
+    function getSimpleAnswer() {
+        if (count%2 == 0){
+            $(".recordContainerPageSolve").stop().fadeIn();
+        }else{
+            $(".recordContainerPageSolve").stop().fadeOut();
+        }
+        count++;
     }
 
 </script>
