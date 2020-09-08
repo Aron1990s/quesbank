@@ -1,4 +1,4 @@
-package com.physics.quesbank.controller.HighPhysicsGradeChapter;
+package com.physics.quesbank.controller.highPhysicsGradeChapter;
 
 import com.physics.quesbank.controller.base.BaseController;
 import com.physics.quesbank.entity.highPhysicsInfo.*;
