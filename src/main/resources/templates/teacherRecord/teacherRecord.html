@@ -180,7 +180,7 @@
                 <div style="height: 0.5%"></div>
                 <div class="container" style="height: 5%;text-align: center">
                     <div class="col-sm-92"></div>
-                    <div class="col-sm-8 saveRecord" onclick="saveQuestion();" style="float: left">
+                    <div class="col-sm-8 saveRecord" onclick="saveSimpleAnswer();" style="float: left">
                         <font class="save-center-vertical">保存答案</font>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                 <div style="height: 0.5%"></div>
                 <div class="container" style="height: 5%;text-align: center">
                     <div class="col-sm-92"></div>
-                    <div class="col-sm-8 saveRecord" onclick="saveQuestion();" style="float: left">
+                    <div class="col-sm-8 saveRecord" onclick="saveStepAnswer();" style="float: left">
                         <font class="save-center-vertical">保存答案</font>
                     </div>
                 </div>
@@ -316,6 +316,44 @@
                 chapter_id: $('#chapterName'),
                 chapter_sub_id: $('#chapterSubName'),
                 chapter_sub_item_id: $('#chapterSubItemName')
+            },
+            async: false,
+            error: function (request) {
+                alert("error")
+            },
+            success: function (data) {
+                alert(data)
+            }
+        });
+    }
+
+    function saveSimpleAnswer() {
+        $.ajax({
+            cache: true,
+            type: "POST",
+            url: "/quesBank/highPhySimAnswerCtl/saveHighPhysicsSimpleAnswer",
+            data: {
+                question_id: $('#question_id'),
+                simple_answer: JMEditor.html('questionSimpleSolve')
+            },
+            async: false,
+            error: function (request) {
+                alert("error")
+            },
+            success: function (data) {
+                alert(data)
+            }
+        });
+    }
+
+    function saveStepAnswer() {
+        $.ajax({
+            cache: true,
+            type: "POST",
+            url: "/quesBank/highPhyStepAnswerCtl/saveHighPhysicsStepAnswer",
+            data: {
+                question_id: $('#question_id'),
+                detail_answer: JMEditor.html('questionStepSolve')
             },
             async: false,
             error: function (request) {

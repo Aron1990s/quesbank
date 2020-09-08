@@ -1,5 +1,6 @@
 package com.physics.quesbank.controller.highPhysicsQuestion;
 
+import com.physics.quesbank.controller.base.BaseController;
 import com.physics.quesbank.dao.highPhysicsQuestion.HighPhysicsQuestionDao;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestion;
 import org.slf4j.Logger;
@@ -22,7 +23,7 @@ import java.util.Map;
  **/
 @Controller
 @RequestMapping("highPhyQuesCtl")
-public class HighPhysicsQuestionController {
+public class HighPhysicsQuestionController extends BaseController {
 
     protected final static Logger logger = LoggerFactory.getLogger(HighPhysicsQuestionController.class);
 
@@ -38,6 +39,7 @@ public class HighPhysicsQuestionController {
     public Object saveHighPhysicsQuestion(HighPhysicsQuestion highPhysicsQuestion){
         Map<String, Object> map = new HashMap<>();
         try{
+            highPhysicsQuestion.setId(getUUID());
             highPhysicsQuestionDao.saveInfo(highPhysicsQuestion);
             map.put("code", "1");
         } catch (Exception e){
