@@ -99,7 +99,7 @@
                         </div>
                         <div class="col-sm-1"></div>
                         <div class="col-sm-18 blockActive ">
-                            <select name="question_type">
+                            <select name="question_type" id="question_type">
                                 <option value="" disabled selected style='display:none;'>选择题型</option>
                                 <option value="1">单选</option>
                                 <option value="2">多选</option>
@@ -305,13 +305,17 @@
 
 
     function saveQuestion() {
-        $('#content').html(JMEditor.html('questionContent'))
         $.ajax({
             cache: true,
-            type: "GET",
-            url: "/quesBank/demo/save2",
+            type: "POST",
+            url: "/quesBank/highPhyQuesCtl/saveHighPhysicsQuestion",
             data: {
-                "content": JMEditor.html('questionContent')
+                question_type: $('#question_type'),
+                question_content: JMEditor.html('questionContent'),
+                grade_id: $('#gradeName'),
+                chapter_id: $('#chapterName'),
+                chapter_sub_id: $('#chapterSubName'),
+                chapter_sub_item_id: $('#chapterSubItemName')
             },
             async: false,
             error: function (request) {
