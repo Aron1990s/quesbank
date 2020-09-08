@@ -19,13 +19,11 @@
     <div class="col-sm-2"></div>
     <div class="col-sm-96 ques">
         <div style="text-align: center;height: 3%"></div>
-        <div th:each="subList:${questionList}" style="height: auto" id="questionId">
+        <div th:each="subList,subListStat:${questionList}" style="height: auto" th:id="question+${subListStat.count}">
             <div class="recordContainerShowQuestion">
                 <div class="showBody">
                     <div class="contentShowQuestion">
                         <div contentEditable="false" class="showDemoShowQuestion" th:utext="${subList.question_content}">
-                            <!--<th:block th:text="${subList.question_content}" />-->
-                            <!--<a th:utext="${subList.question_content}"></a>-->
                         </div>
                     </div>
                 </div>
@@ -36,7 +34,7 @@
                 <div style="height: 30px" class="container">
                     <div class="col-sm-64"></div>
                     <div class="col-sm-11">
-                        <div class="questionOperateBlock" onclick="getSimpleAnswer()">
+                        <div class="questionOperateBlock" th:onclick="'getSimpleAnswer('+${subListStat.count}+')'">
                             <i class="fa fa-check-square-o"></i>&nbsp;简单解析
                         </div>
                     </div>
@@ -49,14 +47,14 @@
                     <div class="col-sm-1"></div>
                     <div class="col-sm-11">
                         <div class="questionOperateBlock">
-                            <i class="fa fa-cubes"></i>&nbsp;难度:&nbsp;3.6
+                            <i class="fa fa-cubes"></i>&nbsp;难度:&nbsp;[[${subList.difficult_level}]]
                         </div>
                     </div>
                     <div class="col-sm-1"></div>
                 </div>
                 <div style="height: 5px"></div>
             </div>
-            <div style="display:none" class="recordContainerPageSolve" id="solve">
+            <div style="display:none" class="recordContainerPageSolve" th:id="solve+${subListStat.count}">
                 <div class="showBody">
                     <div class="contentSolve">
                         <div id="content" contentEditable="false" class="showDemoSolution">AAAA</div>
@@ -104,15 +102,13 @@
 
     }
 
-    var count = 0;
-
     function getSimpleAnswer(id) {
-        if (count % 2 == 0) {
-            $(".recordContainerPageSolve").stop().fadeIn();
-        } else {
-            $(".recordContainerPageSolve").stop().fadeOut();
+        var solveId = '#solve'+id;
+        if ($(solveId).css('display') == 'none'){
+            $(solveId).stop().fadeIn();
+        } else{
+            $(solveId).stop().fadeOut();
         }
-        count++;
     }
 
 </script>
