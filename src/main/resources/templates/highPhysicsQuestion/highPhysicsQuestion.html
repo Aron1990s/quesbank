@@ -23,7 +23,9 @@
             <div class="recordContainerShowQuestion">
                 <div class="showBody">
                     <div class="contentShowQuestion">
-                        <div contentEditable="false" class="showDemoShowQuestion" th:text="${subList.question_content}">
+                        <div contentEditable="false" class="showDemoShowQuestion" th:utext="${subList.question_content}">
+                            <!--<th:block th:text="${subList.question_content}" />-->
+                            <!--<a th:utext="${subList.question_content}"></a>-->
                         </div>
                     </div>
                 </div>
