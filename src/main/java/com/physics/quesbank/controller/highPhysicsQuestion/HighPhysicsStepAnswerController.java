@@ -39,16 +39,17 @@ public class HighPhysicsStepAnswerController extends BaseController {
     public Object saveInfo(HighPhysicsStepAnswer highPhysicsStepAnswer){
         Map<String, Object> map = new HashMap<>();
         try{
+            int step = 1;
             String [] stepAnswers = highPhysicsStepAnswer.getDetail_answer().split("<hr>");
             for (String sub : stepAnswers) {
                 HighPhysicsStepAnswer subHighStepAnswer = new HighPhysicsStepAnswer();
                 subHighStepAnswer.setId(getUUID());
                 subHighStepAnswer.setQuestion_id(highPhysicsStepAnswer.getQuestion_id());
-
+                subHighStepAnswer.setDetail_answer(sub);
+                subHighStepAnswer.setStep(step);
+                step++;
+                highPhysicsStepAnswerService.saveInfo(highPhysicsStepAnswer);
             }
-
-
-            highPhysicsStepAnswerService.saveInfo(highPhysicsStepAnswer);
             map.put("code", "1");
         } catch (Exception e){
             e.printStackTrace();
