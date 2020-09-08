@@ -1,7 +1,7 @@
 package com.physics.quesbank.controller.HighPhysicsGradeChapter;
 
 import com.physics.quesbank.controller.base.BaseController;
-import com.physics.quesbank.entity.HighPhysicsInfo.*;
+import com.physics.quesbank.entity.highPhysicsInfo.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,10 +1,10 @@
 package com.physics.quesbank.service.highPhysicsInfo;
 
 import com.physics.quesbank.dao.highPhysicsInfo.HighPhysicsInfoDao;
-import com.physics.quesbank.entity.HighPhysicsInfo.HighChapterInfo;
-import com.physics.quesbank.entity.HighPhysicsInfo.HighChapterSubInfo;
-import com.physics.quesbank.entity.HighPhysicsInfo.HighChapterSubItemInfo;
-import com.physics.quesbank.entity.HighPhysicsInfo.HighGradeInfo;
+import com.physics.quesbank.entity.highPhysicsInfo.HighChapterInfo;
+import com.physics.quesbank.entity.highPhysicsInfo.HighChapterSubInfo;
+import com.physics.quesbank.entity.highPhysicsInfo.HighChapterSubItemInfo;
+import com.physics.quesbank.entity.highPhysicsInfo.HighGradeInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @ClassName HighPhysicsInfo
+ * @ClassName highPhysicsInfo
  * @Description TODO
  * @Author aron
  * @Date 2020/9/2 17:03

@@ -1,4 +1,4 @@
-package com.physics.quesbank.entity.HighPhysicsInfo;
+package com.physics.quesbank.entity.highPhysicsInfo;
 
 import lombok.Data;
 import org.slf4j.Logger;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @ClassName HighPhysicsInfo
+ * @ClassName highPhysicsInfo
  * @Description TODO
  * @Author aron
  * @Date 2020/9/2 16:39

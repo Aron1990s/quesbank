@@ -1,6 +1,6 @@
 package com.physics.quesbank.controller;
 
-import com.physics.quesbank.entity.HighPhysicsInfo.*;
+import com.physics.quesbank.entity.highPhysicsInfo.*;
 import com.physics.quesbank.entity.demo.Demo;
 import com.physics.quesbank.service.demo.DemoService;
 import com.physics.quesbank.util.Base64Util;

@@ -1,4 +1,4 @@
-package com.physics.quesbank.entity.HighPhysicsInfo;
+package com.physics.quesbank.entity.highPhysicsInfo;
 
 import lombok.Data;
 import org.slf4j.Logger;

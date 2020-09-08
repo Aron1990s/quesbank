@@ -1,9 +1,7 @@
 package com.physics.quesbank.dao.highPhysicsInfo;
 
-import com.physics.quesbank.entity.HighPhysicsInfo.*;
+import com.physics.quesbank.entity.highPhysicsInfo.*;
 import org.apache.ibatis.annotations.Mapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
