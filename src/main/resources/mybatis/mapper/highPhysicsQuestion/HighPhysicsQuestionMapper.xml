@@ -37,7 +37,13 @@
 
     <!-- listInfo -->
     <select id="listInfo" parameterType="HighPhysicsQuestion" resultType="HighPhysicsQuestion">
-        select * from high_physics_question order by record_time desc limit 10
+        select hpq.*,
+               hpsa.simple_answer
+        from high_physics_question hpq
+        left join high_physics_simple_answer hpsa
+        on hpsa.question_id = hpq.id
+        order by record_time desc
+        limit 10
     </select>
 </mapper>
  

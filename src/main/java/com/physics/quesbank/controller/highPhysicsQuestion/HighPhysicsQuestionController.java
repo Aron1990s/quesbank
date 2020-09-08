@@ -65,6 +65,11 @@ public class HighPhysicsQuestionController extends BaseController {
         ModelAndView mv = new ModelAndView();
         try{
             List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfo(highPhysicsQuestion);
+            for (HighPhysicsQuestion sub : lists) {
+                if (sub.getSimple_answer() == null || sub.getSimple_answer().trim().equals("")) {
+                    sub.setSimple_answer("<p>暂无解析</p>");
+                }
+            }
             mv.addObject("questionList", lists);
         } catch (Exception e){
             e.printStackTrace();

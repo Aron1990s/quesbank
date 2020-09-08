@@ -27,6 +27,6 @@ public class HighPhysicsQuestion {
     private String record_time;
     private String record_teacher_id;
     private String difficult_level;
-
+    private String simple_answer;
 
 }

@@ -57,7 +57,7 @@
             <div style="display:none" class="recordContainerPageSolve" th:id="solve+${subListStat.count}">
                 <div class="showBody">
                     <div class="contentSolve">
-                        <div id="content" contentEditable="false" class="showDemoSolution">AAAA</div>
+                        <div id="content" contentEditable="false" class="showDemoSolution" th:utext="${subList.simple_answer}"></div>
                     </div>
                 </div>
             </div>
