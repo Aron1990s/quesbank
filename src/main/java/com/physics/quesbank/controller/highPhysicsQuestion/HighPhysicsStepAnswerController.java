@@ -11,8 +11,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -56,6 +58,29 @@ public class HighPhysicsStepAnswerController extends BaseController {
             map.put("code", "-1");
         }
         return map;
+    }
+
+    /**
+     * 跳转至详细解析
+     * @param highPhysicsStepAnswer
+     * @return
+     */
+    @RequestMapping("goToStepAnswer")
+    public ModelAndView goToStepAnswer(HighPhysicsStepAnswer highPhysicsStepAnswer){
+        ModelAndView mv = new ModelAndView();
+        try{
+            List<HighPhysicsStepAnswer> lists = highPhysicsStepAnswerService.listInfo(highPhysicsStepAnswer);
+            if (lists.size() == 0) {
+                HighPhysicsStepAnswer empty = new HighPhysicsStepAnswer();
+                empty.setDetail_answer("<p>暂无详细解析</p>");
+                lists.add(empty);
+            }
+            mv.addObject("lists", lists);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        mv.setViewName("highPhysicsQuestion/highPhysicsStepAnswer");
+        return mv;
     }
 
 }

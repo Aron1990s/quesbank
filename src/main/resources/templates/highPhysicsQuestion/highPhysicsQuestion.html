@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-11">
-                        <div class="questionOperateBlock bounceInDown dialog" onclick="aa(1)">
+                        <div class="questionOperateBlock bounceInDown dialog" th:onclick="'goToStepAnswer('+${subList.id}+')'">
                             <i class="fa fa-check-circle-o"></i>&nbsp;详细解析
                         </div>
                     </div>
@@ -82,7 +82,8 @@
     }
 
 
-    function aa(aa) {
+    function goToStepAnswer(questionId) {
+        $('#te').attr('src', '/quesBank/highPhyStepAnswerCtl/goToStepAnswer?question_id'+questionId);
         $('.dialog').hDialog({
             title: '这是什么呢' + aa,
             width: '80%',
@@ -90,16 +91,11 @@
             box: '#HBox',
             effect: 'fadeOut',
             closeBg: '#ffffff',
-            positions: 'top'
-            // ,
-            // afterHide: function(){
-            //     $(".recordContainerPageSolve").css('display','none');
-            // }
-
+            positions: 'top',
+            afterHide: function(){
+                // $(".recordContainerPageSolve").css('display','none');
+            }
         });
-        $('#te').attr('src', '/quesBank/demo/detail2');
-        // $(".recordContainerPageSolve").stop().fadeIn(500);
-
     }
 
     function getSimpleAnswer(id) {
