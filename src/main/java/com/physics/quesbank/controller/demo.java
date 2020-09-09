@@ -8,6 +8,7 @@ import com.physics.quesbank.util.DateUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -36,6 +37,9 @@ public class demo {
 
     @Autowired
     private HighPhysicsInfo highPhysicsInfo;
+
+    @Value("${imageUpload.path}")
+    private String path;
 
     @RequestMapping("test")
     public ModelAndView test(){
@@ -155,7 +159,7 @@ public class demo {
     @ResponseBody
     public String  upload(String base64) throws Exception{
         String fileName = UUID.randomUUID().toString().replace("-", "");
-        Base64Util.GenerateImage(base64, "D:/"+fileName+".png");
+        Base64Util.GenerateImage(base64, path+fileName+".png");
 
         return fileName;
 
@@ -226,7 +230,7 @@ public class demo {
 //            return ret;
         }
         //获取项目根目录加上图片目录 webapp/static/imgages/upload/
-        String savePath = "D:/";
+        String savePath = path;
         File savePathFile = new File(savePath);
         if (!savePathFile.exists()) {
             //若不存在该目录，则创建目录

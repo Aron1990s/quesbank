@@ -40,3 +40,6 @@ spring:
       restart:
          enabled: true
          additional-paths: src/main/java
+
+imageUpload:
+   path: /usr/local/quesBank/img/
