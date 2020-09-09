@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-11">
-                        <div class="questionOperateBlock bounceInDown dialog" th:onclick="'goToStepAnswer('+${subList.id}+')'">
+                        <div class="questionOperateBlock bounceInDown dialog" th:onclick="goToStepAnswer([[${subList.id}]])">
                             <i class="fa fa-check-circle-o"></i>&nbsp;详细解析
                         </div>
                     </div>
@@ -83,9 +83,9 @@
 
 
     function goToStepAnswer(questionId) {
-        $('#te').attr('src', '/quesBank/highPhyStepAnswerCtl/goToStepAnswer?question_id'+questionId);
+        $('#te').attr('src', '/quesBank/highPhyStepAnswerCtl/goToStepAnswer?question_id='+questionId);
         $('.dialog').hDialog({
-            title: '这是什么呢' + aa,
+            title: '这是什么呢',
             width: '80%',
             height: '90%',
             box: '#HBox',

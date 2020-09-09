@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -22,18 +22,19 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-96">
             <div style="height: 90%" class="ques">
-                <div style="display:none" class="recordContainerSolve">
+                <div th:each="subList,subListStat:${lists}" style="display:none" class="recordContainerSolve" th:id="step+${subListStat.count}">
                     <div class="showBody">
                         <div class="contentSolve">
-                            <div id="content" contentEditable="false" class="showDemoSolution">
+                            <div id="content" contentEditable="false" class="showDemoSolution" th:utext="${subList.detail_answer}">
 
                             </div>
                         </div>
                     </div>
+                    <div style="height: 30px"></div>
                 </div>
             </div>
             <div style="height: 4%"></div>
-            <div style="height: 6%;text-align: center;width: 100%" class="footer container" onclick="init()">
+            <div style="height: 6%;text-align: center;width: 100%" class="footer container" onclick="showStepAnswer()">
                 <div class="col-sm-43"></div>
                 <div class="col-sm-10" style="text-align: center;background-color: #3685fe;cursor: pointer;border-radius: 5px">
                     <div style="height: 10%"></div>
@@ -48,36 +49,18 @@
 <script type="text/javascript" src="../formula/jmeditor/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../formula/jmeditor/JMEditor.js"></script>
 <script>
-    var index = 1;
+    var count = 1;
     $(function(){
-        init();
+        showStepAnswer();
     });
-    
-    function init() {
-        $.ajax({
-            cache : true,
-            type : "GET",
-            url : "/quesBank/demo/list2",
-            async: false,
-            data : {
-                type_order: index
-            },
-            async : false,
-            error : function(request) {
-                alert("error")
-            },
-            success : function(data) {
-                var con = '<div style="display:none" class="recordContainerSolve bounceInDown dialog" onclick="aa(INDEX)"><div class="showBody"><div class="contentSolve"><div id="content" contentEditable="false" class="showDemoSolution">AAAA</div></div></div></div><div style="height: 1%"></div>';
-                var con1 = con.replace('INDEX',index).replace('AAAA',data.demo[0].content);
-                $('.ques').append(con1);
-                index ++;
-                $('html, body').animate({
-                    scrollTop: document.body.scrollHeight
-                }, 1000);
-                $(".recordContainerSolve").stop().fadeIn(500);
-            }
-        });
-    }
 
+    function showStepAnswer() {
+        var step = "#step"+count;
+        $(step).fadeIn();
+        $('html, body').animate({
+            scrollTop: document.body.scrollHeight
+        }, 1000);
+        count++;
+    }
 </script>
 </html>
