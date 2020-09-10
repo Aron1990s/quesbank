@@ -409,23 +409,25 @@
         $('#questionContent img').each(function () {
             var image = $(this)
             var imageSrc = $(this)[0].src;
-            $.ajax({
-                cache : true,
-                type : "POST",
-                url : "/quesBank/demo/upload",
-                async: false,
-                data : {
-                    base64: imageSrc.replace('data:image/png;base64,','')
-                },
-                async : false,
-                error : function(request) {
-                    alert("error")
-                },
-                success : function(data) {
-                    image.attr('src','/quesBank/image/'+data+'.png')
-                    image.attr('data-cke-saved-src','/quesBank/image/'+data+'.png')
-                }
-            });
+            if (imageSrc.indexOf('data:image/png;base64,')!=-1){
+                $.ajax({
+                    cache : true,
+                    type : "POST",
+                    url : "/quesBank/demo/upload",
+                    async: false,
+                    data : {
+                        base64: imageSrc.replace('data:image/png;base64,','')
+                    },
+                    async : false,
+                    error : function(request) {
+                        alert("error")
+                    },
+                    success : function(data) {
+                        image.attr('src','/quesBank/image/'+data+'.png')
+                        image.attr('data-cke-saved-src','/quesBank/image/'+data+'.png')
+                    }
+                });
+            }
         })
 
     }
@@ -435,23 +437,25 @@
         $('#questionSimpleSolve img').each(function () {
             var image = $(this)
             var imageSrc = $(this)[0].src;
-            $.ajax({
-                cache : true,
-                type : "POST",
-                url : "/quesBank/demo/upload",
-                async: false,
-                data : {
-                    base64: imageSrc.replace('data:image/png;base64,','')
-                },
-                async : false,
-                error : function(request) {
-                    alert("error")
-                },
-                success : function(data) {
-                    image.attr('src','/quesBank/image/'+data+'.png')
-                    image.attr('data-cke-saved-src','/quesBank/image/'+data+'.png')
-                }
-            });
+            if (imageSrc.indexOf('data:image/png;base64,')!=-1){
+                $.ajax({
+                    cache : true,
+                    type : "POST",
+                    url : "/quesBank/demo/upload",
+                    async: false,
+                    data : {
+                        base64: imageSrc.replace('data:image/png;base64,','')
+                    },
+                    async : false,
+                    error : function(request) {
+                        alert("error")
+                    },
+                    success : function(data) {
+                        image.attr('src','/quesBank/image/'+data+'.png')
+                        image.attr('data-cke-saved-src','/quesBank/image/'+data+'.png')
+                    }
+                });
+            }
         })
     }
     
@@ -460,23 +464,25 @@
         $('#questionStepSolve img').each(function () {
             var image = $(this)
             var imageSrc = $(this)[0].src;
-            $.ajax({
-                cache : true,
-                type : "POST",
-                url : "/quesBank/demo/upload",
-                async: false,
-                data : {
-                    base64: imageSrc.replace('data:image/png;base64,','')
-                },
-                async : false,
-                error : function(request) {
-                    alert("error")
-                },
-                success : function(data) {
-                    image.attr('src','/quesBank/image/'+data+'.png')
-                    image.attr('data-cke-saved-src','/quesBank/image/'+data+'.png')
-                }
-            });
+            if (imageSrc.indexOf('data:image/png;base64,')!=-1){
+                $.ajax({
+                    cache : true,
+                    type : "POST",
+                    url : "/quesBank/demo/upload",
+                    async: false,
+                    data : {
+                        base64: imageSrc.replace('data:image/png;base64,','')
+                    },
+                    async : false,
+                    error : function(request) {
+                        alert("error")
+                    },
+                    success : function(data) {
+                        image.attr('src','/quesBank/image/'+data+'.png')
+                        image.attr('data-cke-saved-src','/quesBank/image/'+data+'.png')
+                    }
+                });
+            }
         })
     }
 </script>
