@@ -164,7 +164,11 @@
                 </div>
                 <div style="height: 0.5%"></div>
                 <div class="container" style="height: 5%;text-align: center">
-                    <div class="col-sm-92"></div>
+                    <div class="col-sm-83"></div>
+                    <div class="col-sm-8 saveRecord" onclick="clearFormat();" style="float: left">
+                        <font class="save-center-vertical">AA题目</font>
+                    </div>
+                    <div class="col-sm-1"></div>
                     <div class="col-sm-8 saveRecord" onclick="saveQuestion();" style="float: left">
                         <font class="save-center-vertical">保存题目</font>
                     </div>
@@ -369,6 +373,10 @@
                 window.location.reload(true)
             }
         });
+    }
+    
+    function clearFormat() {
+        $('#questionContent *').removeAttr('style')
     }
 </script>
 </html>
