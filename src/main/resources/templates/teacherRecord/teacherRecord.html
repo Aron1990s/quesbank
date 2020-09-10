@@ -77,6 +77,16 @@
             color: white;
             cursor: pointer;
         }
+
+        .editRecord {
+            background-color: green;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 2vh;
+            color: white;
+            cursor: pointer;
+        }
+
         p{
             border-bottom: 1px dotted grey;
         }
@@ -172,8 +182,8 @@
                 <div style="height: 0.5%"></div>
                 <div class="container" style="height: 5%;text-align: center">
                     <div class="col-sm-92"></div>
-                    <div class="col-sm-8 saveRecord" onclick="saveQuestion();" style="float: left">
-                        <font class="save-center-vertical">保存题目</font>
+                    <div id="saveQuestion" class="col-sm-8 saveRecord" onclick="saveQuestion();" style="float: left">
+                        <font id="saveFont" class="save-center-vertical">保存题目</font>
                     </div>
                 </div>
                 <div style="height: 1%"></div>
@@ -191,8 +201,8 @@
                 <div style="height: 0.5%"></div>
                 <div class="container" style="height: 5%;text-align: center">
                     <div class="col-sm-92"></div>
-                    <div class="col-sm-8 saveRecord" onclick="saveSimpleAnswer();" style="float: left">
-                        <font class="save-center-vertical">保存答案</font>
+                    <div id="saveSimpleAnswer" class="col-sm-8 saveRecord" onclick="saveSimpleAnswer();" style="float: left">
+                        <font id="saveSimpleAnswerFont" class="save-center-vertical">保存答案</font>
                     </div>
                 </div>
                 <div style="height: 1%"></div>
@@ -210,8 +220,8 @@
                 <div style="height: 0.5%"></div>
                 <div class="container" style="height: 5%;text-align: center">
                     <div class="col-sm-92"></div>
-                    <div class="col-sm-8 saveRecord" onclick="saveStepAnswer();" style="float: left">
-                        <font class="save-center-vertical">保存答案</font>
+                    <div id="saveStepAnswer" class="col-sm-8 saveRecord" onclick="saveStepAnswer();" style="float: left">
+                        <font id="saveStepAnswerFont" class="save-center-vertical">保存答案</font>
                     </div>
                 </div>
             </div>
@@ -316,12 +326,14 @@
 
 
     function saveQuestion() {
+        var currentButton = $('#saveQuestion')
         clearFormat();
         $.ajax({
             cache: true,
             type: "POST",
             url: "/quesBank/highPhyQuesCtl/saveHighPhysicsQuestion",
             data: {
+                question_id: $('#question_id').val(),
                 question_type: $('#question_type').val(),
                 question_content: JMEditor.html('questionContent'),
                 grade_id: $('#gradeName').val(),
@@ -336,11 +348,16 @@
             success: function (data) {
                 $('#question_id').val(data.questionId)
                 alert('保存成功')
+                currentButton.removeClass('saveRecord')
+                currentButton.addClass('editRecord')
+                $('#saveFont').html('编辑题目')
             }
         });
     }
 
     function saveSimpleAnswer() {
+        var currentButton = $('#saveSimpleAnswer')
+        clearAnswerFormat()
         $.ajax({
             cache: true,
             type: "POST",
@@ -355,11 +372,16 @@
             },
             success: function (data) {
                 alert('保存成功')
+                currentButton.removeClass('saveRecord')
+                currentButton.addClass('editRecord')
+                $('#saveSimpleAnswerFont').html('编辑答案')
             }
         });
     }
 
     function saveStepAnswer() {
+        var currentButton = $('#saveStepAnswer')
+        clearStepAnswerFormat()
         $.ajax({
             cache: true,
             type: "POST",
@@ -374,7 +396,10 @@
             },
             success: function (data) {
                 alert('保存成功');
-                window.location.reload(true)
+                currentButton.removeClass('saveRecord')
+                currentButton.addClass('editRecord')
+                $('#saveStepAnswerFont').html('编辑答案')
+                // window.location.reload(true)
             }
         });
     }
