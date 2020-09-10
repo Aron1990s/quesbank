@@ -164,11 +164,7 @@
                 </div>
                 <div style="height: 0.5%"></div>
                 <div class="container" style="height: 5%;text-align: center">
-                    <div class="col-sm-83"></div>
-                    <div class="col-sm-8 saveRecord" onclick="clearFormat();" style="float: left">
-                        <font class="save-center-vertical">AA题目</font>
-                    </div>
-                    <div class="col-sm-1"></div>
+                    <div class="col-sm-92"></div>
                     <div class="col-sm-8 saveRecord" onclick="saveQuestion();" style="float: left">
                         <font class="save-center-vertical">保存题目</font>
                     </div>
@@ -313,6 +309,7 @@
 
 
     function saveQuestion() {
+        clearFormat();
         $.ajax({
             cache: true,
             type: "POST",
@@ -377,6 +374,78 @@
     
     function clearFormat() {
         $('#questionContent *').removeAttr('style')
+        $('#questionContent img').each(function () {
+            var image = $(this)
+            var imageSrc = $(this)[0].src;
+            $.ajax({
+                cache : true,
+                type : "POST",
+                url : "/quesBank/demo/upload",
+                async: false,
+                data : {
+                    base64: imageSrc.replace('data:image/png;base64,','')
+                },
+                async : false,
+                error : function(request) {
+                    alert("error")
+                },
+                success : function(data) {
+                    image.attr('src','/quesBank/image/'+data+'.png')
+                    image.attr('data-cke-saved-src','/quesBank/image/'+data+'.png')
+                }
+            });
+        })
+
+    }
+    
+    function clearAnswerFormat() {
+        $('#questionSimpleSolve *').removeAttr('style')
+        $('#questionSimpleSolve img').each(function () {
+            var image = $(this)
+            var imageSrc = $(this)[0].src;
+            $.ajax({
+                cache : true,
+                type : "POST",
+                url : "/quesBank/demo/upload",
+                async: false,
+                data : {
+                    base64: imageSrc.replace('data:image/png;base64,','')
+                },
+                async : false,
+                error : function(request) {
+                    alert("error")
+                },
+                success : function(data) {
+                    image.attr('src','/quesBank/image/'+data+'.png')
+                    image.attr('data-cke-saved-src','/quesBank/image/'+data+'.png')
+                }
+            });
+        })
+    }
+    
+    function clearStepAnswerFormat() {
+        $('#questionStepSolve *').removeAttr('style')
+        $('#questionStepSolve img').each(function () {
+            var image = $(this)
+            var imageSrc = $(this)[0].src;
+            $.ajax({
+                cache : true,
+                type : "POST",
+                url : "/quesBank/demo/upload",
+                async: false,
+                data : {
+                    base64: imageSrc.replace('data:image/png;base64,','')
+                },
+                async : false,
+                error : function(request) {
+                    alert("error")
+                },
+                success : function(data) {
+                    image.attr('src','/quesBank/image/'+data+'.png')
+                    image.attr('data-cke-saved-src','/quesBank/image/'+data+'.png')
+                }
+            });
+        })
     }
 </script>
 </html>
