@@ -426,6 +426,10 @@
     }
 
     function saveSimpleAnswer() {
+        if ($('#question_id').val() == '' || $('#question_id').val() == null){
+            layer.alert('请先保存题目', {icon: 2})
+            return
+        }
         var currentButton = $('#saveSimpleAnswer')
         clearAnswerFormat()
         $.ajax({
@@ -450,6 +454,10 @@
     }
 
     function saveStepAnswer() {
+        if ($('#question_id').val() == '' || $('#question_id').val() == null){
+            layer.alert('请先保存题目', {icon: 2})
+            return
+        }
         var currentButton = $('#saveStepAnswer')
         clearStepAnswerFormat()
         $.ajax({
