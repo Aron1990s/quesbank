@@ -15779,3 +15779,9 @@ Caused by: java.io.FileNotFoundException: class path resource [com/physics/quesb
 2020-09-14 22:02:45,149:INFO restartedMain (DeferredRepositoryInitializationListener.java:53) - Spring Data repositories initialized!
 2020-09-14 22:02:45,154:INFO restartedMain (StartupInfoLogger.java:61) - Started QuesbankApplication in 7.815 seconds (JVM running for 153.771)
 2020-09-14 22:02:45,159:INFO restartedMain (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2020-09-14 22:03:06,990:INFO http-nio-8077-exec-3 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-14 22:03:06,990:INFO http-nio-8077-exec-3 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2020-09-14 22:03:06,993:INFO http-nio-8077-exec-3 (FrameworkServlet.java:547) - Completed initialization in 3 ms
+2020-09-14 22:04:08,109:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==>  Preparing: select hpq.*, hpsa.simple_answer from high_physics_question hpq left join high_physics_simple_answer hpsa on hpsa.question_id = hpq.id order by record_time desc limit 10 
+2020-09-14 22:04:08,110:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2020-09-14 22:04:08,161:DEBUG http-nio-8077-exec-2 (BaseJdbcLogger.java:159) - <==      Total: 5
