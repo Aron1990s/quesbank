@@ -58,7 +58,7 @@ public class HighPhysicsMajorController extends BaseController {
     public Object getMajorSub(HighPhysicsMajor highPhysicsMajor){
         Map<String, Object> map = new HashMap<>();
         try{
-            List<HighPhysicsMajorSub> highPhysicsMajorSubs = highPhysicsMajorInfo.getHighPhysicsMajorSubs().get(highPhysicsMajor.getId());
+            List<HighPhysicsMajorSub> highPhysicsMajorSubs = highPhysicsMajorInfo.getHighPhysicsMajorSubs().get(highPhysicsMajor.getId()+"");
             map.put("highPhysicsMajorSubs", highPhysicsMajorSubs);
             map.put("code", "1");
         } catch (Exception e){
@@ -77,7 +77,7 @@ public class HighPhysicsMajorController extends BaseController {
     public Object getMajorSubItem(HighPhysicsMajorSub highPhysicsMajorSub){
         Map<String, Object> map = new HashMap<>();
         try{
-            List<HighPhysicsMajorSubItem> highPhysicsMajorSubItems = highPhysicsMajorInfo.getHighPhysicsMajorSubItems().get(highPhysicsMajorSub.getId());
+            List<HighPhysicsMajorSubItem> highPhysicsMajorSubItems = highPhysicsMajorInfo.getHighPhysicsMajorSubItems().get(highPhysicsMajorSub.getId()+"");
             map.put("highPhysicsMajorSubItems", highPhysicsMajorSubItems);
             map.put("code", "1");
         } catch (Exception e){
