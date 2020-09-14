@@ -33,7 +33,7 @@ public class HighPhysicsMajorService {
         return dao.listHighPhysicsMajorSub(highPhysicsMajor);
     }
 
-    public List<HighPhysicsMajorSubItem> listHighPhysicsMajorSubItem(HighPhysicsMajorSubItem highPhysicsMajorSubItem){
+    public List<HighPhysicsMajorSubItem> listHighPhysicsMajorSubItem(HighPhysicsMajorSub highPhysicsMajorSubItem){
         return dao.listHighPhysicsMajorSubItem(highPhysicsMajorSubItem);
     }
 

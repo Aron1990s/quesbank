@@ -37,7 +37,15 @@ public class HighPhysicsMajorInfoConfig {
         Map<String, List<HighPhysicsMajorSub>> highPhysicsMajorSubs = new HashMap<>();
         Map<String, List<HighPhysicsMajorSubItem>> highPhysicsMajorSubItems = new HashMap<>();
         try{
-
+            highPhysicsMajors = highPhysicsMajorService.listHighPhysicsMajor();
+            for (HighPhysicsMajor sub : highPhysicsMajors) {
+                List<HighPhysicsMajorSub> highPhysicsMajorSubList = highPhysicsMajorService.listHighPhysicsMajorSub(sub);
+                highPhysicsMajorSubs.put(sub.getId()+"", highPhysicsMajorSubList);
+                for (HighPhysicsMajorSub highPhysicsMajorSub : highPhysicsMajorSubList) {
+                    List<HighPhysicsMajorSubItem> highPhysicsMajorSubItemList = highPhysicsMajorService.listHighPhysicsMajorSubItem(highPhysicsMajorSub);
+                    highPhysicsMajorSubItems.put(highPhysicsMajorSub.getId()+"", highPhysicsMajorSubItemList);
+                }
+            }
         } catch (Exception e){
             e.printStackTrace();
         }

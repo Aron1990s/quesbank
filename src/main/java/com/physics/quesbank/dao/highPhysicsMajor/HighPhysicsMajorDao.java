@@ -14,5 +14,5 @@ public interface HighPhysicsMajorDao {
 
     List<HighPhysicsMajorSub> listHighPhysicsMajorSub(HighPhysicsMajor highPhysicsMajor);
 
-    List<HighPhysicsMajorSubItem> listHighPhysicsMajorSubItem(HighPhysicsMajorSubItem highPhysicsMajorSubItem);
+    List<HighPhysicsMajorSubItem> listHighPhysicsMajorSubItem(HighPhysicsMajorSub highPhysicsMajorSubItem);
 }
