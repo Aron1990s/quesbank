@@ -49,7 +49,6 @@ public class HighPhysicsQuestionController extends BaseController {
                 highPhysicsQuestion.setId(getUUID());
                 highPhysicsQuestion.setRecommend_count(0);
                 highPhysicsQuestion.setRecord_time(DateUtil.getTime());
-                highPhysicsQuestion.setDifficult_level("2.3");
                 highPhysicsQuestionService.saveInfo(highPhysicsQuestion);
                 map.put("questionId", highPhysicsQuestion.getId());
                 map.put("code", "1");

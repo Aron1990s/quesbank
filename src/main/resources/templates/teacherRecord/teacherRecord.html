@@ -130,6 +130,17 @@
                                 <option value="0">否</option>
                             </select>
                         </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-18 blockActive ">
+                            <select name="difficult_level" id="difficult_level">
+                                <option value="" disabled selected style='display:none;'>选择难度</option>
+                                <option value="5">困难</option>
+                                <option value="4">难</option>
+                                <option value="3">一般</option>
+                                <option value="2">简单</option>
+                                <option value="1">十分简单</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div style="height: 2%"></div>
@@ -369,6 +380,11 @@
             alert('请选择题目所属知识点')
             return
         }
+        if ($('#difficult_level').val() == '' || $('#difficult_level').val() == null){
+            alert('请选择题目难度')
+            return
+        }
+
         var currentButton = $('#saveQuestion')
         clearFormat();
         $.ajax({
@@ -386,7 +402,8 @@
                 chapter_sub_item_id: $('#chapterSubItemName').val(),
                 major_id: $('#majorName').val(),
                 major_sub_id: $('#majorSubName').val(),
-                major_sub_item_id: $('#majorSubItemName').val()
+                major_sub_item_id: $('#majorSubItemName').val(),
+                difficult_level: $('#difficult_level').val()
             },
             async: false,
             error: function (request) {
