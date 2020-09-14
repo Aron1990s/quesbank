@@ -23,5 +23,10 @@
     <select id="listInfo" parameterType="HighPhysicsStepAnswer" resultType="HighPhysicsStepAnswer">
         select * from high_physics_step_answer where question_id = #{question_id} order by step
     </select>
+
+    <!-- delInfo -->
+    <delete id="delInfo" parameterType="HighPhysicsStepAnswer">
+        delete from high_physics_step_answer where question_id = #{question_id}
+    </delete>
 </mapper>
  

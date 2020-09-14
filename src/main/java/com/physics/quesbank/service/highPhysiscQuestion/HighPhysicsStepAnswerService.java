@@ -46,6 +46,6 @@ public class HighPhysicsStepAnswerService implements BaseService<HighPhysicsStep
 
     @Override
     public int delInfo(HighPhysicsStepAnswer highPhysicsStepAnswer) {
-        return 0;
+        return dao.delInfo(highPhysicsStepAnswer);
     }
 }

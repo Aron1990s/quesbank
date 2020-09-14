@@ -53,5 +53,22 @@
         order by record_time desc
         limit 10
     </select>
+
+    <!-- editInfo -->
+    <update id="editInfo" parameterType="HighPhysicsQuestion">
+        update high_physics_question set
+           question_type = #{question_type},
+           is_subExam  = #{is_subExam},
+           question_content  = #{question_content},
+           grade_id = #{grade_id},
+           chapter_id  = #{chapter_id},
+           chapter_sub_id  = #{chapter_sub_id},
+           chapter_sub_item_id  = #{chapter_sub_item_id},
+           major_id = #{major_id},
+           major_sub_id = #{major_sub_id},
+           major_sub_item_id = #{major_sub_item_id},
+           difficult_level = #{difficult_level}
+        where id = #{id}
+    </update>
 </mapper>
  

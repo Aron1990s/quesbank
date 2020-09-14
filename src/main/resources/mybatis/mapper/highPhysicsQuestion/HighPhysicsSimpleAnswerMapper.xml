@@ -16,5 +16,10 @@
         #{question_id}
       )
     </insert>
+
+    <!-- delInfo -->
+    <delete id="delInfo" parameterType="HighPhysicsSimpleAnswer">
+        delete from high_physics_simple_answer where question_id = #{question_id}
+    </delete>
 </mapper>
  

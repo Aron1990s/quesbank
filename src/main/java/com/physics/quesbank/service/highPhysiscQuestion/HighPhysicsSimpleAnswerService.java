@@ -46,6 +46,6 @@ public class HighPhysicsSimpleAnswerService implements BaseService<HighPhysicsSi
 
     @Override
     public int delInfo(HighPhysicsSimpleAnswer highPhysicsSimpleAnswer) {
-        return 0;
+        return dao.delInfo(highPhysicsSimpleAnswer);
     }
 }

@@ -42,13 +42,18 @@ public class HighPhysicsQuestionController extends BaseController {
     public Object saveHighPhysicsQuestion(HighPhysicsQuestion highPhysicsQuestion){
         Map<String, Object> map = new HashMap<>();
         try{
-            highPhysicsQuestion.setId(getUUID());
-            highPhysicsQuestion.setRecommend_count(0);
-            highPhysicsQuestion.setRecord_time(DateUtil.getTime());
-            highPhysicsQuestion.setDifficult_level("2.3");
-            highPhysicsQuestionService.saveInfo(highPhysicsQuestion);
-            map.put("questionId", highPhysicsQuestion.getId());
-            map.put("code", "1");
+            if (highPhysicsQuestion.getId() != null && !highPhysicsQuestion.getId().trim().equals("")) {
+                highPhysicsQuestionService.editInfo(highPhysicsQuestion);
+                map.put("code", "2");
+            } else {
+                highPhysicsQuestion.setId(getUUID());
+                highPhysicsQuestion.setRecommend_count(0);
+                highPhysicsQuestion.setRecord_time(DateUtil.getTime());
+                highPhysicsQuestion.setDifficult_level("2.3");
+                highPhysicsQuestionService.saveInfo(highPhysicsQuestion);
+                map.put("questionId", highPhysicsQuestion.getId());
+                map.put("code", "1");
+            }
         } catch (Exception e){
             e.printStackTrace();
             map.put("code", "-1");

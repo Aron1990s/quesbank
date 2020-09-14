@@ -376,24 +376,33 @@
             type: "POST",
             url: "/quesBank/highPhyQuesCtl/saveHighPhysicsQuestion",
             data: {
-                question_id: $('#question_id').val(),
+                id: $('#question_id').val(),
                 question_type: $('#question_type').val(),
+                is_subExam: $('#is_subExam').val(),
                 question_content: JMEditor.html('questionContent'),
                 grade_id: $('#gradeName').val(),
                 chapter_id: $('#chapterName').val(),
                 chapter_sub_id: $('#chapterSubName').val(),
-                chapter_sub_item_id: $('#chapterSubItemName').val()
+                chapter_sub_item_id: $('#chapterSubItemName').val(),
+                major_id: $('#majorName').val(),
+                major_sub_id: $('#majorSubName').val(),
+                major_sub_item_id: $('#majorSubItemName').val()
             },
             async: false,
             error: function (request) {
                 alert("error")
             },
             success: function (data) {
-                $('#question_id').val(data.questionId)
-                alert('保存成功')
-                currentButton.removeClass('saveRecord')
-                currentButton.addClass('editRecord')
-                $('#saveFont').html('编辑题目')
+                if (data.code == '1') {
+                    $('#question_id').val(data.questionId)
+                    alert('保存成功')
+                    currentButton.removeClass('saveRecord')
+                    currentButton.addClass('editRecord')
+                    $('#saveFont').html('编辑题目')
+                }else if(data.code == '2'){
+                    alert('编辑成功')
+                }
+
             }
         });
     }

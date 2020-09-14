@@ -38,6 +38,7 @@ public class HighPhysicsSimpleAnswerController extends BaseController {
     public Object saveInfo(HighPhysicsSimpleAnswer highPhysicsSimpleAnswer){
         Map<String, Object> map = new HashMap<>();
         try{
+            highPhysicsSimpleAnswerService.delInfo(highPhysicsSimpleAnswer);
             highPhysicsSimpleAnswer.setId(getUUID());
             highPhysicsSimpleAnswerService.saveInfo(highPhysicsSimpleAnswer);
             map.put("code", "1");
