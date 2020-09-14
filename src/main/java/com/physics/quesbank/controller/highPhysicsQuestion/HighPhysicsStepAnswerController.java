@@ -41,6 +41,7 @@ public class HighPhysicsStepAnswerController extends BaseController {
     public Object saveInfo(HighPhysicsStepAnswer highPhysicsStepAnswer){
         Map<String, Object> map = new HashMap<>();
         try{
+            highPhysicsStepAnswer.setDetail_answer(highPhysicsStepAnswer.getDetail_answer().replace("</em>", "</em>&nbsp;"));
             highPhysicsStepAnswerService.delInfo(highPhysicsStepAnswer);
             int step = 1;
             String [] stepAnswers = highPhysicsStepAnswer.getDetail_answer().split("<hr>");

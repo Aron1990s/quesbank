@@ -42,6 +42,7 @@ public class HighPhysicsQuestionController extends BaseController {
     public Object saveHighPhysicsQuestion(HighPhysicsQuestion highPhysicsQuestion){
         Map<String, Object> map = new HashMap<>();
         try{
+            highPhysicsQuestion.setQuestion_content(highPhysicsQuestion.getQuestion_content().replace("</em>", "</em>&nbsp;"));
             if (highPhysicsQuestion.getId() != null && !highPhysicsQuestion.getId().trim().equals("")) {
                 highPhysicsQuestionService.editInfo(highPhysicsQuestion);
                 map.put("code", "2");

@@ -28,7 +28,15 @@
  }
 
 .col-sm-2 {
-    width: 2%;
+     width: 2%;
+ }
+
+.col-sm-025 {
+    width: 2.5%;
+}
+
+.col-sm-3 {
+    width: 3%;
 }
 
 .col-sm-4 {

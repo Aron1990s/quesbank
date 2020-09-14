@@ -76,10 +76,34 @@
             width: 100%;
             padding: 0.5% 0.5% 0.5% 0.5%
         }
+        .headImg{
+            background-image: url(../images/head.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            width: 2.5%;
+        }
+        .headContent{
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body style="background-color: #d6e6ff">
-    <div id="topMenu" style="height: 6%;background-color: #65a2ff"></div>
+    <div id="topMenu" style="height: 6%;background-color: #65a2ff">
+        <div style="height: 10%"></div>
+        <div style="height: 80%" class="container">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 headImg"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 headContent">
+                物理题库
+            </div>
+        </div>
+        <div style="height: 10%"></div>
+    </div>
     <div id="topBlank" style="height: 1%;background-color: #d6e6ff"></div>
     <div style="height: 92%;background-color: #d6e6ff">
         <div class="container">
