@@ -7,16 +7,16 @@ function saveQuestion() {
         layer.alert('请选择是否小高考', {icon: 2})
         return
     }
+    if ($('#difficult_level').val() == '' || $('#difficult_level').val() == null){
+        layer.alert('请选择题目难度', {icon: 2})
+        return
+    }
     if ($('#chapterSubItemName').val() == '' || $('#chapterSubItemName').val() == null){
         layer.alert('请选择题目所属', {icon: 2})
         return
     }
     if ($('#majorSubItemName').val() == '' || $('#majorSubItemName').val() == null){
         layer.alert('请选择题目所属知识点', {icon: 2})
-        return
-    }
-    if ($('#difficult_level').val() == '' || $('#difficult_level').val() == null){
-        layer.alert('请选择题目难度', {icon: 2})
         return
     }
 
