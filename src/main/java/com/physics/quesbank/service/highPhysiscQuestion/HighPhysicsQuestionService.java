@@ -36,7 +36,7 @@ public class HighPhysicsQuestionService implements BaseService<HighPhysicsQuesti
 
     @Override
     public int editInfo(HighPhysicsQuestion highPhysicsQuestion) {
-        return 0;
+        return highPhysicsQuestionDao.editInfo(highPhysicsQuestion);
     }
 
     @Override

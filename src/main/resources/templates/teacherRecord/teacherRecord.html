@@ -188,7 +188,7 @@
                         <div class="col-sm-1"></div>
                         <div class="col-sm-37 blockActive ">
                             <select id="majorSubItemName" name="majorSubItemName">
-                                <option value="" disabled selected style="display:none;">选择知识点</option>
+                                <option value="" disabled selected style="display:none;">选择子知识点</option>
                             </select>
                         </div>
                     </div>
@@ -353,6 +353,22 @@
     }
 
     function saveQuestion() {
+        if ($('#question_type').val() == '' || $('#question_type').val() == null){
+            alert('请选择题目类型')
+            return
+        }
+        if ($('#is_subExam').val() == '' || $('#is_subExam').val() == null){
+            alert('请选择是否小高考')
+            return
+        }
+        if ($('#chapterSubItemName').val() == '' || $('#chapterSubItemName').val() == null){
+            alert('请选择题目所属')
+            return
+        }
+        if ($('#majorSubItemName').val() == '' || $('#majorSubItemName').val() == null){
+            alert('请选择题目所属知识点')
+            return
+        }
         var currentButton = $('#saveQuestion')
         clearFormat();
         $.ajax({
