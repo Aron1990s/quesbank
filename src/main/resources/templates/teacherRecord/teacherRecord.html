@@ -483,10 +483,11 @@
     }
     
     function clearFormat() {
-        $('#questionContent *').removeAttr('style')
+        $('#questionContent *').not('img').removeAttr('style')
         $('#questionContent img').each(function () {
             var image = $(this)
             var imageSrc = $(this)[0].src;
+            alert(imageSrc)
             if (imageSrc.indexOf('data:image/png;base64,')!=-1){
                 $.ajax({
                     cache : true,
@@ -511,7 +512,7 @@
     }
     
     function clearAnswerFormat() {
-        $('#questionSimpleSolve *').removeAttr('style')
+        $('#questionSimpleSolve *').not('img').removeAttr('style')
         $('#questionSimpleSolve img').each(function () {
             var image = $(this)
             var imageSrc = $(this)[0].src;
@@ -538,7 +539,7 @@
     }
     
     function clearStepAnswerFormat() {
-        $('#questionStepSolve *').removeAttr('style')
+        $('#questionStepSolve *').not('img').removeAttr('style')
         $('#questionStepSolve img').each(function () {
             var image = $(this)
             var imageSrc = $(this)[0].src;
