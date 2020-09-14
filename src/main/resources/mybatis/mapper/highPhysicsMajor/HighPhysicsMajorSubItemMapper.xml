@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.physics.quesbank.dao.highPhysicsMajor.HighPhysicsMajorSubItemDao">
+
+    <!-- saveInfo -->
+    <insert id="saveInfo" parameterType="HighPhysicsMajorSubItem">
+        insert into high_physics_major_sub_item (
+            major_sub_item_name,
+            major_sub_id
+        )values(
+            #{major_sub_item_name},
+            #{major_sub_id}
+        )
+    </insert>
+
+</mapper>
+ 
