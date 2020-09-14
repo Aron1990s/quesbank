@@ -167,6 +167,33 @@
                     </div>
                 </div>
                 <div style="height: 2%"></div>
+                <div style="height: 5%">
+                    <div class="container">
+                        <div class="col-sm-10 blockHead ">
+                            <font class="center-vertical">题目所属:</font>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-18 blockActive ">
+                            <select id="majorName" name="majorName"
+                                    onchange="changeMajor(this.options[this.options.selectedIndex].value)">
+                            </select>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-18 blockActive ">
+                            <select id="majorSubName" name="majorSubName"
+                                    onchange="changeMajorSub(this.options[this.options.selectedIndex].value)">
+                                <option value="" disabled selected style="display:none;">选择子项</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-18 blockActive ">
+                            <select id="majorSubItemName" name="majorSubItemName">
+                                <option value="" disabled selected style="display:none;">选择知识点</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 2%"></div>
                 <label style="font-weight: bold">请在下方录入题目：</label>
                 <div style="height: 0.5%"></div>
                 <input type="hidden" id="question_id" value="">
@@ -236,6 +263,7 @@
     var selectOptionTemplate = '<option value = OPTIONVALUE>OPTIONNAME</option>';
     $(function () {
         getGrade();
+        getMajor();
     })
 
     function getGrade() {
@@ -323,7 +351,6 @@
             }
         });
     }
-
 
     function saveQuestion() {
         var currentButton = $('#saveQuestion')
@@ -484,6 +511,68 @@
                 });
             }
         })
+    }
+
+    function getMajor() {
+        $.ajax({
+            cache: true,
+            type: "GET",
+            url: "../highPhyMajorCtl/getMajor",
+            async: false,
+            error: function (request) {
+                alert("error")
+            },
+            success: function (data) {
+                var majors = data.highPhysicsMajors;
+                $('#majorName').empty();
+                $('#majorName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择父知识点'))
+                for (var i = 0; i < majors.length; i++) {
+                    $('#majorName').append(selectOptionTemplate.replace('OPTIONVALUE', majors[i].id).replace('OPTIONNAME', majors[i].major));
+                }
+            }
+        });
+    }
+
+    function changeMajor(majorId) {
+        $.ajax({
+            cache: true,
+            type: "GET",
+            url: "../highPhyMajorCtl/getMajorSub?id=" + majorId,
+            async: false,
+            error: function (request) {
+                alert("error")
+            },
+            success: function (data) {
+                var highPhysicsMajorSubs = data.highPhysicsMajorSubs;
+                $('#majorSubName').empty();
+                $('#majorSubItemName').empty();
+                $('#majorSubItemName').append('<option value ="" disabled selected style="display:none;">选择子知识点</option>')
+                $('#majorSubName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择子项'))
+                for (var i = 0; i < highPhysicsMajorSubs.length; i++) {
+                    $('#majorSubName').append(selectOptionTemplate.replace('OPTIONVALUE', highPhysicsMajorSubs[i].id).replace('OPTIONNAME', highPhysicsMajorSubs[i].major_sub_name));
+                }
+            }
+        });
+    }
+
+    function changeMajorSub(majorSubId) {
+        $.ajax({
+            cache: true,
+            type: "GET",
+            url: "../highPhyMajorCtl/getMajorSubItem?id=" + majorSubId,
+            async: false,
+            error: function (request) {
+                alert("error")
+            },
+            success: function (data) {
+                var highPhysicsMajorSubItems = data.highPhysicsMajorSubItems;
+                $('#majorSubItemName').empty();
+                $('#majorSubItemName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择子知识点'))
+                for (var i = 0; i < highPhysicsMajorSubItems.length; i++) {
+                    $('#majorSubItemName').append(selectOptionTemplate.replace('OPTIONVALUE', highPhysicsMajorSubItems[i].id).replace('OPTIONNAME', highPhysicsMajorSubItems[i].major_sub_item_name));
+                }
+            }
+        });
     }
 </script>
 </html>
