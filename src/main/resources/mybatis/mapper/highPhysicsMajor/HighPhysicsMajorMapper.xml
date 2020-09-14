@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.physics.quesbank.dao.highPhysicsMajor.HighPhysicsMajorDao">
+
+    <!-- listHighPhysicsMajor -->
+    <select id="listHighPhysicsMajor" resultType="HighPhysicsMajor">
+        select * from high_physics_major
+    </select>
+
+    <!-- listHighPhysicsMajorSub -->
+    <select id="listHighPhysicsMajorSub" parameterType="HighPhysicsMajor" resultType="HighPhysicsMajorSub">
+        select * from high_physics_major_sub where major_id = #{id}
+    </select>
+
+    <!-- listHighPhysicsMajorSubItem -->
+    <select id="listHighPhysicsMajorSubItem" parameterType="HighPhysicsMajorSub" resultType="HighPhysicsMajorSubItem">
+        select * from high_physics_major_sub_item where major_sub_id = #{id}
+    </select>
+
+</mapper>
+ 
