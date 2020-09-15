@@ -1,7 +1,7 @@
 $(function() {
 	$.ajax({
         type: "get",
-        url: '../leftNav/json/data.json',
+        url: '../leftNavCtl/initNavByMajor',
         dataType: "json",
         success: function(result) {
             var res = eval(result.data);
