@@ -37,7 +37,7 @@ function showSideMenu(res) {
 				html += "<ul class='nav child_menu'>";
 				for(var j = 0; j < res[i].children[k].children.length; j++) {
 					html += "<li>";
-					html += "<a href='" + res[i].children[k].children[j].menuAction + "' target='myFrame' >" + res[i].children[k].children[j].menuName + "</a>";
+					html += "<a  onclick=goToQuestionList('" + res[i].children[k].children[j].menuAction + "')>" + res[i].children[k].children[j].menuName + "</a>";
 					html += "</li>";
 				}
 				html += "</ul>";
