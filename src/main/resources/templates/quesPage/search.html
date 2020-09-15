@@ -151,8 +151,11 @@
         
         function goToQuestionList(url) {
             changeMajorSub(url.split('=')[1])
-            var currentPage = 1;
-            var totalPages = 25;
+            initPagePlugin(2,25)
+            $('#myIframe').attr('src','../highPhyQuesCtl/listInfo');
+        }
+        
+        function initPagePlugin(currentPage,totalPages) {
             $("#page").bootstrapPaginator({
                 bootstrapMajorVersion:3, //对应的bootstrap版本
                 currentPage: currentPage, //当前页数
@@ -165,7 +168,6 @@
                     console.log(page)
                 }
             });
-            $('#myIframe').attr('src','../highPhyQuesCtl/listInfo');
         }
 
         function changeMajorSub(majorSubId) {
