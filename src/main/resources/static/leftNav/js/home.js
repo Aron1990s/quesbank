@@ -44,7 +44,7 @@ function showSideMenu(res) {
 				html += "</li>";
 			} else if(typeof(res[i].children[k].children) == 'undefined'){
 				html += "<li>";
-				html += "<a href='" + res[i].children[k].menuAction + "' target='myFrame'>" + res[i].children[k].menuName + "</a>";
+				html += "<a onclick=goToQuestionList(\'" + res[i].children[k].menuAction + "\')>" + res[i].children[k].menuName + "</a>";
 				html += "</li>";
 			}
 		}
@@ -57,7 +57,7 @@ function showSideMenu(res) {
 	});
 	$("#navmenu .child_menu").eq(0).find("li:eq(0)").addClass("current-page");
 
-	var fram = "<iframe src='../highPhyQuesCtl/listInfo' name='myFrame' id='myIframe' width='100%' height='100%'  scrolling='auto' frameborder='0'></iframe>"
+	var fram = "<iframe src='' name='myFrame' id='myIframe' width='100%' height='100%'  scrolling='auto' frameborder='0'></iframe>"
 	$("#rightContent").append(fram);
 
 	$("#navmenu .child_menu").on("click", "li", function() {

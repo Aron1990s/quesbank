@@ -67,6 +67,9 @@
         #page li{
             cursor:pointer;
         }
+        select:focus{
+            outline: none;border: 1px solid #d6e6ff;
+        }
 	</style>
 
 	<body class="nav-md">
@@ -92,15 +95,9 @@
                     </select>
                 </div>
                 <div class="col-sm-05"></div>
-                <div class="col-sm-15 blockActive ">
-                    <select name="question_type" style="">
-                        <option value ="" disabled selected style='display:none;'>选择知识点</option>
-                        <option value ="1">知识点1</option>
-                        <option value ="2">知识点1</option>
-                        <option value="3">知识点1</option>
-                        <option value="4">知识点1</option>
-                        <option value="5">知识点1</option>
-                        <option value="6">知识点1</option>
+                <div class="col-sm-30 blockActive ">
+                    <select name="majorSubItemName" id="majorSubItemName">
+                        <option value="" disabled selected style="display:none;">选择子知识点</option>
                     </select>
                 </div>
                 <div class="col-sm-05"></div>
@@ -132,7 +129,28 @@
 
 	</body>
     <script>
+        var selectOptionFirstTemplate = '<option value ="" disabled selected style="display:none;">OPTIONNAME</option>';
+        var selectOptionTemplate = '<option value = OPTIONVALUE>OPTIONNAME</option>';
         $(function () {
+            // var currentPage = 1;
+            // var totalPages = 25;
+            // $("#page").bootstrapPaginator({
+            //     bootstrapMajorVersion:3, //对应的bootstrap版本
+            //     currentPage: currentPage, //当前页数
+            //     numberOfPages: 10, //每次显示页数
+            //     totalPages:totalPages, //总页数
+            //     shouldShowPage:true,//是否显示该按钮
+            //     useBootstrapTooltip:true,
+            //     //点击事件
+            //     onPageClicked: function (event, originalEvent, type, page) {
+            //         console.log(page)
+            //     }
+            // });
+
+        });
+        
+        function goToQuestionList(url) {
+            changeMajorSub(url.split('=')[1])
             var currentPage = 1;
             var totalPages = 25;
             $("#page").bootstrapPaginator({
@@ -147,7 +165,27 @@
                     console.log(page)
                 }
             });
+            $('#myIframe').attr('src','../highPhyQuesCtl/listInfo');
+        }
 
-        });
+        function changeMajorSub(majorSubId) {
+            $.ajax({
+                cache: true,
+                type: "GET",
+                url: "../highPhyMajorCtl/getMajorSubItem?id=" + majorSubId,
+                async: false,
+                error: function (request) {
+                    layer.alert("error", {icon: 2})
+                },
+                success: function (data) {
+                    var highPhysicsMajorSubItems = data.highPhysicsMajorSubItems;
+                    $('#majorSubItemName').empty();
+                    $('#majorSubItemName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择子知识点'))
+                    for (var i = 0; i < highPhysicsMajorSubItems.length; i++) {
+                        $('#majorSubItemName').append(selectOptionTemplate.replace('OPTIONVALUE', highPhysicsMajorSubItems[i].id).replace('OPTIONNAME', highPhysicsMajorSubItems[i].major_sub_item_name));
+                    }
+                }
+            });
+        }
     </script>
 </html>

@@ -62,6 +62,24 @@ public class HighPhysicsQuestionController extends BaseController {
     }
 
     /**
+     * 设置session用以问题检索
+     * @return
+     */
+    @RequestMapping("configQuestionSearch")
+    @ResponseBody
+    public Object configQuestionSearch(){
+        Map<String, Object> map = new HashMap<>();
+        try{
+
+            map.put("code", "1");
+        } catch (Exception e){
+            e.printStackTrace();
+            map.put("code", "-1");
+        }
+        return map;
+    }
+
+    /**
      * 列表获取数据
      * @param highPhysicsQuestion
      * @return

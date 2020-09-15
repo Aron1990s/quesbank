@@ -55,7 +55,7 @@ public class LeftNavController {
                     baseNav.setMenuId("001");
                     baseNav.setMenuCode("RR1234");
                     baseNav.setMenuName(subHighPhysicsMajorSub.getMajor_sub_name());
-                    baseNav.setMenuAction("../highPhyQuesCtl/listInfo?major_sub_id="+subHighPhysicsMajorSub.getId());
+                    baseNav.setMenuAction("../highPhyQuesCtl/configQuestionSearch?major_sub_id="+subHighPhysicsMajorSub.getId());
                     children.add(baseNav);
                 }
                 baseNavElement.setChildren(children);
