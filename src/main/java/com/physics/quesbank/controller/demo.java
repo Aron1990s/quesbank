@@ -83,6 +83,13 @@ public class demo {
         return mv;
     }
 
+    @RequestMapping("login")
+    public ModelAndView login(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("login/login");
+        return mv;
+    }
+
     @RequestMapping("generate")
     public ModelAndView generate(){
         ModelAndView mv = new ModelAndView();
