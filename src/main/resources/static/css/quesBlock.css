@@ -85,6 +85,7 @@ select:focus{
     line-height:25px;
     float:none;
     height: auto;
+    cursor: default;
 }
 
 .contentShowQuestion{
