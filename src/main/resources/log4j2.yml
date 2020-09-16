@@ -45,7 +45,7 @@ Configuration:
       AppenderRef:
         - ref: CONSOLE
         - ref: ROLLING_FILE
-    Logger: # 为com.xjj包配置特殊的Log级别，方便调试
+    Logger:
       - name: com.physics.quesbank.dao
         additivity: false
         level: ${sys:log.level.quesbank}
