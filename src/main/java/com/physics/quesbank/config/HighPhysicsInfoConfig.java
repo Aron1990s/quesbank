@@ -33,7 +33,6 @@ public class HighPhysicsInfoConfig {
         Map<String, List<HighChapterInfo>> chapters = new HashMap<>();
         Map<String, List<HighChapterSubInfo>> chapterSubs = new HashMap<>();
         Map<String, List<HighChapterSubItemInfo>> chapterSubItems = new HashMap<>();
-        logger.info("saasssss");
         try{
             highGradeInfos = highPhysicsInfoService.listHighGradeInfo();
             for (HighGradeInfo highGradeInfo: highGradeInfos) {
