@@ -42,5 +42,5 @@ spring:
          additional-paths: src/main/java
 
 imageUpload:
-   path: /usr/local/quesBank/img/
-#   path: D:/
+#   path: /usr/local/quesBank/img/
+   path: D:/
