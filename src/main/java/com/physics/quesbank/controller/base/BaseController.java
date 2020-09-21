@@ -1,5 +1,6 @@
 package com.physics.quesbank.controller.base;
 
+import com.physics.quesbank.entity.systemUser.SystemUser;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
@@ -35,4 +36,15 @@ public class BaseController {
         Session session = currentUser.getSession();
         return session;
     }
+
+    /**
+     * 获取用户信息
+     * @return
+     */
+    public static SystemUser getUserInfo(){
+        Subject currentUser = SecurityUtils.getSubject();
+        SystemUser systemUser = (SystemUser) currentUser.getPrincipal();
+        return systemUser;
+    }
+
 }

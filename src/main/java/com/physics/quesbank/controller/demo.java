@@ -1,5 +1,6 @@
 package com.physics.quesbank.controller;
 
+import com.physics.quesbank.controller.base.BaseController;
 import com.physics.quesbank.entity.highPhysicsInfo.*;
 import com.physics.quesbank.entity.demo.Demo;
 import com.physics.quesbank.service.demo.DemoService;
@@ -28,7 +29,7 @@ import java.util.*;
 @CrossOrigin
 @Controller
 @RequestMapping("demo")
-public class demo {
+public class demo extends BaseController {
 
     protected final static Logger logger = LoggerFactory.getLogger(demo.class);
 
@@ -72,6 +73,8 @@ public class demo {
     @RequestMapping("quesMainPage")
     public ModelAndView quesMainPage(){
         ModelAndView mv = new ModelAndView();
+        String userName = getUserInfo().getUser_name();
+        mv.addObject("user_name", userName);
         mv.setViewName("quesPage/quesMainPage");
         return mv;
     }
