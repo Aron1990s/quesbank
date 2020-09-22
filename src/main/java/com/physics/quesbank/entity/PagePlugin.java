@@ -17,6 +17,10 @@ public class PagePlugin extends Page {
     public PagePlugin() {
     }
 
+    public PagePlugin(long current) {
+        super(current,10);
+    }
+
     public PagePlugin(long current, long size) {
         super(current, size);
     }

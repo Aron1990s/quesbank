@@ -2,7 +2,9 @@ package com.physics.quesbank.controller.highPhysicsQuestion;
 
 import com.physics.quesbank.controller.base.BaseController;
 import com.physics.quesbank.dao.highPhysicsQuestion.HighPhysicsQuestionDao;
+import com.physics.quesbank.entity.PagePlugin;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestion;
+import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestionSearchCondition;
 import com.physics.quesbank.service.highPhysiscQuestion.HighPhysicsQuestionService;
 import com.physics.quesbank.util.DateUtil;
 import org.slf4j.Logger;
@@ -68,10 +70,19 @@ public class HighPhysicsQuestionController extends BaseController {
      */
     @RequestMapping("configQuestionSearch")
     @ResponseBody
-    public Object configQuestionSearch(){
+    public Object configQuestionSearch(HighPhysicsQuestionSearchCondition condition){
         Map<String, Object> map = new HashMap<>();
         try{
-
+            //初始化检索条件
+            condition.setCurrent(1);
+            //=初始化结束=
+            //获取分页总页数
+            PagePlugin pagePlugin = new PagePlugin(condition.getCurrent());
+            Map<String, Object> pagePd = new HashMap<>();
+            pagePlugin.setPd(pagePd);
+            List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfoByPage(pagePlugin);
+            //==获取结束==
+            logger.info("输出的总页数："+pagePlugin.getTotal());
             map.put("code", "1");
         } catch (Exception e){
             e.printStackTrace();

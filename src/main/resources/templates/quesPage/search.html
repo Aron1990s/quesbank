@@ -161,9 +161,20 @@
         });
         
         function goToQuestionList(url) {
-            changeMajorSub(url.split('=')[1])
-            initPagePlugin(2,25)
-            $('#myIframe').attr('src','../highPhyQuesCtl/listInfo');
+            $.ajax({
+                cache: true,
+                type: "GET",
+                url: url,
+                async: false,
+                error: function (request) {
+                    layer.alert("error", {icon: 2})
+                },
+                success: function (data) {
+                    changeMajorSub(url.split('=')[1])
+                    initPagePlugin(2,25)
+                    $('#myIframe').attr('src','../highPhyQuesCtl/listInfo');
+                }
+            });
         }
         
         function initPagePlugin(currentPage,totalPages) {

@@ -21,7 +21,11 @@ function saveQuestion() {
     }
 
     var currentButton = $('#saveQuestion')
-    clearFormat();
+    var ableToNext = clearFormat()
+    if (ableToNext == false){
+        layer.alert('请将红框中的图片上传至服务器', {icon: 2})
+        return
+    }
     $.ajax({
         cache: true,
         type: "POST",
@@ -65,7 +69,11 @@ function saveSimpleAnswer() {
         return
     }
     var currentButton = $('#saveSimpleAnswer')
-    clearAnswerFormat()
+    var ableToNext = clearAnswerFormat()
+    if (ableToNext == false){
+        layer.alert('请将红框中的图片上传至服务器', {icon: 2})
+        return
+    }
     $.ajax({
         cache: true,
         type: "POST",
@@ -93,7 +101,11 @@ function saveStepAnswer() {
         return
     }
     var currentButton = $('#saveStepAnswer')
-    clearStepAnswerFormat()
+    var ableToNext = clearStepAnswerFormat()
+    if (ableToNext == false){
+        layer.alert('请将红框中的图片上传至服务器', {icon: 2})
+        return
+    }
     $.ajax({
         cache: true,
         type: "POST",
@@ -117,7 +129,8 @@ function saveStepAnswer() {
 }
 
 function clearFormat() {
-    $('#questionContent *').not('img').removeAttr('style')
+    var ableToNext = true;
+    $('#questionContent p').removeAttr('style')
     $('#questionContent img').each(function () {
         var image = $(this)
         var imageSrc = $(this)[0].src;
@@ -140,12 +153,17 @@ function clearFormat() {
                 }
             });
         }
+        if(imageSrc.indexOf('quesBank/image') == -1){
+            ableToNext = false;
+            image.css('border','3px solid red');
+        }
     })
-
+    return ableToNext;
 }
 
 function clearAnswerFormat() {
-    $('#questionSimpleSolve *').not('img').removeAttr('style')
+    var ableToNext = true;
+    $('#questionSimpleSolve p').removeAttr('style')
     $('#questionSimpleSolve img').each(function () {
         var image = $(this)
         var imageSrc = $(this)[0].src;
@@ -168,11 +186,17 @@ function clearAnswerFormat() {
                 }
             });
         }
+        if(imageSrc.indexOf('quesBank/image') == -1){
+            ableToNext = false;
+            image.css('border','3px solid red');
+        }
     })
+    return ableToNext;
 }
 
 function clearStepAnswerFormat() {
-    $('#questionStepSolve *').not('img').removeAttr('style')
+    var ableToNext = true;
+    $('#questionStepSolve p').removeAttr('style')
     $('#questionStepSolve img').each(function () {
         var image = $(this)
         var imageSrc = $(this)[0].src;
@@ -195,7 +219,12 @@ function clearStepAnswerFormat() {
                 }
             });
         }
+        if(imageSrc.indexOf('quesBank/image') == -1){
+            ableToNext = false;
+            image.css('border','3px solid red');
+        }
     })
+    return ableToNext;
 }
 
 function getMajor() {

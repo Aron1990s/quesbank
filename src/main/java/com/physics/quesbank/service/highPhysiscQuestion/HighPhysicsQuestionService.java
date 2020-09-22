@@ -1,6 +1,7 @@
 package com.physics.quesbank.service.highPhysiscQuestion;
 
 import com.physics.quesbank.dao.highPhysicsQuestion.HighPhysicsQuestionDao;
+import com.physics.quesbank.entity.PagePlugin;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestion;
 import com.physics.quesbank.service.baseService.BaseService;
 import org.slf4j.Logger;
@@ -47,5 +48,9 @@ public class HighPhysicsQuestionService implements BaseService<HighPhysicsQuesti
     @Override
     public int delInfo(HighPhysicsQuestion highPhysicsQuestion) {
         return 0;
+    }
+
+    public List<HighPhysicsQuestion> listInfoByPage(PagePlugin page) {
+        return highPhysicsQuestionDao.listInfoByPage(page);
     }
 }
