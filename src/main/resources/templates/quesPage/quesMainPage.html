@@ -149,21 +149,22 @@
                 <div class="leftMenuMain" style="height: 96%">
                     <div class="container">
                         <div class="col-sm-15"></div>
-                        <div class="col-sm-70">
-                            <div class="container menuItem menuItemActive" onclick="changePage(1)">
+                        <div class="col-sm-70 leftItem">
+                            <div class="subItem container menuItem menuItemActive" onclick="changePage(1)">
                                 <div style="height: 30%"></div>
                                 <img src="../images/menu/lr1.png" class="menuItemImg">
                                 <div style="height:1%"></div>
                                 <div class="menuItemFont menuItemFontActive">录入</div>
                             </div>
                             <div style="height: 1%"></div>
-                            <div class="container menuItem" onclick="changePage(2)">
+                            <div class="subItem container menuItem" onclick="changePage(2)">
                                 <div style="height: 30%"></div>
                                 <img src="../images/menu/sc2.png" class="menuItemImg">
                                 <div style="height:1%"></div>
                                 <div class="menuItemFont">生成</div>
                             </div>
-                            <div class="container menuItem" onclick="changePage(3)">
+                            <div style="height: 1%"></div>
+                            <div class="subItem container menuItem" onclick="changePage(3)">
                                 <div style="height: 30%"></div>
                                 <img src="../images/menu/ss2.png" class="menuItemImg">
                                 <div style="height:1%"></div>
@@ -185,6 +186,15 @@
 <script src="../js/jquery-1.8.3.min.js"></script>
 <script>
     function changePage(type) {
+        var index = 1
+        $('.subItem').each(function () {
+            $(this).removeClass('menuItemActive')
+            if (index == type){
+                $(this).addClass('menuItemActive')
+            }
+            index++;
+        })
+
         if (type == 1){
             $('#mainPage').attr('src', "../teacherRecordCtl/goToTeacherRecord");
         }else if(type == 2){
