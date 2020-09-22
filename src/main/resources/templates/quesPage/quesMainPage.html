@@ -186,16 +186,16 @@
 <script src="../js/jquery-1.8.3.min.js"></script>
 <script>
     function changePage(type) {
-        var index = 1
+        var index = 1;
         $('.subItem').each(function () {
-            $(this).removeClass('menuItemActive')
-            var image = $(this).find('img')
-            image.attr('src', image[0].src.replace('ACTIVE','INVIS'))
-            var bottomWord = $(this).find('.menuItemFont')
-            bottomWord.removeClass('menuItemFontActive')
+            $(this).removeClass('menuItemActive');
+            var image = $(this).find('img');
+            image.attr('src', image[0].src.replace('ACTIVE','INVIS'));
+            var bottomWord = $(this).find('.menuItemFont');
+            bottomWord.removeClass('menuItemFontActive');
             if (index == type){
-                $(this).addClass('menuItemActive')
-                image.attr('src', image[0].src.replace('INVIS','ACTIVE'))
+                $(this).addClass('menuItemActive');
+                image.attr('src', image[0].src.replace('INVIS','ACTIVE'));
                 bottomWord.addClass('menuItemFontActive')
             }
             index++;
