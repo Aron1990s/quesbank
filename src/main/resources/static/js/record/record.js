@@ -130,7 +130,7 @@ function saveStepAnswer() {
 
 function clearFormat() {
     var ableToNext = true;
-    $('#questionContent p').removeAttr('style')
+    $('#questionContent p,span').removeAttr('style')
     $('#questionContent img').each(function () {
         var image = $(this)
         var imageSrc = $(this)[0].src;
