@@ -152,21 +152,21 @@
                         <div class="col-sm-70 leftItem">
                             <div class="subItem container menuItem menuItemActive" onclick="changePage(1)">
                                 <div style="height: 30%"></div>
-                                <img src="../images/menu/lr1.png" class="menuItemImg">
+                                <img src="../images/menu/lrACTIVE.png" class="menuItemImg">
                                 <div style="height:1%"></div>
                                 <div class="menuItemFont menuItemFontActive">录入</div>
                             </div>
                             <div style="height: 1%"></div>
                             <div class="subItem container menuItem" onclick="changePage(2)">
                                 <div style="height: 30%"></div>
-                                <img src="../images/menu/sc2.png" class="menuItemImg">
+                                <img src="../images/menu/scINVIS.png" class="menuItemImg">
                                 <div style="height:1%"></div>
                                 <div class="menuItemFont">生成</div>
                             </div>
                             <div style="height: 1%"></div>
                             <div class="subItem container menuItem" onclick="changePage(3)">
                                 <div style="height: 30%"></div>
-                                <img src="../images/menu/ss2.png" class="menuItemImg">
+                                <img src="../images/menu/ssINVIS.png" class="menuItemImg">
                                 <div style="height:1%"></div>
                                 <div class="menuItemFont">检索</div>
                             </div>
@@ -189,8 +189,14 @@
         var index = 1
         $('.subItem').each(function () {
             $(this).removeClass('menuItemActive')
+            var image = $(this).find('img')
+            image.attr('src', image[0].src.replace('ACTIVE','INVIS'))
+            var bottomWord = $(this).find('.menuItemFont')
+            bottomWord.removeClass('menuItemFontActive')
             if (index == type){
                 $(this).addClass('menuItemActive')
+                image.attr('src', image[0].src.replace('INVIS','ACTIVE'))
+                bottomWord.addClass('menuItemFontActive')
             }
             index++;
         })
