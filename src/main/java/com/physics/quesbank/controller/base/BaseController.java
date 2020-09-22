@@ -1,5 +1,7 @@
 package com.physics.quesbank.controller.base;
 
+import com.physics.quesbank.constant.SessionConstant;
+import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestionSearchCondition;
 import com.physics.quesbank.entity.systemUser.SystemUser;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
@@ -47,4 +49,11 @@ public class BaseController {
         return systemUser;
     }
 
+    /**
+     * 获取高中物理检索
+     * @return
+     */
+    public static HighPhysicsQuestionSearchCondition getHighPhysicsSearchCondition(){
+        return (HighPhysicsQuestionSearchCondition)getSession().getAttribute(SessionConstant.HIGH_PHYSICS_QUESTION_SEARCH_CONDITION);
+    }
 }

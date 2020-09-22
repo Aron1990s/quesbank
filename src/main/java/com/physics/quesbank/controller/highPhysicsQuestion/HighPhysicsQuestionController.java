@@ -1,6 +1,7 @@
 package com.physics.quesbank.controller.highPhysicsQuestion;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.physics.quesbank.constant.SessionConstant;
 import com.physics.quesbank.controller.base.BaseController;
 import com.physics.quesbank.dao.highPhysicsQuestion.HighPhysicsQuestionDao;
 import com.physics.quesbank.entity.PagePlugin;
@@ -86,8 +87,27 @@ public class HighPhysicsQuestionController extends BaseController {
             map.put("code", "1");
             map.put("totalPages", pagePlugin.getPages());
             //=将查询条件存入session=
-            getSession().setAttribute("HIGH_PHYSICS_QUESTION_SEARCH_CONDITION", condition);
+            getSession().setAttribute(SessionConstant.HIGH_PHYSICS_QUESTION_SEARCH_CONDITION, condition);
             //========存入结束======
+        } catch (Exception e){
+            e.printStackTrace();
+            map.put("code", "-1");
+        }
+        return map;
+    }
+
+    /**
+     * 调取分页数据
+     * @param condition
+     * @return
+     */
+    @RequestMapping("highPhysicsPagePlugin")
+    @ResponseBody
+    public Object highPhysicsPagePlugin(HighPhysicsQuestionSearchCondition condition){
+        Map<String, Object> map = new HashMap<>();
+        try{
+            getHighPhysicsSearchCondition().setCurrent(condition.getCurrent());
+            map.put("code", "1");
         } catch (Exception e){
             e.printStackTrace();
             map.put("code", "-1");
