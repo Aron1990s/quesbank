@@ -108,6 +108,6 @@ public class DruidConfig {
      */
     @Bean
     public PaginationInterceptor paginationInterceptor() {
-        return new PaginationInterceptor();
+        return new PaginationInterceptor().setDialectType("mysql");
     }
 }

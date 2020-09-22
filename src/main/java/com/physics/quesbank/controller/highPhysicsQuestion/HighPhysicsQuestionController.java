@@ -1,5 +1,6 @@
 package com.physics.quesbank.controller.highPhysicsQuestion;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.physics.quesbank.controller.base.BaseController;
 import com.physics.quesbank.dao.highPhysicsQuestion.HighPhysicsQuestionDao;
 import com.physics.quesbank.entity.PagePlugin;
@@ -82,8 +83,11 @@ public class HighPhysicsQuestionController extends BaseController {
             pagePlugin.setPd(pagePd);
             List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfoByPage(pagePlugin);
             //==获取结束==
-            logger.info("输出的总页数："+pagePlugin.getTotal());
             map.put("code", "1");
+            map.put("totalPages", pagePlugin.getPages());
+            //=将查询条件存入session=
+            getSession().setAttribute("HIGH_PHYSICS_QUESTION_SEARCH_CONDITION", condition);
+            //========存入结束======
         } catch (Exception e){
             e.printStackTrace();
             map.put("code", "-1");
