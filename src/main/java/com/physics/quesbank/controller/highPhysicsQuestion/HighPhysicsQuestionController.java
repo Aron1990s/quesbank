@@ -124,7 +124,10 @@ public class HighPhysicsQuestionController extends BaseController {
     public ModelAndView listInfo(HighPhysicsQuestion highPhysicsQuestion){
         ModelAndView mv = new ModelAndView();
         try{
-            List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfo(highPhysicsQuestion);
+            PagePlugin pagePlugin = new PagePlugin(getHighPhysicsSearchCondition().getCurrent());
+            Map<String, Object> pagePd = new HashMap<>();
+            pagePlugin.setPd(pagePd);
+            List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfoByPage(pagePlugin);
             for (HighPhysicsQuestion sub : lists) {
                 if (sub.getSimple_answer() == null || sub.getSimple_answer().trim().equals("")) {
                     sub.setSimple_answer("<p>暂无解析</p>");
