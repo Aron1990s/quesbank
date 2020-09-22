@@ -58,6 +58,11 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/layer/layer.min.js"></script>
 <script>
+    window.onload = function () {
+        if (window.parent.window != window) {
+            window.top.location = "quesBank/login";
+        }
+    }
     function sysLogin() {
         $.ajax({
             cache: true,
