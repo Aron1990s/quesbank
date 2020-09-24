@@ -15,7 +15,7 @@ public class QuesbankApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(QuesbankApplication.class, args);
-        logger.info("~~~乾杯~~梦想已在路上~~ (^_^)／★＼(^_^) ~~道路已在脚下~~乾杯~~~");
+        logger.info("[~~~乾杯~~梦想已在路上~~ (^_^)／★＼(^_^) ~~道路已在脚下~~乾杯~~~]");
 
     }
 
