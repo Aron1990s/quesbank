@@ -18,6 +18,11 @@ public class PrizeController {
 
     protected final static Logger logger = LoggerFactory.getLogger(PrizeController.class);
 
+    /**
+     * 跳转至排行榜页面
+     * @return
+     */
+    @RequestMapping("goToPrize")
     public ModelAndView goToPrize(){
         ModelAndView mv = new ModelAndView();
         try{
