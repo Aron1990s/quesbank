@@ -134,6 +134,7 @@ function clearFormat() {
     $('#questionContent img').each(function () {
         var image = $(this)
         var imageSrc = $(this)[0].src;
+        image.removeAttr('data-cke-saved-src');
         if (imageSrc.indexOf('data:image/png;base64,')!=-1){
             $.ajax({
                 cache : true,
@@ -167,6 +168,7 @@ function clearAnswerFormat() {
     $('#questionSimpleSolve img').each(function () {
         var image = $(this)
         var imageSrc = $(this)[0].src;
+        image.removeAttr('data-cke-saved-src');
         if (imageSrc.indexOf('data:image/png;base64,')!=-1){
             $.ajax({
                 cache : true,
@@ -200,6 +202,7 @@ function clearStepAnswerFormat() {
     $('#questionStepSolve img').each(function () {
         var image = $(this)
         var imageSrc = $(this)[0].src;
+        image.removeAttr('data-cke-saved-src');
         if (imageSrc.indexOf('data:image/png;base64,')!=-1){
             $.ajax({
                 cache : true,

@@ -38,7 +38,7 @@ public class HighPhysicsSimpleAnswerController extends BaseController {
     public Object saveInfo(HighPhysicsSimpleAnswer highPhysicsSimpleAnswer){
         Map<String, Object> map = new HashMap<>();
         try{
-            highPhysicsSimpleAnswer.setSimple_answer(highPhysicsSimpleAnswer.getSimple_answer().replace("</em>", "</em>&nbsp;"));
+            highPhysicsSimpleAnswer.setSimple_answer(highPhysicsSimpleAnswer.getSimple_answer().replace("</em>", "</em>&nbsp;").replace("mathquill-rendered-math", ""));
             highPhysicsSimpleAnswerService.delInfo(highPhysicsSimpleAnswer);
             highPhysicsSimpleAnswer.setId(getUUID());
             highPhysicsSimpleAnswerService.saveInfo(highPhysicsSimpleAnswer);
