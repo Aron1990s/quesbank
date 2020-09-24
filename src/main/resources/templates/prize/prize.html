@@ -60,6 +60,17 @@
         .topOtherBottom{
             border-bottom: 1px solid #d7e5ff
         }
+        .topImageLeft{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .topNormalWord{
+            display: flex;
+            align-items: center;
+            font-size: 1vw;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -73,10 +84,26 @@
         <div class="container">
             <div class="col-sm-10"></div>
             <div class="col-sm-80">
-                <div style="height: 5%;" class="topWord"></div>
-                <div style="height: 11%;" class="topOne"></div>
-                <div style="height: 10%;" class="topTwo"></div>
-                <div style="height: 9%;" class="topThree"></div>
+                <div style="height: 5%;" class="topWord">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-10"></div>
+                    <div class="col-sm-27 topNormalWord">用户名</div>
+                    <div class="col-sm-27 topNormalWord">周贡献</div>
+                    <div class="col-sm-27 topNormalWord">总贡献</div>
+                </div>
+                <div style="height: 11%;" class="topOne container">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-5 topImageLeft"><img src="../images/prize/topOne.png" alt="" style="padding: 10%"></div>
+                </div>
+                <div style="height: 10%;" class="topTwo">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-5 topImageLeft"><img src="../images/prize/topTwo.png" alt="" style="padding: 10%"></div>
+                </div>
+                <div style="height: 9%;" class="topThree">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-5 topImageLeft"><img src="../images/prize/topThree.png" alt="" style="padding: 10%"></div>
+                </div>
                 <div style="height: 8%;" class="topOther"></div>
                 <div style="height: 8%;" class="topOther"></div>
                 <div style="height: 8%;" class="topOther"></div>
