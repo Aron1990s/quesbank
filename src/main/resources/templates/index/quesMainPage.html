@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物理题库</title>
+    <link href="../css/flexPlugin.css" rel="stylesheet">
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin-top: -0.1px;
+            margin-left: -0.1px;
+            background-color: #F3F3F4;
+        }
+        .menuItem{
+            height: 15%;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .menuItemActive{
+            transition:border linear .2s,box-shadow linear .1s;
+            -moz-transition:border linear .2s,-moz-box-shadow linear .1s;
+            -webkit-transition:border linear .2s,-webkit-box-shadow linear .1s;
+            -o-transition:border linear .2s,-webkit-box-shadow linear .1s;
+            outline:none;border-color: #d8e5f8;
+            box-shadow:0 0 10px #d8e5f8;
+            -moz-box-shadow:0 0 10px #d8e5f8;
+            -webkit-box-shadow:0 0 10px #d8e5f8;
+            -o-box-shadow:0 0 10px #d8e5f8;
+            background-color: white;
+        }
+        .menuItem:hover{
+            transition:border linear .2s,box-shadow linear .1s;
+            -moz-transition:border linear .2s,-moz-box-shadow linear .1s;
+            -webkit-transition:border linear .2s,-webkit-box-shadow linear .1s;
+            -o-transition:border linear .2s,-webkit-box-shadow linear .1s;
+            outline:none;border-color: #d8e5f8;
+            box-shadow:0 0 10px #d8e5f8;
+            -moz-box-shadow:0 0 10px #d8e5f8;
+            -webkit-box-shadow:0 0 10px #d8e5f8;
+            -o-box-shadow:0 0 10px #d8e5f8;
+            background-color: white;
+        }
+        .menuItemActive{
+            transition:border linear .2s,box-shadow linear .1s;
+            -moz-transition:border linear .2s,-moz-box-shadow linear .1s;
+            -webkit-transition:border linear .2s,-webkit-box-shadow linear .1s;
+            -o-transition:border linear .2s,-webkit-box-shadow linear .1s;
+            outline:none;border-color: #d8e5f8;
+            box-shadow:0 0 10px #d8e5f8;
+            -moz-box-shadow:0 0 10px #d8e5f8;
+            -webkit-box-shadow:0 0 10px #d8e5f8;
+            -o-box-shadow:0 0 10px #d8e5f8;
+            background-color: white;
+        }
+        .menuItemFont{
+            font-size: 0.8vw;
+            height: 15%;
+            color: #626260
+        }
+        .menuItemFontActive{
+            color: #3685fe
+        }
+        .menuItemImg{
+            width: 18%;height: 20%
+        }
+        .subPage{
+            width: 100%;
+            padding: 0.5% 0.5% 0.5% 0.5%
+        }
+        .headImg{
+            background-image: url(../images/head.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 15%;
+            width: 2.5%;
+        }
+        .headContent{
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+        .userImg{
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 10%
+        }
+        .userContent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8vw;
+            font-weight: bold;
+        }
+        .userQuestionCount{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8vw;
+            font-weight: bold;
+            background-color: red;
+            border-radius: 15%;
+        }
+    </style>
+</head>
+<body style="background-color: #d6e6ff">
+    <div id="topMenu" style="height: 6%;background-color: #65a2ff">
+        <div style="height: 10%"></div>
+        <div style="height: 80%" class="container">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 headImg"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 headContent">
+                物理题库
+            </div>
+            <div class="col-sm-70"></div>
+            <div class="col-sm-3 userContent" style="text-align: right">
+                欢迎您!
+            </div>
+            <!--<div class="col-sm-2" style="width: 1.7%">-->
+                <!--<div style="height: 15%"></div>-->
+                <!--<div class="userImg" style="height: 70%;background-image: url(../images/head.jpg);"></div>-->
+                <!--<div style="height: 15%"></div>-->
+            <!--</div>-->
+            <div class="col-sm-05"></div>
+            <div class="col-sm-6 userContent">
+                [[${user_name}]]
+            </div>
+            <div class="col-sm-2" style="width: 1.7%">
+                <div style="height: 15%"></div>
+                <div class="userQuestionCount" style="height: 70%;">
+                    0
+                </div>
+                <div style="height: 15%"></div>
+            </div>
+        </div>
+        <div style="height: 10%"></div>
+    </div>
+    <div id="topBlank" style="height: 1%;background-color: #d6e6ff"></div>
+    <div style="height: 92%;background-color: #d6e6ff">
+        <div class="container">
+            <div id="leftMenu" class="col-sm-12" style="background-color: #f6f9fe;border-radius: 5px">
+                <div class="leftMenuTop" style="height: 2%"></div>
+                <div class="leftMenuMain" style="height: 96%">
+                    <div class="container">
+                        <div class="col-sm-15"></div>
+                        <div class="col-sm-70 leftItem">
+                            <div class="subItem container menuItem menuItemActive" onclick="changePage(0)">
+                                <div style="height: 20%"></div>
+                                <img src="../images/menu/prizeACTIVE.png" class="menuItemImg" style="height: 30%;width: 30%">
+                                <div style="height:1%"></div>
+                                <div class="menuItemFont menuItemFontActive">排行榜</div>
+                            </div>
+                            <div style="height: 1%"></div>
+                            <div class="subItem container menuItem" onclick="changePage(1)">
+                                <div style="height: 30%"></div>
+                                <img src="../images/menu/lrINVIS.png" class="menuItemImg">
+                                <div style="height:1%"></div>
+                                <div class="menuItemFont">录入</div>
+                            </div>
+                            <!--<div style="height: 1%"></div>-->
+                            <!--<div class="subItem container menuItem" onclick="changePage(2)">-->
+                                <!--<div style="height: 30%"></div>-->
+                                <!--<img src="../images/menu/scINVIS.png" class="menuItemImg">-->
+                                <!--<div style="height:1%"></div>-->
+                                <!--<div class="menuItemFont">生成</div>-->
+                            <!--</div>-->
+                            <div style="height: 1%"></div>
+                            <div class="subItem container menuItem" onclick="changePage(2)">
+                                <div style="height: 30%"></div>
+                                <img src="../images/menu/ssINVIS.png" class="menuItemImg">
+                                <div style="height:1%"></div>
+                                <div class="menuItemFont">检索</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-15"></div>
+                    </div>
+                </div>
+                <div class="leftMenuBottom" style="height: 2%"></div>
+            </div>
+            <div class="col-sm-05"></div>
+            <div class="col-sm-87" style="background-color: white;border-radius: 5px">
+                <iframe id="mainPage" src="../prizeCtl/goToPrize" frameborder="0" class="subPage"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script>
+    function changePage(type) {
+        var index = 0;
+        $('.subItem').each(function () {
+            $(this).removeClass('menuItemActive');
+            var image = $(this).find('img');
+            image.attr('src', image[0].src.replace('ACTIVE','INVIS'));
+            var bottomWord = $(this).find('.menuItemFont');
+            bottomWord.removeClass('menuItemFontActive');
+            if (index == type){
+                $(this).addClass('menuItemActive');
+                image.attr('src', image[0].src.replace('INVIS','ACTIVE'));
+                bottomWord.addClass('menuItemFontActive')
+            }
+            index++;
+        })
+        if (type == 0){
+            $('#mainPage').attr('src', "../prizeCtl/goToPrize");
+        } else if (type == 1){
+            $('#mainPage').attr('src', "../teacherRecordCtl/goToTeacherRecord");
+        }else if(type == 11){
+            $('#mainPage').attr('src', "generate");
+        }else if(type == 2){
+            $('#mainPage').attr('src', "../quesSearchCtl/highPhySearch");
+        }
+
+    }
+</script>
+</html>

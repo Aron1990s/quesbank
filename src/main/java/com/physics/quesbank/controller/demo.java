@@ -70,14 +70,14 @@ public class demo extends BaseController {
         return mv;
     }
 
-    @RequestMapping("quesMainPage")
-    public ModelAndView quesMainPage(){
-        ModelAndView mv = new ModelAndView();
-        String userName = getUserInfo().getUser_name();
-        mv.addObject("user_name", userName);
-        mv.setViewName("quesPage/quesMainPage");
-        return mv;
-    }
+//    @RequestMapping("quesMainPage")
+//    public ModelAndView quesMainPage(){
+//        ModelAndView mv = new ModelAndView();
+//        String userName = getUserInfo().getUser_name();
+//        mv.addObject("user_name", userName);
+//        mv.setViewName("quesPage/quesMainPage");
+//        return mv;
+//    }
 
     @RequestMapping("record")
     public ModelAndView record(){
@@ -100,12 +100,12 @@ public class demo extends BaseController {
         return mv;
     }
 
-    @RequestMapping("search")
-    public ModelAndView search(){
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("quesPage/search");
-        return mv;
-    }
+//    @RequestMapping("search")
+//    public ModelAndView search(){
+//        ModelAndView mv = new ModelAndView();
+//        mv.setViewName("quesPage/search");
+//        return mv;
+//    }
 
     @RequestMapping("question")
     public ModelAndView question(){
