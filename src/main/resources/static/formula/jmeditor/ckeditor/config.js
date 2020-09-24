@@ -31,5 +31,5 @@ CKEDITOR.editorConfig = function( config ) {
 	// need to have in the Standard(s) toolbar.
 	config.removeButtons = 'Underline,SpecialChar';
 	config.extraPlugins = 'jme';
-    config.filebrowserUploadUrl="../demo/uploadPhoto";
+    config.filebrowserUploadUrl="../imgUploadCtl/uploadPhoto";
 };

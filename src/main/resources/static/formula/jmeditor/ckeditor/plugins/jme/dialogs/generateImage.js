@@ -21,7 +21,7 @@ function convertCanvasToImage(canvas) {
     $.ajax({
         cache : true,
         type : "POST",
-        url : "/quesBank/demo/upload",
+        url : "/quesBank/imgUploadCtl/upload",
         async: false,
         data : {
             base64: picture

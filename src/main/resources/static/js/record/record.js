@@ -138,7 +138,7 @@ function clearFormat() {
             $.ajax({
                 cache : true,
                 type : "POST",
-                url : "/quesBank/demo/upload",
+                url : "/quesBank/imgUploadCtl/upload",
                 async: false,
                 data : {
                     base64: imageSrc.replace('data:image/png;base64,','')
@@ -171,7 +171,7 @@ function clearAnswerFormat() {
             $.ajax({
                 cache : true,
                 type : "POST",
-                url : "/quesBank/demo/upload",
+                url : "/quesBank/imgUploadCtl/upload",
                 async: false,
                 data : {
                     base64: imageSrc.replace('data:image/png;base64,','')
@@ -204,7 +204,7 @@ function clearStepAnswerFormat() {
             $.ajax({
                 cache : true,
                 type : "POST",
-                url : "/quesBank/demo/upload",
+                url : "/quesBank/imgUploadCtl/upload",
                 async: false,
                 data : {
                     base64: imageSrc.replace('data:image/png;base64,','')
