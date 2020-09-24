@@ -150,11 +150,18 @@
                     <div class="container">
                         <div class="col-sm-15"></div>
                         <div class="col-sm-70 leftItem">
-                            <div class="subItem container menuItem menuItemActive" onclick="changePage(1)">
-                                <div style="height: 30%"></div>
-                                <img src="../images/menu/lrACTIVE.png" class="menuItemImg">
+                            <div class="subItem container menuItem menuItemActive" onclick="changePage(0)">
+                                <div style="height: 20%"></div>
+                                <img src="../images/menu/prizeACTIVE.png" class="menuItemImg" style="height: 30%;width: 30%">
                                 <div style="height:1%"></div>
-                                <div class="menuItemFont menuItemFontActive">录入</div>
+                                <div class="menuItemFont menuItemFontActive">排行榜</div>
+                            </div>
+                            <div style="height: 1%"></div>
+                            <div class="subItem container menuItem" onclick="changePage(1)">
+                                <div style="height: 30%"></div>
+                                <img src="../images/menu/lrINVIS.png" class="menuItemImg">
+                                <div style="height:1%"></div>
+                                <div class="menuItemFont">录入</div>
                             </div>
                             <div style="height: 1%"></div>
                             <div class="subItem container menuItem" onclick="changePage(2)">
@@ -178,7 +185,7 @@
             </div>
             <div class="col-sm-05"></div>
             <div class="col-sm-87" style="background-color: white;border-radius: 5px">
-                <iframe id="mainPage" src="../teacherRecordCtl/goToTeacherRecord" frameborder="0" class="subPage"></iframe>
+                <iframe id="mainPage" src="../prizeCtl/prize" frameborder="0" class="subPage"></iframe>
             </div>
         </div>
     </div>
@@ -186,7 +193,7 @@
 <script src="../js/jquery-1.8.3.min.js"></script>
 <script>
     function changePage(type) {
-        var index = 1;
+        var index = 0;
         $('.subItem').each(function () {
             $(this).removeClass('menuItemActive');
             var image = $(this).find('img');
