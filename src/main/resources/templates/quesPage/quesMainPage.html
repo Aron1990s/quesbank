@@ -207,8 +207,9 @@
             }
             index++;
         })
-
-        if (type == 1){
+        if (type == 0){
+            $('#mainPage').attr('src', "../prizeCtl/goToPrize");
+        } else if (type == 1){
             $('#mainPage').attr('src', "../teacherRecordCtl/goToTeacherRecord");
         }else if(type == 2){
             $('#mainPage').attr('src', "generate");
