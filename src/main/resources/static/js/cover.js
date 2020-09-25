@@ -1,3 +1,5 @@
 $(function () {
-    $('.cover').remove()
+    setTimeout(function () {
+        $('.cover').remove()
+    },500)
 })
