@@ -51,16 +51,18 @@
         left join high_physics_simple_answer hpsa
         on hpsa.question_id = hpq.id
         order by record_time desc
-        limit 100
     </select>
 
     <!-- listInfoByPage -->
     <select id="listInfoByPage" parameterType="PagePlugin" resultType="HighPhysicsQuestion">
         select hpq.*,
-               hpsa.simple_answer
+               hpsa.simple_answer,
+               sui.user_name as record_teacher_name
         from high_physics_question hpq
         left join high_physics_simple_answer hpsa
         on hpsa.question_id = hpq.id
+        left join system_user_info sui
+        on sui.id = hpq.record_teacher_id
         order by record_time desc
     </select>
 

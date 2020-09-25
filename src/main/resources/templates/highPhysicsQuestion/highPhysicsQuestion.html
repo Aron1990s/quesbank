@@ -10,6 +10,15 @@
     <link href="../css/quesBlock.css" rel="stylesheet">
     <link href="../css/imageNoDim.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .questionAuthor{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1vw;
+            color: #646464;
+        }
+    </style>
 </head>
 <body class="main">
 <div id="HBox" style="height: 100%;width: 100%">
@@ -32,7 +41,9 @@
             <div style="height:40px" class="questionOperate">
                 <div style="height: 5px"></div>
                 <div style="height: 30px" class="container">
-                    <div class="col-sm-64"></div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11 questionAuthor" th:text="'录入者:&nbsp;' + ${subList.record_teacher_name}"></div>
+                    <div class="col-sm-52"></div>
                     <div class="col-sm-11">
                         <div class="questionOperateBlock" th:onclick="'getSimpleAnswer('+${subListStat.count}+')'">
                             <i class="fa fa-check-square-o"></i>&nbsp;简单解析
