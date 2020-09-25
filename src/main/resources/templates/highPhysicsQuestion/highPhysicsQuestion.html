@@ -43,7 +43,13 @@
                 <div style="height: 30px" class="container">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-11 questionAuthor" th:text="'录入者:&nbsp;' + ${subList.record_teacher_name}"></div>
-                    <div class="col-sm-39"></div>
+                    <div class="col-sm-27"></div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11">
+                        <div class="questionOperateBlock" th:onclick="removeQuestionAndAnswer([[${subList.id}]])">
+                            <i class="fa fa-trash-o" aria-hidden="true" style="font-weight: bold"></i>&nbsp;删除题目
+                        </div>
+                    </div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-11">
                         <div class="questionOperateBlock" th:onclick="editQuestionAndAnswer([[${subList.id}]])">
@@ -97,6 +103,11 @@
     function initDialog() {
         var $el = $('.dialog');
         $el.hDialog();
+    }
+
+    function removeQuestionAndAnswer(questionId) {
+        layer.alert('暂未开放', {icon: 4})
+        return
     }
     
     function editQuestionAndAnswer(questionId) {
