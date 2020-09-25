@@ -1,29 +1,29 @@
 function saveQuestion() {
     if ($('#question_type').val() == '' || $('#question_type').val() == null){
-        layer.alert('请选择题目类型', {icon: 2})
+        layer.alert('请选择题目类型', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
     if ($('#is_subExam').val() == '' || $('#is_subExam').val() == null){
-        layer.alert('请选择是否小高考', {icon: 2})
+        layer.alert('请选择是否小高考', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
     if ($('#difficult_level').val() == '' || $('#difficult_level').val() == null){
-        layer.alert('请选择题目难度', {icon: 2})
+        layer.alert('请选择题目难度', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
     if ($('#chapterSubItemName').val() == '' || $('#chapterSubItemName').val() == null){
-        layer.alert('请选择题目所属', {icon: 2})
+        layer.alert('请选择题目所属', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
     if ($('#majorSubItemName').val() == '' || $('#majorSubItemName').val() == null){
-        layer.alert('请选择题目所属知识点', {icon: 2})
+        layer.alert('请选择题目所属知识点', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
 
     var currentButton = $('#saveQuestion')
     var ableToNext = clearFormat()
     if (ableToNext == false){
-        layer.alert('请将红框中的图片上传至服务器', {icon: 2})
+        layer.alert('请将红框中的图片上传至服务器', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
     $.ajax({
@@ -51,12 +51,12 @@ function saveQuestion() {
         success: function (data) {
             if (data.code == '1') {
                 $('#question_id').val(data.questionId)
-                layer.alert('保存成功', {icon: 1})
+                layer.alert('保存成功', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 1})
                 currentButton.removeClass('saveRecord')
                 currentButton.addClass('editRecord')
                 $('#saveFont').html('编辑题目')
             }else if(data.code == '2'){
-                layer.alert('编辑成功', {icon: 1})
+                layer.alert('编辑成功', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 1})
             }
 
         }
@@ -65,13 +65,13 @@ function saveQuestion() {
 
 function saveSimpleAnswer() {
     if ($('#question_id').val() == '' || $('#question_id').val() == null){
-        layer.alert('请先保存题目', {icon: 2})
+        layer.alert('请先保存题目', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
     var currentButton = $('#saveSimpleAnswer')
     var ableToNext = clearAnswerFormat()
     if (ableToNext == false){
-        layer.alert('请将红框中的图片上传至服务器', {icon: 2})
+        layer.alert('请将红框中的图片上传至服务器', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
     $.ajax({
@@ -84,10 +84,10 @@ function saveSimpleAnswer() {
         },
         async: false,
         error: function (request) {
-            layer.alert("error", {icon: 2})
+            layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         },
         success: function (data) {
-            layer.alert('保存成功', {icon: 1})
+            layer.alert('保存成功', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 1})
             currentButton.removeClass('saveRecord')
             currentButton.addClass('editRecord')
             $('#saveSimpleAnswerFont').html('编辑答案')
@@ -97,13 +97,13 @@ function saveSimpleAnswer() {
 
 function saveStepAnswer() {
     if ($('#question_id').val() == '' || $('#question_id').val() == null){
-        layer.alert('请先保存题目', {icon: 2})
+        layer.alert('请先保存题目', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
     var currentButton = $('#saveStepAnswer')
     var ableToNext = clearStepAnswerFormat()
     if (ableToNext == false){
-        layer.alert('请将红框中的图片上传至服务器', {icon: 2})
+        layer.alert('请将红框中的图片上传至服务器', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
     }
     $.ajax({
@@ -116,10 +116,10 @@ function saveStepAnswer() {
         },
         async: false,
         error: function (request) {
-            layer.alert("error", {icon: 2})
+            layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         },
         success: function (data) {
-            layer.alert('保存成功', {icon: 1});
+            layer.alert('保存成功', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 1});
             currentButton.removeClass('saveRecord')
             currentButton.addClass('editRecord')
             $('#saveStepAnswerFont').html('编辑答案')
@@ -146,7 +146,7 @@ function clearFormat() {
                 },
                 async : false,
                 error : function(request) {
-                    layer.alert("error", {icon: 2})
+                    layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
                 },
                 success : function(data) {
                     image.attr('src','/quesBank/image/'+data+'.png')
@@ -180,7 +180,7 @@ function clearAnswerFormat() {
                 },
                 async : false,
                 error : function(request) {
-                    layer.alert("error", {icon: 2})
+                    layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
                 },
                 success : function(data) {
                     image.attr('src','/quesBank/image/'+data+'.png')
@@ -214,7 +214,7 @@ function clearStepAnswerFormat() {
                 },
                 async : false,
                 error : function(request) {
-                    layer.alert("error", {icon: 2})
+                    layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
                 },
                 success : function(data) {
                     image.attr('src','/quesBank/image/'+data+'.png')
@@ -237,7 +237,7 @@ function getMajor() {
         url: "../highPhyMajorCtl/getMajor",
         async: false,
         error: function (request) {
-            layer.alert("error", {icon: 2})
+            layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         },
         success: function (data) {
             var majors = data.highPhysicsMajors;
@@ -257,7 +257,7 @@ function changeMajor(majorId) {
         url: "../highPhyMajorCtl/getMajorSub?id=" + majorId,
         async: false,
         error: function (request) {
-            layer.alert("error", {icon: 2})
+            layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         },
         success: function (data) {
             var highPhysicsMajorSubs = data.highPhysicsMajorSubs;
@@ -279,7 +279,7 @@ function changeMajorSub(majorSubId) {
         url: "../highPhyMajorCtl/getMajorSubItem?id=" + majorSubId,
         async: false,
         error: function (request) {
-            layer.alert("error", {icon: 2})
+            layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         },
         success: function (data) {
             var highPhysicsMajorSubItems = data.highPhysicsMajorSubItems;

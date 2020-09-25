@@ -145,7 +145,7 @@
                 url: url,
                 async: false,
                 error: function (request) {
-                    layer.alert("error", {icon: 2})
+                    layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
                 },
                 success: function (data) {
                     changeMajorSub(url.split('=')[1])
@@ -171,7 +171,7 @@
                         url: "../highPhyQuesCtl/highPhysicsPagePlugin?current="+page,
                         async: false,
                         error: function (request) {
-                            layer.alert("error", {icon: 2})
+                            layer.alert("error", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
                         },
                         success: function (data) {
                             if (data.code == '1'){
