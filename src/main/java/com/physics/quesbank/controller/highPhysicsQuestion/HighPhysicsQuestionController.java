@@ -55,6 +55,7 @@ public class HighPhysicsQuestionController extends BaseController {
                 highPhysicsQuestion.setRecommend_count(0);
                 highPhysicsQuestion.setRecord_time(DateUtil.getTime());
                 highPhysicsQuestion.setRecord_teacher_id(getUserInfo().getId());
+                highPhysicsQuestion.setStatus("0");
                 highPhysicsQuestionService.saveInfo(highPhysicsQuestion);
                 map.put("questionId", highPhysicsQuestion.getId());
                 map.put("code", "1");
