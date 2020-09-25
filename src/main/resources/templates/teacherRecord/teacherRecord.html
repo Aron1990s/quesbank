@@ -6,6 +6,7 @@
     <link href="../css/flexPlugin.css" rel="stylesheet">
     <link href="../css/quesBlock.css" rel="stylesheet">
     <link href="../css/customSelect.css" rel="stylesheet">
+    <link href="../css/cover.css" rel="stylesheet">
     <style>
         html, body {
             width: 100%;
@@ -94,6 +95,7 @@
 
 </head>
 <body>
+<div class="cover pageCover" th:include="cover/cover::loadCover"></div>
 <div class="titleBorder">
     <div style="height: 15%"></div>
     <div class="titleFont">录入</div>
@@ -280,4 +282,5 @@
 <script type="text/javascript" src="../js/layer/layer.min.js"></script>
 <script type="text/javascript" src="../js/record/initOptions.js"></script>
 <script type="text/javascript" src="../js/record/record.js"></script>
+<script type="text/javascript" src="../js/cover.js"></script>
 </html>

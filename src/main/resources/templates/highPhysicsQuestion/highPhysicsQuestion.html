@@ -10,6 +10,7 @@
     <link href="../css/quesBlock.css" rel="stylesheet">
     <link href="../css/imageNoDim.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/cover.css" rel="stylesheet">
     <style>
         .questionAuthor{
             display: flex;
@@ -24,6 +25,7 @@
     </style>
 </head>
 <body class="main">
+<div class="cover pageCover" th:include="cover/cover::loadCover"></div>
 <div class="container">
     <div class="col-sm-2"></div>
     <div class="col-sm-96 ques">
@@ -129,4 +131,5 @@
     }
 
 </script>
+<script type="text/javascript" src="../js/cover.js"></script>
 </html>
