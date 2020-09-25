@@ -75,6 +75,7 @@ select:focus{
     min-height:50px;
     width:100%;
     padding:0 0 0 10px;
+    overflow: hidden;
 }
 
 .recordContainerShowQuestion{

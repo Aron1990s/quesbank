@@ -25,7 +25,7 @@
                 <div th:each="subList,subListStat:${lists}" style="display:none" class="recordContainerSolve" th:id="step+${subListStat.count}">
                     <div class="showBody">
                         <div class="contentSolve">
-                            <div id="content" contentEditable="false" class="showDemoSolution" th:utext="${subList.detail_answer}">
+                            <div id="content" class="showDemoSolution" th:utext="${subList.detail_answer}">
 
                             </div>
                         </div>
