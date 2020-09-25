@@ -30,7 +30,7 @@ public class LeftNavController {
     protected final static Logger logger = LoggerFactory.getLogger(LeftNavController.class);
 
     @Autowired
-    private HighPhysicsMajorInfo highPhysicsMajorInfo;
+    private List<BaseNavElement> baseNavElements;
 
     /**
      * 初始化学科菜单
@@ -39,28 +39,7 @@ public class LeftNavController {
     @RequestMapping("initNavByMajor")
     public Object initNavByMajor(){
         Map<String, Object> map = new HashMap<>();
-        List<BaseNavElement> baseNavElements = new ArrayList<>();
         try{
-            List<HighPhysicsMajor> highPhysicsMajors = highPhysicsMajorInfo.getHighPhysicsMajors();
-            for (HighPhysicsMajor subHighPhysicsMajor : highPhysicsMajors) {
-                BaseNavElement baseNavElement = new BaseNavElement();
-                baseNavElement.setMenuId("01");
-                baseNavElement.setMenuCode("RR1234");
-                baseNavElement.setMenuName(subHighPhysicsMajor.getMajor());
-                baseNavElement.setMenuAction("#");
-                List<BaseNav> children = new ArrayList<>();
-                List<HighPhysicsMajorSub> highPhysicsMajorSubs = highPhysicsMajorInfo.getHighPhysicsMajorSubs().get(subHighPhysicsMajor.getId()+"");
-                for (HighPhysicsMajorSub subHighPhysicsMajorSub : highPhysicsMajorSubs) {
-                    BaseNav baseNav = new BaseNav();
-                    baseNav.setMenuId("001");
-                    baseNav.setMenuCode("RR1234");
-                    baseNav.setMenuName(subHighPhysicsMajorSub.getMajor_sub_name());
-                    baseNav.setMenuAction("../highPhyQuesCtl/configQuestionSearch?major_sub_id="+subHighPhysicsMajorSub.getId());
-                    children.add(baseNav);
-                }
-                baseNavElement.setChildren(children);
-                baseNavElements.add(baseNavElement);
-            }
             map.put("data", baseNavElements);
             map.put("code", "1");
         } catch (Exception e){
