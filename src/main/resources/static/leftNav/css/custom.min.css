@@ -55,7 +55,7 @@ a:hover {
 
 .nav.child_menu li.active,
 .nav.child_menu li:hover {
-	background-color: rgba(255, 255, 255, .06)
+	background-color: rgba(255, 255, 255, .2)
 }
 
 .nav.child_menu li {
@@ -117,7 +117,7 @@ a:hover {
 }
 
 .nav li.current-page {
-	background: rgba(255, 255, 255, .05)
+	background: rgba(255, 255, 255, .2)
 }
 
 .nav li li li.current-page {
