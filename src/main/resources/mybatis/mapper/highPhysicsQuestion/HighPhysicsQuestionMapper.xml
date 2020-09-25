@@ -22,7 +22,8 @@
             recommend_count,
             record_time,
             record_teacher_id,
-            difficult_level
+            difficult_level,
+            has_copy_right
         )values(
             #{id},
             #{question_type},
@@ -39,7 +40,8 @@
             #{recommend_count},
             #{record_time},
             #{record_teacher_id},
-            #{difficult_level}
+            #{difficult_level},
+            #{has_copy_right}
         )
     </insert>
 
@@ -79,7 +81,8 @@
            major_id = #{major_id},
            major_sub_id = #{major_sub_id},
            major_sub_item_id = #{major_sub_item_id},
-           difficult_level = #{difficult_level}
+           difficult_level = #{difficult_level},
+           has_copy_right = #{has_copy_right}
         where id = #{id}
     </update>
 </mapper>

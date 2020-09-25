@@ -33,5 +33,6 @@ public class HighPhysicsQuestion {
     private String difficult_level;
     private String simple_answer;
     private String record_teacher_name;
+    private String has_copy_right;
 
 }

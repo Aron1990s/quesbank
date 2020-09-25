@@ -42,7 +42,8 @@ function saveQuestion() {
             major_id: $('#majorName').val(),
             major_sub_id: $('#majorSubName').val(),
             major_sub_item_id: $('#majorSubItemName').val(),
-            difficult_level: $('#difficult_level').val()
+            difficult_level: $('#difficult_level').val(),
+            has_copy_right: $('#has_copy_right').val()
         },
         async: false,
         error: function (request) {
