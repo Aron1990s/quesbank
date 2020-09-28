@@ -83,7 +83,6 @@ public class HighPhysicsMajorController extends BaseController {
             for (String sub : ids) {
                 highPhysicsMajorSubItems.addAll(highPhysicsMajorInfo.getHighPhysicsMajorSubItems().get(sub));
             }
-//            List<HighPhysicsMajorSubItem> highPhysicsMajorSubItems = highPhysicsMajorInfo.getHighPhysicsMajorSubItems().get(highPhysicsMajorSub.getId()+"");
             map.put("highPhysicsMajorSubItems", highPhysicsMajorSubItems);
             map.put("code", "1");
         } catch (Exception e){
