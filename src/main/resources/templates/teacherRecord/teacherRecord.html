@@ -212,11 +212,15 @@
                             </select>
                         </div>
                         <div class="col-sm-1"></div>
-                        <div class="col-sm-18 blockActive ">
-                            <select id="majorSubName" name="majorSubName"
-                                    onchange="changeMajorSub(this.options[this.options.selectedIndex].value)">
-                                <option value="" disabled selected style="display:none;">选择子项</option>
-                            </select>
+                        <div class="col-sm-25 blockActiveSelect ">
+                            <!--<select id="majorSubName" name="majorSubName"-->
+                                    <!--onchange="changeMajorSub(this.options[this.options.selectedIndex].value)">-->
+                                <!--<option value="" disabled selected style="display:none;">选择子项</option>-->
+                            <!--</select>-->
+                            <div id="majorSubNameBlock" class="selectPickerWrapper">
+                                <select class="hidden" multiple="multiple" id="majorSubName" name="majorSubItemName">
+                                </select>
+                            </div>
                         </div>
                         <div class="col-sm-1"></div>
                         <div class="col-sm-37 blockActiveSelect" style="text-align: left">
@@ -305,7 +309,14 @@
 <script type="text/javascript" src="../js/select.js"></script>
 <script>
     $(function () {
+        $("#majorSubNameBlock").mySelect();
         $("#majorSubItemNameBlock").mySelect();
+
+
+
+        //     .change(function () {
+        //     alert($(this).html())
+        // })
     })
 </script>
 </html>

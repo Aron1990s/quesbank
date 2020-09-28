@@ -50,11 +50,19 @@
 					checkedArr.push($.trim(_this.text()))
 				}
 			})
+            var fatherId = $this.attr('id')
 			if (checkedArr.length > 0) {
 			    $this.find('.select-picker-search-checked').text(checkedArr.join(','));
-			    // $this.find('.select-picker-search-checked').text(checkedArr.join(',')).css('color', '#fff');
+                if(fatherId == 'majorSubNameBlock'){//题目类型2子项
+                    var searchIds = getIdByContent(fatherId, 'majorSubName')
+                    changeMajorSub(searchIds)
+                }
 			} else {
 			    $this.find('.select-picker-search-checked').text('请选择').css('color', 'black');
+                if(fatherId == 'majorSubNameBlock'){//题目类型2子项
+                    $('#majorSubItemName').empty();
+                    clearBlock('majorSubItemNameBlock')
+                }
 			}
  		})
  		// 前端实现下拉搜索 

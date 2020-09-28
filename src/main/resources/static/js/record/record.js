@@ -278,10 +278,10 @@ function changeMajor(majorId) {
             var highPhysicsMajorSubs = data.highPhysicsMajorSubs;
             $('#majorSubName').empty();
             $('#majorSubItemName').empty();
-            $('#majorSubName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择子项'))
             for (var i = 0; i < highPhysicsMajorSubs.length; i++) {
                 $('#majorSubName').append(selectOptionTemplate.replace('OPTIONVALUE', highPhysicsMajorSubs[i].id).replace('OPTIONNAME', highPhysicsMajorSubs[i].major_sub_name));
             }
+            clearBlock('majorSubNameBlock')
             clearBlock('majorSubItemNameBlock')
         }
     });
