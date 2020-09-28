@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -70,14 +71,19 @@ public class HighPhysicsMajorController extends BaseController {
 
     /**
      * 获取子项知识点
-     * @param highPhysicsMajorSub
+     * @param id
      * @return
      */
     @RequestMapping("getMajorSubItem")
-    public Object getMajorSubItem(HighPhysicsMajorSub highPhysicsMajorSub){
+    public Object getMajorSubItem(String id){
         Map<String, Object> map = new HashMap<>();
         try{
-            List<HighPhysicsMajorSubItem> highPhysicsMajorSubItems = highPhysicsMajorInfo.getHighPhysicsMajorSubItems().get(highPhysicsMajorSub.getId()+"");
+            List<HighPhysicsMajorSubItem> highPhysicsMajorSubItems = new ArrayList<>();
+            String[] ids = id.split(",");
+            for (String sub : ids) {
+                highPhysicsMajorSubItems.addAll(highPhysicsMajorInfo.getHighPhysicsMajorSubItems().get(sub));
+            }
+//            List<HighPhysicsMajorSubItem> highPhysicsMajorSubItems = highPhysicsMajorInfo.getHighPhysicsMajorSubItems().get(highPhysicsMajorSub.getId()+"");
             map.put("highPhysicsMajorSubItems", highPhysicsMajorSubItems);
             map.put("code", "1");
         } catch (Exception e){
