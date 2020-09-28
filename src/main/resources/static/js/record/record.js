@@ -1,4 +1,18 @@
 function saveQuestion() {
+    // var content = $('#majorSubItemNameBlock .select-picker-search-checked').html();
+    // var contentList = content.split(',');
+    // var majorSubItemList = ''
+    // $('#majorSubItemName option').each(function () {
+    //     var opt = $(this)
+    //     for (var i = 0; i < contentList.length; i++) {
+    //         if (opt.html() == contentList[i]){
+    //             majorSubItemList += majorSubItemList == '' ? opt.val() : "," + opt.val();
+    //         }
+    //     }
+    // })
+    alert(getIdByContent('majorSubItemNameBlock','majorSubItemName'))
+    return
+
     if ($('#question_type').val() == '' || $('#question_type').val() == null){
         layer.alert('请选择题目类型', {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
         return
@@ -264,11 +278,11 @@ function changeMajor(majorId) {
             var highPhysicsMajorSubs = data.highPhysicsMajorSubs;
             $('#majorSubName').empty();
             $('#majorSubItemName').empty();
-            $('#majorSubItemName').append('<option value ="" disabled selected style="display:none;">选择子知识点</option>')
             $('#majorSubName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择子项'))
             for (var i = 0; i < highPhysicsMajorSubs.length; i++) {
                 $('#majorSubName').append(selectOptionTemplate.replace('OPTIONVALUE', highPhysicsMajorSubs[i].id).replace('OPTIONNAME', highPhysicsMajorSubs[i].major_sub_name));
             }
+            clearBlock('majorSubItemNameBlock')
         }
     });
 }
@@ -289,10 +303,31 @@ function changeMajorSub(majorSubId) {
             for (var i = 0; i < highPhysicsMajorSubItems.length; i++) {
                 $('#majorSubItemName').append(selectOptionTemplate.replace('OPTIONVALUE', highPhysicsMajorSubItems[i].id).replace('OPTIONNAME', highPhysicsMajorSubItems[i].major_sub_item_name));
             }
-            $('#demo1 .select-picker-search').remove();
-            $('#demo1 .select-picker-options-wrp').remove();
-            $("#demo1").unbind('click');
-            $("#demo1").mySelect();
+            clearBlock('majorSubItemNameBlock')
         }
     });
+}
+
+function clearBlock(blockId) {
+    $('#BLOCKID .select-picker-search'.replace('BLOCKID', blockId)).remove();
+    $('#BLOCKID .select-picker-options-wrp'.replace('BLOCKID', blockId)).remove();
+    $("#BLOCKID".replace('BLOCKID', blockId)).unbind('click');
+    $("#BLOCKID".replace('BLOCKID', blockId)).mySelect();
+}
+
+function getIdByContent(contentId, selectId) {
+    var conId = '#CONID .select-picker-search-checked';
+    var selId = '#SELID option';
+    var content = $(conId.replace('CONID', contentId)).html();
+    var contentList = content.split(',');
+    var idList = ''
+    $(selId.replace('SELID', selectId)).each(function () {
+        var opt = $(this)
+        for (var i = 0; i < contentList.length; i++) {
+            if (opt.html() == contentList[i]){
+                idList += idList == '' ? opt.val() : "," + opt.val();
+            }
+        }
+    })
+    return idList
 }
