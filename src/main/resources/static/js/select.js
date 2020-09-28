@@ -54,7 +54,7 @@
 			    $this.find('.select-picker-search-checked').text(checkedArr.join(','));
 			    // $this.find('.select-picker-search-checked').text(checkedArr.join(',')).css('color', '#fff');
 			} else {
-			    $this.find('.select-picker-search-checked').text('请选择').css('color', '#757575');
+			    $this.find('.select-picker-search-checked').text('请选择').css('color', 'black');
 			}
  		})
  		// 前端实现下拉搜索 
