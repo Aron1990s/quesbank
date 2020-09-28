@@ -69,19 +69,23 @@
  		$this.on('keyup',".select-picker-options-serch input",function(){  
  			var text = $(this).val();
  			var html = '';
- 			$this.find("option").each(function(){ 
+ 			$this.find(".select-picker-options-list-item").each(function(){
 	 			let _this = $(this);
-	 			if(_this.text().indexOf(text) != -1){
-		 			html += '<div class="select-picker-options-list-item">';
-		 			html += '<b class="duihao duihao-nocheck"></b>';
-		 			html += '<span>'+_this.text()+'</span>';
-		 			html += '</div>';
-	 			}
+	 			var spanH = $(this).find('span');
+	 			if(spanH.text().indexOf(text) != -1){
+		 			// html += '<div class="select-picker-options-list-item">';
+		 			// html += '<b class="duihao duihao-nocheck"></b>';
+		 			// html += '<span>'+_this.text()+'</span>';
+		 			// html += '</div>';
+                    _this.show()
+	 			}else{
+                    _this.hide()
+                }
 	 		})
-	 		if(html == ''){
-	 			html += '<p style="text-align:center;">没有相关内容</p>';
-	 		}
-	 		$this.find(".select-picker-options-list").html('').append(html);
+	 		// if(html == ''){
+	 		// 	html += '<p style="text-align:center;">没有相关内容</p>';
+	 		// }
+	 		// $this.find(".select-picker-options-list").html('').append(html);
  		})
     }
     // 点击document任意地方 下拉消失

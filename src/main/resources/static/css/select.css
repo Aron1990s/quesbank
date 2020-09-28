@@ -59,13 +59,17 @@
     z-index: 999;
 }
 
+.select-picker-options-serch{
+    text-align: center;
+}
+
 .select-picker-options-serch input {
-    width: 80%;
+    width: 90%;
     height: 32px;
     line-height: 32px;
     border: 1px solid #ddd;
     border-radius: 3px;
-    margin: 12px 0 0 10px;
+    margin: 12px 0 0 0px;
     padding-left: 8px;
 }
 
