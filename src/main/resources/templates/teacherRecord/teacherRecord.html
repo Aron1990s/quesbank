@@ -7,6 +7,7 @@
     <link href="../css/quesBlock.css" rel="stylesheet">
     <link href="../css/customSelect.css" rel="stylesheet">
     <link href="../css/cover.css" rel="stylesheet">
+    <link href="../css/select.css" rel="stylesheet">
     <style>
         html, body {
             width: 100%;
@@ -88,11 +89,19 @@
             cursor: pointer;
         }
 
-        p{
+        p {
             border-bottom: 1px dotted grey;
         }
-        .editDemo{
+
+        .editDemo {
             overflow: hidden;
+        }
+
+        .blockActiveSelect {
+            border-radius: 3px;
+            font-size: 2vh;
+            color: white;
+            cursor: pointer;
         }
     </style>
 
@@ -210,10 +219,20 @@
                             </select>
                         </div>
                         <div class="col-sm-1"></div>
-                        <div class="col-sm-37 blockActive ">
-                            <select id="majorSubItemName" name="majorSubItemName">
-                                <option value="" disabled selected style="display:none;">选择子知识点</option>
-                            </select>
+                        <div class="col-sm-37 blockActiveSelect" style="text-align: left">
+                            <!--<select id="majorSubItemName" name="majorSubItemName">-->
+                            <!--<option value="" disabled selected style="display:none;">选择子知识点</option>-->
+                            <!--</select>-->
+                            <div id="demo1" class="selectPickerWrapper">
+                                <select class="hidden" multiple="multiple" id="majorSubItemName" name="majorSubItemName">
+                                    <!--<option value="1">万源路</option>-->
+                                    <!--<option value="2">漕宝路666号</option>-->
+                                    <!--<option>古美街道</option>-->
+                                    <!--<option>平南路888号</option>-->
+                                    <!--<option>合川路</option>-->
+                                    <!--<option>莲花路4545号</option>-->
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -252,12 +271,14 @@
                 <div style="height: 0.5%"></div>
                 <div class="container" style="height: 5%;text-align: center">
                     <div class="col-sm-92"></div>
-                    <div id="saveSimpleAnswer" class="col-sm-8 saveRecord" onclick="saveSimpleAnswer();" style="float: left">
+                    <div id="saveSimpleAnswer" class="col-sm-8 saveRecord" onclick="saveSimpleAnswer();"
+                         style="float: left">
                         <font id="saveSimpleAnswerFont" class="save-center-vertical">保存答案</font>
                     </div>
                 </div>
                 <div style="height: 1%"></div>
-                <label style="font-weight: bold">请在下方录入题目详细解析(分步请用水平线分隔)：<font color="red">(图片尽量换行显示并采用上传的方式插入)</font></label>
+                <label style="font-weight: bold">请在下方录入题目详细解析(分步请用水平线分隔)：<font
+                        color="red">(图片尽量换行显示并采用上传的方式插入)</font></label>
                 <div style="height: 0.5%"></div>
                 <div class="recordContainer">
                     <div class="recordBody">
@@ -271,7 +292,8 @@
                 <div style="height: 0.5%"></div>
                 <div class="container" style="height: 5%;text-align: center">
                     <div class="col-sm-92"></div>
-                    <div id="saveStepAnswer" class="col-sm-8 saveRecord" onclick="saveStepAnswer();" style="float: left">
+                    <div id="saveStepAnswer" class="col-sm-8 saveRecord" onclick="saveStepAnswer();"
+                         style="float: left">
                         <font id="saveStepAnswerFont" class="save-center-vertical">保存答案</font>
                     </div>
                 </div>
@@ -286,4 +308,10 @@
 <script type="text/javascript" src="../js/record/initOptions.js"></script>
 <script type="text/javascript" src="../js/record/record.js"></script>
 <script type="text/javascript" src="../js/cover.js"></script>
+<script type="text/javascript" src="../js/select.js"></script>
+<script>
+    $(function () {
+        $("#demo1").mySelect();
+    })
+</script>
 </html>

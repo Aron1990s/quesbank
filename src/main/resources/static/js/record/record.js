@@ -285,10 +285,14 @@ function changeMajorSub(majorSubId) {
         success: function (data) {
             var highPhysicsMajorSubItems = data.highPhysicsMajorSubItems;
             $('#majorSubItemName').empty();
-            $('#majorSubItemName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择子知识点'))
+            // $('#majorSubItemName').append(selectOptionFirstTemplate.replace('OPTIONNAME', '选择子知识点'))
             for (var i = 0; i < highPhysicsMajorSubItems.length; i++) {
                 $('#majorSubItemName').append(selectOptionTemplate.replace('OPTIONVALUE', highPhysicsMajorSubItems[i].id).replace('OPTIONNAME', highPhysicsMajorSubItems[i].major_sub_item_name));
             }
+            $('#demo1 .select-picker-search').remove();
+            $('#demo1 .select-picker-options-wrp').remove();
+            $("#demo1").unbind('click');
+            $("#demo1").mySelect();
         }
     });
 }
