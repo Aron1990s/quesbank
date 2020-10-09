@@ -4,6 +4,9 @@ $(function(){
 
 function generateImg() {
     $('#jme-math').css('border','none');
+    $('#jme-math .non-leaf').each(function () {
+        $(this).css('margin-left','5px')
+    })
     html2canvas($('#jme-math'),{
         dpi:1000,
         onrendered: function(canvas) {
