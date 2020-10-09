@@ -25,7 +25,7 @@ $(document).ready(function(){
 		versionName : "V0.9.4",
 		ckEditor : CKEDITOR,
 		jmeBasePath : JMEditor_BasePath,
-		defaultFontSize : "20px",
+		defaultFontSize : "16px",
 		isEmpty : function(elementId){
 			return ($("#" + elementId).html()+"").replace(/(<[^>]*>|\s|&nbsp;)/ig,"").length < 1;
 		},
