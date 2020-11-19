@@ -26,7 +26,7 @@ public class HtmlToPdfConfig {
     private String pdfPath;
 
     @Bean
-    public HtmlToPdf htmlToPdfConfig(){
+    public HtmlToPdf htmlToPdf(){
         HtmlToPdf htmlToPdf = new HtmlToPdf();
         try{
             htmlToPdf.setHtmlPath(htmlPath);
