@@ -7,8 +7,10 @@ import com.physics.quesbank.dao.highPhysicsQuestion.HighPhysicsQuestionDao;
 import com.physics.quesbank.entity.PagePlugin;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestion;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestionSearchCondition;
+import com.physics.quesbank.entity.htmlToPdf.HtmlToPdf;
 import com.physics.quesbank.service.highPhysiscQuestion.HighPhysicsQuestionService;
 import com.physics.quesbank.util.DateUtil;
+import com.physics.quesbank.util.HtmlToPdfUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,6 +40,9 @@ public class HighPhysicsQuestionController extends BaseController {
 
     @Autowired
     private HighPhysicsQuestionService highPhysicsQuestionService;
+
+    @Autowired
+    private HtmlToPdf htmlToPdf;
 
     /**
      * 保存数据
@@ -140,5 +147,36 @@ public class HighPhysicsQuestionController extends BaseController {
         }
         mv.setViewName("highPhysicsQuestion/highPhysicsQuestion");
         return mv;
+    }
+
+    @RequestMapping("test")
+    @ResponseBody
+    public Object test(){
+        Map<String, Object> map = new HashMap<>();
+        try{
+            PagePlugin pagePlugin = new PagePlugin(getHighPhysicsSearchCondition().getCurrent());
+            Map<String, Object> pagePd = new HashMap<>();
+            pagePlugin.setPd(pagePd);
+            List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfoByPage(pagePlugin);
+            String te = htmlToPdf.getHtmlTemplate();
+            String h5path = htmlToPdf.getHtmlPath();
+            String pdfpath = htmlToPdf.getPdfPath();
+            String subTemplate = "<div style=\"height: auto\" id=\"question1\"><div class=\"recordContainerShowQuestion\"><div class=\"showBody\"><div class=\"contentShowQuestion\"><div class=\"showDemoShowQuestion\">SUBTEMPLATE</div></div></div></div><div style=\"height: 20px\"></div></div>";
+            try (PrintStream printStream = new PrintStream(new FileOutputStream("D:/test.html"));){
+                StringBuilder stringBuilder = new StringBuilder();
+                for (HighPhysicsQuestion sub : lists) {
+                    stringBuilder.append(subTemplate.replace("SUBTEMPLATE", sub.getQuestion_content()).replace("../image", "http://localhost:8077/quesBank/pdfimage").replace("/quesBank/image", "http://localhost:8077/quesBank/pdfimage"));
+                }
+                printStream.println(te.replace("TEMPLATE", stringBuilder.toString()));
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            HtmlToPdfUtil.tomPdf("D:/test.html", "D:/test.pdf");
+            map.put("code", "1");
+        } catch (Exception e){
+            e.printStackTrace();
+            map.put("code", "-1");
+        }
+        return map;
     }
 }

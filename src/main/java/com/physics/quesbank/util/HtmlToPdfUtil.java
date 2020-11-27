@@ -25,15 +25,19 @@ public class HtmlToPdfUtil {
     public static void tomPdf(String html, String DEST) throws Exception {
         ConverterProperties props = new ConverterProperties();
         DefaultFontProvider defaultFontProvider = new DefaultFontProvider(false, false, false);
-        defaultFontProvider.addFont("classpath:NotoSansCJKsc-Regular.otf");
+        defaultFontProvider.addFont("src/main/resources/NotoSansCJKsc-Regular.otf");
         props.setFontProvider(defaultFontProvider);
         PdfWriter writer = new PdfWriter(DEST);
         PdfDocument pdf = new PdfDocument(writer);
-        pdf.setDefaultPageSize(new PageSize(595.0F, 842.0F));
+        pdf.setDefaultPageSize(new PageSize(700.0F, 1000.0F));
         Document document = HtmlConverter.convertToDocument(new FileInputStream(html), pdf, props);
         document.close();
         pdf.close();
 
+    }
+
+    public static void main (String[] args) throws Exception{
+        tomPdf("D:/test.html", "D:/test.pdf");
     }
 
 }

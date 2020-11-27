@@ -250,13 +250,14 @@
   display: block;
 }
 .mathquill-rendered-math .numerator {
+  width: 100%;
   padding: 0 0.1em;
   margin-bottom: 0.01em;
 }
 .mathquill-rendered-math .denominator {
   border-top: 1px solid;
   float: right;
-  width: 120%;
+  width: 100%;
   padding: .1em .1em 0 .1em;
   margin-right: -0.1em;
   margin-left: -0.1em;
