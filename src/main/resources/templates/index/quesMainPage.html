@@ -127,10 +127,10 @@
             <div class="col-sm-6 userContent">
                 [[${user_name}]]
             </div>
-            <div class="col-sm-2" style="width: 1.7%">
+            <div class="col-sm-2" style="width: 1.7%;cursor: pointer">
                 <div style="height: 15%"></div>
-                <div class="userQuestionCount" style="height: 70%;">
-                    0
+                <div onclick="downTest()" class="userQuestionCount" style="height: 70%;">
+                    10
                 </div>
                 <div style="height: 15%"></div>
             </div>
@@ -213,6 +213,10 @@
             $('#mainPage').attr('src', "../quesSearchCtl/highPhySearch");
         }
 
+    }
+
+    function downTest() {
+        window.location.href="../highPhyQuesCtl/downloadText"
     }
 </script>
 </html>

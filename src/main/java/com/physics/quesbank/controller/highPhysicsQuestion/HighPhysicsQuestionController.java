@@ -14,14 +14,18 @@ import com.physics.quesbank.util.HtmlToPdfUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-import java.io.FileOutputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -149,6 +153,65 @@ public class HighPhysicsQuestionController extends BaseController {
         return mv;
     }
 
+    /**
+     * 下载pdf
+     * @param response
+     * @return
+     */
+    @RequestMapping(value = "/downloadText")
+    public ResponseEntity<Resource> downloadText(HttpServletResponse response) {
+        try {
+            PagePlugin pagePlugin = new PagePlugin(getHighPhysicsSearchCondition().getCurrent());
+            Map<String, Object> pagePd = new HashMap<>();
+            pagePlugin.setPd(pagePd);
+            List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfoByPage(pagePlugin);
+            String te = htmlToPdf.getHtmlTemplate();
+            String h5path = htmlToPdf.getHtmlPath();
+            String pdfpath = htmlToPdf.getPdfPath();
+            String subTemplate = "<div style=\"height: auto\" id=\"question1\"><div class=\"recordContainerShowQuestion\"><div class=\"showBody\"><div class=\"contentShowQuestion\"><div class=\"showDemoShowQuestion\">SUBTEMPLATE</div></div></div></div><div style=\"height: 20px\"></div></div>";
+            try (PrintStream printStream = new PrintStream(new FileOutputStream("D:/test.html"));){
+                StringBuilder stringBuilder = new StringBuilder();
+                int index = 1;
+                for (HighPhysicsQuestion sub : lists) {
+                    stringBuilder.append(subTemplate.replace("SUBTEMPLATE", insertString(">",sub.getQuestion_content(),index+") ")).replace("../image", "http://localhost:8077/quesBank/pdfimage").replace("/quesBank/image", "http://localhost:8077/quesBank/pdfimage"));
+                    index++;
+                }
+                printStream.println(te.replace("TEMPLATE", stringBuilder.toString()));
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            HtmlToPdfUtil.tomPdf(h5path+"test.html", pdfpath+"test.pdf");
+            downLoadExcel(pdfpath, "test.pdf", response);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new ResponseEntity<Resource>(HttpStatus.OK);
+    }
+
+    public static void downLoadExcel(String path, String fileName, HttpServletResponse response) throws IOException {
+        // 读到流中
+        InputStream inStream = new FileInputStream(path + fileName);// 文件的存放路径
+        // 设置输出的格式
+        response.reset();
+        response.setContentType("bin");
+        response.addHeader("Content-Disposition", "attachment; filename=\"" + fileName + "\"");
+        // 循环取出流中的数据
+        byte[] b = new byte[100];
+        int len;
+        try {
+            while ((len = inStream.read(b)) > 0)
+                response.getOutputStream().write(b, 0, len);
+            inStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
     @RequestMapping("test")
     @ResponseBody
     public Object test(){
@@ -178,5 +241,18 @@ public class HighPhysicsQuestionController extends BaseController {
             map.put("code", "-1");
         }
         return map;
+    }
+
+    public static String insertString(String startString, String originString, String insertString){
+        int offset = originString.indexOf(startString) + 1;
+        String afterString = new StringBuilder(originString).insert(offset, insertString).toString();
+        return afterString;
+    }
+
+    public static void main (String[] args){
+        String sssss = "d>asddasdd<>dsadad";
+        int ss = sssss.indexOf(">")+1;
+        String sdas = new StringBuilder(sssss).insert(ss, "1) ").toString();
+        System.out.println(sdas);
     }
 }
