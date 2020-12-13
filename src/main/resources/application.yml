@@ -42,12 +42,12 @@ spring:
          additional-paths: src/main/java
 
 imageUpload:
-#   path: /usr/local/quesBank/img/
-   path: D:/img/
+   path: /usr/local/quesBank/img/
+#   path: D:/img/
 
 htmlToPdf:
    htmlTemplate: <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>试题</title><style>body,html{height:100%;width:100%;margin:0;}.recordContainerShowQuestion{width:100%;min-height:150px;margin-left:auto;margin-right:auto;line-height:25px;float:none;height:auto;cursor:default;padding-left:20px;border-radius:5px;}.contentShowQuestion{width:100%;height:auto;min-height:150px;}.showDemoShowQuestion{overflow:hidden;}.container{height:100%;width:100%;}.container * {box-sizing:border-box;height:100%;}[class *= 'col-']{float:left;min-height:1px;padding:0px;}.col-sm-25{width:0%;}.col-sm-50{width:100%;}img{vertical-align:middle;}p{margin:0}</style></head><body><div class="container"><div class="col-sm-25"></div><div class="col-sm-50 ques">TEMPLATE</div><div class="col-sm-2"></div></div></body></html>
-#   htmlPath: /usr/local/quesBank/
-#   pdfPath: /usr/local/quesBank/
-   htmlPath: D:/
-   pdfPath: D:/
+   htmlPath: /usr/local/quesBank/
+   pdfPath: /usr/local/quesBank/
+#   htmlPath: D:/
+#   pdfPath: D:/

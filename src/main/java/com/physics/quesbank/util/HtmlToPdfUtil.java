@@ -10,6 +10,7 @@ import com.itextpdf.layout.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.FileInputStream;
 
 /**
@@ -25,7 +26,7 @@ public class HtmlToPdfUtil {
     public static void tomPdf(String html, String DEST) throws Exception {
         ConverterProperties props = new ConverterProperties();
         DefaultFontProvider defaultFontProvider = new DefaultFontProvider(false, false, false);
-        defaultFontProvider.addFont("src/main/resources/NotoSansCJKsc-Regular.otf");
+        defaultFontProvider.addFont( currentPath()+"NotoSansCJKsc-Regular.otf");
         props.setFontProvider(defaultFontProvider);
         PdfWriter writer = new PdfWriter(DEST);
         PdfDocument pdf = new PdfDocument(writer);
@@ -34,6 +35,32 @@ public class HtmlToPdfUtil {
         document.close();
         pdf.close();
 
+    }
+
+    public static String currentPath() throws Exception{
+        String path = null;
+        String filePath = new File("").getCanonicalPath();
+        if (judgeOperationSystemType().equals("linux")) {
+            return filePath+"/";
+        }
+        path = filePath.substring(0, filePath.lastIndexOf("\\") + 1).replace("\\", "/");
+        String temp = path.substring(0, path.lastIndexOf("/"));
+        path = temp.substring(0, temp.lastIndexOf("/") + 1);
+        return path;
+    }
+
+    /*
+     * 判断项目部署所在的操作系统
+     */
+    public static String judgeOperationSystemType() {
+        String osType = System.getProperty("os.name").toLowerCase();
+        if (osType.startsWith("win")) {
+            return "windows";
+        } else if (osType.startsWith("lin")) {
+            return "linux";
+        } else {
+            return "";
+        }
     }
 
     public static void main (String[] args) throws Exception{

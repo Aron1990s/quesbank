@@ -169,7 +169,7 @@ public class HighPhysicsQuestionController extends BaseController {
             String h5path = htmlToPdf.getHtmlPath();
             String pdfpath = htmlToPdf.getPdfPath();
             String subTemplate = "<div style=\"height: auto\" id=\"question1\"><div class=\"recordContainerShowQuestion\"><div class=\"showBody\"><div class=\"contentShowQuestion\"><div class=\"showDemoShowQuestion\">SUBTEMPLATE</div></div></div></div><div style=\"height: 20px\"></div></div>";
-            try (PrintStream printStream = new PrintStream(new FileOutputStream("D:/test.html"));){
+            try (PrintStream printStream = new PrintStream(new FileOutputStream(h5path+"test.html"));){
                 StringBuilder stringBuilder = new StringBuilder();
                 int index = 1;
                 for (HighPhysicsQuestion sub : lists) {
