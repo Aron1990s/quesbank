@@ -34,7 +34,7 @@ public class HtmlToPdfUtil {
         Document document = HtmlConverter.convertToDocument(new FileInputStream(html), pdf, props);
         document.close();
         pdf.close();
-
+        writer.close();
     }
 
     public static String currentPath() throws Exception{
