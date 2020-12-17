@@ -25,7 +25,7 @@
     </style>
 </head>
 <body class="main">
-<div class="hideCart" style="position: fixed;right: 0;top: 0;width: 10px;height: 10px;background-color: red"></div>
+<div class="hideCart" style="position: fixed;right: 0;top: 0;width: 1px;height: 1px;background-color: white"></div>
 <div class="cover pageCover" th:include="cover/cover::loadCover"></div>
 <div class="container">
     <div class="col-sm-2"></div>
@@ -49,7 +49,7 @@
                     <div class="col-sm-15"></div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-11">
-                        <div id="addQuestion" class="questionOperateBlock" th:onclick="addQuestionAndAnswer(this,[[${subList.id}]])">
+                        <div th:id="addQuestion+${subListStat.count}" class="questionOperateBlock addQuestionBlock" th:onclick="addQuestionAndAnswer(this,[[${subList.id}]])">
                             <i class="fa fa-plus-square" aria-hidden="true" style="font-weight: bold"></i>&nbsp;添加题目
                         </div>
                     </div>
@@ -105,7 +105,14 @@
 <script type="text/javascript" src="../js/layer/layer.min.js"></script>
 <script>
     $(function () {
-
+        $('.addQuestionBlock').shoping({
+            endElement:".hideCart",
+            iconCSS:"",
+            iconImg:"../images/questionCart.png",
+            endFunction:function(element){
+                return false
+            }
+        })
     });
 
     function removeQuestionAndAnswer(questionId) {
@@ -119,14 +126,6 @@
     }
     
     function addQuestionAndAnswer(questionId) {
-        $(this).shoping({
-            endElement:".hideCart",
-            iconCSS:"",
-            iconImg:"../images/questionCart.png",
-            endFunction:function(element){
-                return false;
-            }
-        })
         window.parent.parent.topChangeQuestionCount(questionId)
         return
     }
