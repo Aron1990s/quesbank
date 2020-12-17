@@ -11,6 +11,8 @@ import com.physics.quesbank.entity.htmlToPdf.HtmlToPdf;
 import com.physics.quesbank.service.highPhysiscQuestion.HighPhysicsQuestionService;
 import com.physics.quesbank.util.DateUtil;
 import com.physics.quesbank.util.HtmlToPdfUtil;
+import com.spire.pdf.FileFormat;
+import com.spire.pdf.PdfDocument;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -250,9 +252,11 @@ public class HighPhysicsQuestionController extends BaseController {
     }
 
     public static void main (String[] args){
-        String sssss = "d>asddasdd<>dsadad";
-        int ss = sssss.indexOf(">")+1;
-        String sdas = new StringBuilder(sssss).insert(ss, "1) ").toString();
-        System.out.println(sdas);
+//        String sssss = "d>asddasdd<>dsadad";
+//        int ss = sssss.indexOf(">")+1;
+//        String sdas = new StringBuilder(sssss).insert(ss, "1) ").toString();
+//        System.out.println(sdas);
+        PdfDocument pdf = new PdfDocument("D:/test.pdf");
+        pdf.saveToFile("ToWord.docx",FileFormat.DOCX);
     }
 }
