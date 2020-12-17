@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.physics.quesbank.dao.questionSelectInfo.QuestionSelectInfoDao">
+
+    <!-- saveInfo -->
+    <insert id="saveInfo" parameterType="QuestionSelectInfo">
+        insert into question_select_info (
+            id,
+            user_id,
+            question_type,
+            question_id,
+            add_time
+        )values(
+            #{id},
+            #{user_id},
+            #{question_type},
+            #{question_id},
+            #{add_time}
+        )
+    </insert>
+
+    <!-- listInfo -->
+    <select id="listInfo" parameterType="QuestionSelectInfo" resultType="QuestionSelectInfo">
+        select *
+        from question_select_info hpq
+        order by add_time desc
+    </select>
+
+    <delete id="delInfo" parameterType="QuestionSelectInfo">
+        delete from question_select_info where id = #{id}
+    </delete>
+
+</mapper>
+ 
