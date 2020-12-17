@@ -3,12 +3,15 @@ package com.physics.quesbank.controller.base;
 import com.physics.quesbank.constant.SessionConstant;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestionSearchCondition;
 import com.physics.quesbank.entity.systemUser.SystemUser;
+import com.physics.quesbank.util.SnowflakeIdWorker;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import java.math.BigInteger;
 import java.util.UUID;
 
 /**
@@ -20,6 +23,9 @@ import java.util.UUID;
 public class BaseController {
 
     protected final static Logger logger = LoggerFactory.getLogger(BaseController.class);
+
+    @Autowired
+    private SnowflakeIdWorker snowflakeIdWorker;
 
     /**
      * 获取UUID
@@ -55,5 +61,12 @@ public class BaseController {
      */
     public static HighPhysicsQuestionSearchCondition getHighPhysicsSearchCondition(){
         return (HighPhysicsQuestionSearchCondition)getSession().getAttribute(SessionConstant.HIGH_PHYSICS_QUESTION_SEARCH_CONDITION);
+    }
+
+    /**
+     * 生成snowflakerId
+     */
+    public BigInteger generateSnowFlakerId() throws Exception{
+        return new BigInteger(String.valueOf(snowflakeIdWorker.nextId()));
     }
 }
