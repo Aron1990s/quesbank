@@ -126,7 +126,22 @@
     }
     
     function addQuestionAndAnswer(el,questionId) {
-        window.parent.parent.topChangeQuestionCount(questionId)
+        $.ajax({
+            cache: true,
+            type: "POST",
+            url: "../quesSelectInfoCtl/saveInfo",
+            data: {
+                question_id: questionId,
+                question_type: '1'
+            },
+            async: false,
+            error: function (request) {
+                layer.alert("添加失败！", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
+            },
+            success: function (data) {
+                window.parent.parent.topChangeQuestionCount(questionId)
+            }
+        });
         return
     }
 
