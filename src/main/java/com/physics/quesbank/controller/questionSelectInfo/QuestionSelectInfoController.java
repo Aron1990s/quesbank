@@ -39,6 +39,10 @@ public class QuestionSelectInfoController extends BaseController {
     public Object saveInfo(QuestionSelectInfo questionSelectInfo){
         Map<String, Object> map = new HashMap<>();
         try{
+            if (getCurrQuesSelectInfo().getMap().containsKey(questionSelectInfo.getQuestion_id())) {
+                map.put("code", "-1");
+                return map;
+            }
             questionSelectInfo.setId(generateSnowFlakerId());
             questionSelectInfo.setUser_id(getUserInfo().getId());
             questionSelectInfo.setAdd_time(DateUtil.getTime());

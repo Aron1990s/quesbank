@@ -19,5 +19,5 @@ public class CurrentQuestionSelectInfo {
 
     private int currentCount;
 
-    private Map<BigInteger, Object> map = new HashMap<>();
+    private Map<String, Object> map = new HashMap<>();
 }

@@ -66,9 +66,9 @@ public class LoginController extends BaseController {
             qsi.setUser_id(getUserInfo().getId());
             List<QuestionSelectInfo> questionSelectInfoList = questionSelectInfoService.listInfo(qsi);
             int currentCount = questionSelectInfoList.size();
-            Map<BigInteger, Object> currentQues = new HashMap<>();
+            Map<String, Object> currentQues = new HashMap<>();
             for (QuestionSelectInfo questionSelectInfo : questionSelectInfoList) {
-                currentQues.put(questionSelectInfo.getId() , new Object());
+                currentQues.put(questionSelectInfo.getQuestion_id() , new Object());
             }
             CurrentQuestionSelectInfo currentQuestionSelectInfo = new CurrentQuestionSelectInfo();
             currentQuestionSelectInfo.setCurrentCount(currentCount);
