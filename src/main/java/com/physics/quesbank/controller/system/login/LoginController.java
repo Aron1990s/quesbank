@@ -1,8 +1,14 @@
 package com.physics.quesbank.controller.system.login;
 
+import com.physics.quesbank.constant.SessionConstant;
+import com.physics.quesbank.controller.base.BaseController;
+import com.physics.quesbank.entity.questionSelectInfo.CurrentQuestionSelectInfo;
+import com.physics.quesbank.entity.questionSelectInfo.QuestionSelectInfo;
 import com.physics.quesbank.entity.systemUser.SystemUser;
+import com.physics.quesbank.service.questionSelectInfo.QuestionSelectInfoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -16,6 +22,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * @ClassName LoginController
  * @Description TODO
@@ -23,9 +34,12 @@ import org.springframework.web.servlet.ModelAndView;
  * @Date 2020/9/21 11:05
  **/
 @Controller
-public class LoginController {
+public class LoginController extends BaseController {
 
     protected final static Logger logger = LoggerFactory.getLogger(LoginController.class);
+
+    @Autowired
+    private QuestionSelectInfoService questionSelectInfoService;
 
     @GetMapping("/login")
     public ModelAndView login(){
@@ -47,6 +61,19 @@ public class LoginController {
         try {
             //进行验证，这里可以捕获异常，然后返回对应信息
             subject.login(usernamePasswordToken);
+            //初始化载入当前用户所选题目
+            QuestionSelectInfo qsi = new QuestionSelectInfo();
+            qsi.setUser_id(getUserInfo().getId());
+            List<QuestionSelectInfo> questionSelectInfoList = questionSelectInfoService.listInfo(qsi);
+            int currentCount = questionSelectInfoList.size();
+            Map<BigInteger, Object> currentQues = new HashMap<>();
+            for (QuestionSelectInfo questionSelectInfo : questionSelectInfoList) {
+                currentQues.put(questionSelectInfo.getId() , new Object());
+            }
+            CurrentQuestionSelectInfo currentQuestionSelectInfo = new CurrentQuestionSelectInfo();
+            currentQuestionSelectInfo.setCurrentCount(currentCount);
+            currentQuestionSelectInfo.setMap(currentQues);
+            getSession().setAttribute(SessionConstant.CURRENT_SELECT_QUESTION_INFO, currentQuestionSelectInfo);
         } catch (UnknownAccountException e) {
             logger.error("用户名不存在！", e);
             return "用户名不存在！";

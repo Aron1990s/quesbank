@@ -27,6 +27,7 @@ public class IndexController extends BaseController {
     public ModelAndView quesMainPage(){
         ModelAndView mv = new ModelAndView();
         String userName = getUserInfo().getUser_name();
+        mv.addObject("currentQuestionSelectCount", getCurrQuesSelectInfo().getCurrentCount());
         mv.addObject("user_name", userName);
         mv.setViewName("index/quesMainPage");
         return mv;

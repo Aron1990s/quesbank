@@ -24,7 +24,11 @@
     <!-- listInfo -->
     <select id="listInfo" parameterType="QuestionSelectInfo" resultType="QuestionSelectInfo">
         select *
-        from question_select_info hpq
+        from question_select_info qsi
+        where 1=1
+        <if test="user_id != '' and user_id != null">
+            and user_id = #{user_id}
+        </if>
         order by add_time desc
     </select>
 

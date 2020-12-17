@@ -13,5 +13,7 @@ public class SessionConstant {
 
     public static final String HIGH_PHYSICS_QUESTION_SEARCH_CONDITION = "HIGH_PHYSICS_QUESTION_SEARCH_CONDITION";
 
+    public static final String CURRENT_SELECT_QUESTION_INFO = "CURRENT_SELECT_QUESTION_INFO";
+
 
 }

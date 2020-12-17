@@ -2,6 +2,7 @@ package com.physics.quesbank.controller.base;
 
 import com.physics.quesbank.constant.SessionConstant;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestionSearchCondition;
+import com.physics.quesbank.entity.questionSelectInfo.CurrentQuestionSelectInfo;
 import com.physics.quesbank.entity.systemUser.SystemUser;
 import com.physics.quesbank.util.SnowflakeIdWorker;
 import org.apache.shiro.SecurityUtils;
@@ -53,6 +54,13 @@ public class BaseController {
         Subject currentUser = SecurityUtils.getSubject();
         SystemUser systemUser = (SystemUser) currentUser.getPrincipal();
         return systemUser;
+    }
+
+    /**
+     * 获取当前用户添加的题目
+     */
+    public static CurrentQuestionSelectInfo getCurrQuesSelectInfo(){
+        return (CurrentQuestionSelectInfo)getSession().getAttribute(SessionConstant.CURRENT_SELECT_QUESTION_INFO);
     }
 
     /**
