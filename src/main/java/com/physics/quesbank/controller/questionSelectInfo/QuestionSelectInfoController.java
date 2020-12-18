@@ -1,6 +1,7 @@
 package com.physics.quesbank.controller.questionSelectInfo;
 
 import com.physics.quesbank.controller.base.BaseController;
+import com.physics.quesbank.entity.questionSelectInfo.CurrentQuestionSelectInfo;
 import com.physics.quesbank.entity.questionSelectInfo.QuestionSelectInfo;
 import com.physics.quesbank.service.questionSelectInfo.QuestionSelectInfoService;
 import com.physics.quesbank.util.DateUtil;
@@ -10,8 +11,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -55,6 +58,26 @@ public class QuestionSelectInfoController extends BaseController {
             map.put("code", "-1");
         }
         return map;
+    }
+
+    /**
+     * 列表显示所选题目
+     * @return
+     */
+    @RequestMapping("listSelectQuestion")
+    public ModelAndView listSelectQuestion(){
+        ModelAndView mv = new ModelAndView();
+        try{
+            //初始化载入当前用户所选题目
+            QuestionSelectInfo qsi = new QuestionSelectInfo();
+            qsi.setUser_id(getUserInfo().getId());
+            List<QuestionSelectInfo> lists = questionSelectInfoService.listInfo(qsi);
+            mv.addObject("questionList", lists);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        mv.setViewName("questionSelectInfo/questionSelectInfo");
+        return mv;
     }
 
 }

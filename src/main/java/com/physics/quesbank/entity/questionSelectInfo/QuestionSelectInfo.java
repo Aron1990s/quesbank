@@ -22,5 +22,6 @@ public class QuestionSelectInfo {
     private String question_type;
     private String question_id;
     private String add_time;
+    private String question_content;
 
 }

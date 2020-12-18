@@ -23,13 +23,16 @@
 
     <!-- listInfo -->
     <select id="listInfo" parameterType="QuestionSelectInfo" resultType="QuestionSelectInfo">
-        select *
+        select qsi.*,
+               hpq.question_content
         from question_select_info qsi
+        left join high_physics_question hpq
+        on hpq.id = qsi.question_id
         where 1=1
         <if test="user_id != '' and user_id != null">
             and user_id = #{user_id}
         </if>
-        order by add_time desc
+        order by hpq.question_type asc,qsi.add_time desc
     </select>
 
     <delete id="delInfo" parameterType="QuestionSelectInfo">
