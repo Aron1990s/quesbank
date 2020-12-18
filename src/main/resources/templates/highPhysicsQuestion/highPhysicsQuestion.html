@@ -192,6 +192,7 @@
             success: function (data) {
                 if (data.code == '1'){
                     window.parent.parent.topChangeQuestionCount(questionId)
+                    window.location.reload()
                 }else{
                     layer.alert("添加失败！", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
                 }
