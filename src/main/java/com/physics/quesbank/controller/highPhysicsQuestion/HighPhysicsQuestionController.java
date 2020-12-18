@@ -9,7 +9,9 @@ import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestion;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestionSearchCondition;
 import com.physics.quesbank.entity.htmlToPdf.HtmlToPdf;
 import com.physics.quesbank.entity.questionSelectInfo.CurrentQuestionSelectInfo;
+import com.physics.quesbank.entity.questionSelectInfo.QuestionSelectInfo;
 import com.physics.quesbank.service.highPhysiscQuestion.HighPhysicsQuestionService;
+import com.physics.quesbank.service.questionSelectInfo.QuestionSelectInfoService;
 import com.physics.quesbank.util.DateUtil;
 import com.physics.quesbank.util.HtmlToPdfUtil;
 import com.spire.pdf.FileFormat;
@@ -50,6 +52,9 @@ public class HighPhysicsQuestionController extends BaseController {
 
     @Autowired
     private HtmlToPdf htmlToPdf;
+
+    @Autowired
+    private QuestionSelectInfoService questionSelectInfoService;
 
     /**
      * 保存数据
@@ -171,10 +176,14 @@ public class HighPhysicsQuestionController extends BaseController {
     @RequestMapping(value = "/downloadText")
     public ResponseEntity<Resource> downloadText(HttpServletResponse response) {
         try {
-            PagePlugin pagePlugin = new PagePlugin(getHighPhysicsSearchCondition().getCurrent());
-            Map<String, Object> pagePd = new HashMap<>();
-            pagePlugin.setPd(pagePd);
-            List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfoByPage(pagePlugin);
+//            PagePlugin pagePlugin = new PagePlugin(getHighPhysicsSearchCondition().getCurrent());
+//            Map<String, Object> pagePd = new HashMap<>();
+//            pagePlugin.setPd(pagePd);
+//            List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfoByPage(pagePlugin);
+            //初始化载入当前用户所选题目
+            QuestionSelectInfo qsi = new QuestionSelectInfo();
+            qsi.setUser_id(getUserInfo().getId());
+            List<HighPhysicsQuestion> lists = questionSelectInfoService.listCurrentQuestion(qsi);
             String te = htmlToPdf.getHtmlTemplate();
             String h5path = htmlToPdf.getHtmlPath();
             String pdfpath = htmlToPdf.getPdfPath();

@@ -43,10 +43,10 @@ public class HtmlToPdfUtil {
         if (judgeOperationSystemType().equals("linux")) {
             return filePath+"/";
         }
-        path = filePath.substring(0, filePath.lastIndexOf("\\") + 1).replace("\\", "/");
-        String temp = path.substring(0, path.lastIndexOf("/"));
-        path = temp.substring(0, temp.lastIndexOf("/") + 1);
-        return path;
+//        path = filePath.substring(0, filePath.lastIndexOf("\\") + 1).replace("\\", "/");
+//        String temp = path.substring(0, path.lastIndexOf("/"));
+//        path = temp.substring(0, temp.lastIndexOf("/") + 1);
+        return filePath+"\\";
     }
 
     /*
@@ -64,7 +64,8 @@ public class HtmlToPdfUtil {
     }
 
     public static void main (String[] args) throws Exception{
-        tomPdf("D:/test.html", "D:/test.pdf");
+//        tomPdf("D:/test.html", "D:/test.pdf");
+        System.out.println(currentPath());
     }
 
 }

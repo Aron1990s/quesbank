@@ -1,6 +1,8 @@
 package com.physics.quesbank.service.questionSelectInfo;
 
 import com.physics.quesbank.dao.questionSelectInfo.QuestionSelectInfoDao;
+import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestion;
+import com.physics.quesbank.entity.questionSelectInfo.CurrentQuestionSelectInfo;
 import com.physics.quesbank.entity.questionSelectInfo.QuestionSelectInfo;
 import com.physics.quesbank.service.baseService.BaseService;
 import org.slf4j.Logger;
@@ -48,4 +50,9 @@ public class QuestionSelectInfoService implements BaseService<QuestionSelectInfo
     public int delInfo(QuestionSelectInfo questionSelectInfo) {
         return dao.delInfo(questionSelectInfo);
     }
+
+    public List<HighPhysicsQuestion> listCurrentQuestion(QuestionSelectInfo currentQuestionSelectInfo){
+        return dao.listCurrentQuestion(currentQuestionSelectInfo);
+    }
+
 }

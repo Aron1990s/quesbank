@@ -39,5 +39,20 @@
         delete from question_select_info where id = #{id}
     </delete>
 
+    <!-- listCurrentQuestion -->
+    <select id="listCurrentQuestion" parameterType="QuestionSelectInfo" resultType="HighPhysicsQuestion">
+        select hpq.*,
+               hpsa.simple_answer
+        from question_select_info qsi
+        left join high_physics_question hpq
+        on hpq.id = qsi.question_id
+        left join high_physics_simple_answer hpsa
+        on hpsa.question_id = hpq.id
+        where 1=1
+        <if test="user_id != '' and user_id != null">
+            and user_id = #{user_id}
+        </if>
+        order by hpq.question_type asc,qsi.add_time desc
+    </select>
 </mapper>
  
