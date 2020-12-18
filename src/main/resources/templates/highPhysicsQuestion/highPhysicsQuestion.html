@@ -100,7 +100,7 @@
                     <div class="col-sm-15"></div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-11">
-                        <div th:id="addQuestion+${subListStat.count}" class="questionOperateBlock addQuestionBlock" th:onclick="addQuestionAndAnswer(this,[[${subList.id}]])">
+                        <div th:id="addQuestion+${subListStat.count}" class="questionOperateBlock addQuestionBlock questionOperateDisable" th:onclick="addQuestionAndAnswer(this,[[${subList.id}]])">
                             <i class="fa fa-plus-square" aria-hidden="true" style="font-weight: bold"></i>&nbsp;添加题目
                         </div>
                     </div>
@@ -177,6 +177,7 @@
     }
     
     function addQuestionAndAnswer(el,questionId) {
+        var currentDiv = $(el);
         $.ajax({
             cache: true,
             type: "POST",
@@ -192,9 +193,16 @@
             success: function (data) {
                 if (data.code == '1'){
                     window.parent.parent.topChangeQuestionCount(questionId)
-                    window.location.reload()
+                    currentDiv.parent().parent().parent().removeClass('questionOperate')
+                    currentDiv.parent().parent().parent().addClass('questionOperateSelect')
+                    var currQues = currentDiv.parent().parent().parent().parent().find('.showDemoShowQuestion')
+                    currQues.removeClass('showDemoShowQuestion')
+                    currQues.addClass('showDemoShowQuestionSelected')
+                    currentDiv.addClass('questionOperateDisable')
+
+                    // window.location.reload()
                 }else{
-                    layer.alert("添加失败！", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
+                    layer.alert("添加失败！该题已添加", {title: ['信息', 'color:white;background-color:#65a2ff;font-weight:bold'],icon: 2})
                 }
             }
         });
