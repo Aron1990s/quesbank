@@ -22,6 +22,9 @@
         .showDemoShowQuestion{
             overflow: hidden;
         }
+        .showDemoShowQuestionSelected{
+            overflow: hidden;
+        }
     </style>
 </head>
 <body class="main">
@@ -35,13 +38,61 @@
             <div class="recordContainerShowQuestion">
                 <div class="showBody">
                     <div class="contentShowQuestion">
-                        <div class="showDemoShowQuestion" th:utext="${subList.question_content}">
+                        <div th:if="${subList.hasSelect == '0'}" class="showDemoShowQuestion" th:utext="${subList.question_content}">
+                        </div>
+                        <div th:if="${subList.hasSelect == '1'}" class="showDemoShowQuestionSelected" th:utext="${subList.question_content}">
                         </div>
                     </div>
                 </div>
             </div>
             <div style="height: 3%"></div>
-            <div style="height:40px" class="questionOperate">
+            <div th:if="${subList.hasSelect == '0'}" style="height:40px" class="questionOperate">
+                <div style="height: 5px"></div>
+                <div style="height: 30px" class="container">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11 questionAuthor" th:text="'录入者:&nbsp;' + ${subList.record_teacher_name}"></div>
+                    <div class="col-sm-15"></div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11">
+                        <div th:id="addQuestion+${subListStat.count}" class="questionOperateBlock addQuestionBlock" th:onclick="addQuestionAndAnswer(this,[[${subList.id}]])">
+                            <i class="fa fa-plus-square" aria-hidden="true" style="font-weight: bold"></i>&nbsp;添加题目
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11">
+                        <div class="questionOperateBlock" th:onclick="removeQuestionAndAnswer([[${subList.id}]])">
+                            <i class="fa fa-trash-o" aria-hidden="true" style="font-weight: bold"></i>&nbsp;删除题目
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11">
+                        <div class="questionOperateBlock" th:onclick="editQuestionAndAnswer([[${subList.id}]])">
+                            <i class="fa fa-pencil-square" aria-hidden="true"></i>&nbsp;编辑题目
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11">
+                        <div class="questionOperateBlock" th:onclick="'getSimpleAnswer('+${subListStat.count}+')'">
+                            <i class="fa fa-check-square-o"></i>&nbsp;简单解析
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11">
+                        <div class="questionOperateBlock" th:onclick="goToStepAnswer([[${subList.id}]])">
+                            <i class="fa fa-check-circle-o"></i>&nbsp;详细解析
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11">
+                        <div class="questionOperateBlock">
+                            <i class="fa fa-cubes"></i>&nbsp;难度:&nbsp;[[${subList.difficult_level}]]
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                <div style="height: 5px"></div>
+            </div>
+            <div th:if="${subList.hasSelect == '1'}" style="height:40px" class="questionOperateSelect">
                 <div style="height: 5px"></div>
                 <div style="height: 30px" class="container">
                     <div class="col-sm-1"></div>

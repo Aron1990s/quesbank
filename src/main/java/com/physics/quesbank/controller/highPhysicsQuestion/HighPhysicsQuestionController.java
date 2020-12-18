@@ -8,6 +8,7 @@ import com.physics.quesbank.entity.PagePlugin;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestion;
 import com.physics.quesbank.entity.highPhysicsQuestion.HighPhysicsQuestionSearchCondition;
 import com.physics.quesbank.entity.htmlToPdf.HtmlToPdf;
+import com.physics.quesbank.entity.questionSelectInfo.CurrentQuestionSelectInfo;
 import com.physics.quesbank.service.highPhysiscQuestion.HighPhysicsQuestionService;
 import com.physics.quesbank.util.DateUtil;
 import com.physics.quesbank.util.HtmlToPdfUtil;
@@ -141,8 +142,15 @@ public class HighPhysicsQuestionController extends BaseController {
             PagePlugin pagePlugin = new PagePlugin(getHighPhysicsSearchCondition().getCurrent());
             Map<String, Object> pagePd = new HashMap<>();
             pagePlugin.setPd(pagePd);
+            Map<String, Object> currMap = getCurrQuesSelectInfo().getMap();
             List<HighPhysicsQuestion> lists = highPhysicsQuestionService.listInfoByPage(pagePlugin);
             for (HighPhysicsQuestion sub : lists) {
+                //判断是否已被选
+                if (currMap.containsKey(sub.getId())) {
+                    sub.setHasSelect("1");
+                }else{
+                    sub.setHasSelect("0");
+                }
                 if (sub.getSimple_answer() == null || sub.getSimple_answer().trim().equals("")) {
                     sub.setSimple_answer("<p>暂无解析</p>");
                 }

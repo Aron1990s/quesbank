@@ -105,10 +105,20 @@ select:focus{
     padding:10px;
 }
 
+.showDemoShowQuestionSelected{
+    border: solid 1px #65a2ff;
+    min-height:150px;
+    width:100%;
+    padding:10px;
+    background-color: #d6e6ff;
+}
+
 .questionOperate{
     background-color: #d6e6ff;
-    /*border-bottom-left-radius: 5px;*/
-    /*border-bottom-right-radius: 5px;*/
+}
+
+.questionOperateSelect{
+    background-color: #65a2ff;
 }
 
 .questionOperateBlock{

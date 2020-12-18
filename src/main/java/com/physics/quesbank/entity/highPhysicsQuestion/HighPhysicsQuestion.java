@@ -34,5 +34,6 @@ public class HighPhysicsQuestion {
     private String simple_answer;
     private String record_teacher_name;
     private String has_copy_right;
+    private String hasSelect;
 
 }

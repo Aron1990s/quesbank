@@ -47,6 +47,7 @@ public class QuestionSelectInfoController extends BaseController {
             questionSelectInfo.setUser_id(getUserInfo().getId());
             questionSelectInfo.setAdd_time(DateUtil.getTime());
             questionSelectInfoService.saveInfo(questionSelectInfo);
+            getCurrQuesSelectInfo().getMap().put(questionSelectInfo.getQuestion_id(), new Object());
             map.put("code", "1");
         } catch (Exception e){
             e.printStackTrace();
