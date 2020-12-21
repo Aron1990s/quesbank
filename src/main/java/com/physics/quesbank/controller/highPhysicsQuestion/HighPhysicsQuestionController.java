@@ -200,7 +200,7 @@ public class HighPhysicsQuestionController extends BaseController {
             }catch (Exception e){
                 e.printStackTrace();
             }
-            HtmlToPdfUtil.tomPdf(h5path+"test.html", pdfpath+"test.pdf");
+            HtmlToPdfUtil.tomPdf(h5path+"test.html", pdfpath+"test.pdf", (getCurrQuesSelectInfo().getCurrentCount()/10)+1);
             downLoadExcel(pdfpath, "test.pdf", response);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

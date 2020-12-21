@@ -37,6 +37,20 @@ public class HtmlToPdfUtil {
         writer.close();
     }
 
+    public static void tomPdf(String html, String DEST, int pageSize) throws Exception {
+        ConverterProperties props = new ConverterProperties();
+        DefaultFontProvider defaultFontProvider = new DefaultFontProvider(false, false, false);
+        defaultFontProvider.addFont( currentPath()+"NotoSansCJKsc-Regular.otf");
+        props.setFontProvider(defaultFontProvider);
+        PdfWriter writer = new PdfWriter(DEST);
+        PdfDocument pdf = new PdfDocument(writer);
+        pdf.setDefaultPageSize(new PageSize(700.0F, (float) 1000*pageSize));
+        Document document = HtmlConverter.convertToDocument(new FileInputStream(html), pdf, props);
+        document.close();
+        pdf.close();
+        writer.close();
+    }
+
     public static String currentPath() throws Exception{
         String path = null;
         String filePath = new File("").getCanonicalPath();
@@ -46,6 +60,7 @@ public class HtmlToPdfUtil {
 //        path = filePath.substring(0, filePath.lastIndexOf("\\") + 1).replace("\\", "/");
 //        String temp = path.substring(0, path.lastIndexOf("/"));
 //        path = temp.substring(0, temp.lastIndexOf("/") + 1);
+        System.out.println(filePath+"\\");
         return filePath+"\\";
     }
 
@@ -64,8 +79,8 @@ public class HtmlToPdfUtil {
     }
 
     public static void main (String[] args) throws Exception{
-//        tomPdf("D:/test.html", "D:/test.pdf");
-        System.out.println(currentPath());
+        tomPdf("D:/test.html", "D:/test.pdf");
+//        System.out.println(currentPath());
     }
 
 }
